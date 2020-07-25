@@ -1,21 +1,18 @@
 import React from "react"
-import PropTypes from "prop-types"
 
 import { StyledHeader } from "./style"
+import { Pane } from "../ui"
 import Logo from "../logo/Logo"
 import TopNav from "../navigation/top-nav/TopNav"
+import { BREAKPOINT } from "../../utils/constants"
 
-const TopBar = props => {
-  return (
-    <StyledHeader>
+const TopBar = props => (
+  <StyledHeader>
+    <Pane width="100%" maxWidth={BREAKPOINT.XL} margin="auto" height="100%">
       <Logo />
       <TopNav />
-    </StyledHeader>
-  )
-}
-
-TopBar.propTypes = {}
-
-TopBar.defaultProps = {}
+    </Pane>
+  </StyledHeader>
+)
 
 export default TopBar

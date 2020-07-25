@@ -11,6 +11,4 @@ NavLink.propTypes = {
   children: PropTypes.oneOf(PropTypes.string, PropTypes.node),
 }
 
-NavLink.defaultProps = {}
-
 export default NavLink

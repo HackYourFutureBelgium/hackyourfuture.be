@@ -1,8 +1,8 @@
 import React from "react"
-import PropTypes from "prop-types"
 
 import { StyledTopNav } from "./style"
 import NavLink from "../nav-link/NavLink"
+import { Button } from "../../ui"
 
 const TopNav = props => {
   return (
@@ -12,12 +12,9 @@ const TopNav = props => {
       <NavLink to="/about">About</NavLink>
       <NavLink to="/faq">FAQ</NavLink>
       <NavLink to="/support-us">Support us</NavLink>
+      <Button>Apply now</Button>
     </StyledTopNav>
   )
 }
-
-TopNav.propTypes = {}
-
-TopNav.defaultProps = {}
 
 export default TopNav

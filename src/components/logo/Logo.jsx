@@ -5,7 +5,7 @@ import { StyledLogoContainer } from "./style"
 
 const Logo = props => (
   <StyledLogoContainer>
-    <Link ti="/">Logo</Link>
+    <Link ti="/">HACK YOUR FUTURE</Link>
   </StyledLogoContainer>
 )
 

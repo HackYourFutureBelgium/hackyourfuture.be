@@ -1,8 +1,9 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
 export const StyledPane = styled(
   ({
+    display,
     children,
     direction,
     grow,
@@ -13,24 +14,28 @@ export const StyledPane = styled(
     padding,
     margin,
     wrap,
+    maxWidth,
+    maxHeight,
     ...rest
   }) => <div {...rest}>{children}</div>
 )`
-  display: flex;
+  display: ${({ display }) => display};
   box-sizing: border-box;
   flex-direction: ${({ direction }) => direction};
   flex-grow: ${({ grow }) => grow};
   justify-content: ${({ justifyContent }) => justifyContent};
   align-items: ${({ alignItems }) => alignItems};
   width: ${({ width }) => width};
-  width: ${({ width }) => width};
+  max-width: ${({ maxWidth }) => maxWidth};
   height: ${({ height }) => height};
+  max-height: ${({ maxHeight }) => maxHeight};
   padding: ${({ padding }) => padding};
   margin: ${({ margin }) => margin};
-  flex-wrap: ${({ wrap }) => (wrap ? "flex-wrap" : "no-wrap")};
-`;
+  flex-wrap: ${({ wrap }) => wrap};
+`
 
 StyledPane.defaultProps = {
+  display: "flex",
   grow: 0,
   width: "auto",
   height: "auto",
@@ -39,5 +44,7 @@ StyledPane.defaultProps = {
   direction: "row",
   justifyContent: "flex-start",
   alignItems: "stretch",
-  wrap: false,
-};
+  wrap: "no-wrap",
+  maxWidth: "none",
+  maxHeight: "none",
+}

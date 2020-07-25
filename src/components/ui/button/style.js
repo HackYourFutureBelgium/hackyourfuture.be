@@ -1,8 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
-import Button from "./Button";
-import { COLOR } from "../../utils/constants";
+import Button from "./Button"
 
 export const StyledButton = styled(({ type, ...rest }) => <Button {...rest} />)`
   display: inline-flex;
@@ -10,8 +9,8 @@ export const StyledButton = styled(({ type, ...rest }) => <Button {...rest} />)`
   line-height: 20px;
   text-decoration: none;
   background-color: ${({ type }) =>
-    type === "button" ? COLOR.LINK : "transparent"};
-  color: ${({ type }) => (type === "button" ? "white" : COLOR.LINK)};
+    type === "button" ? "black" : "transparent"};
+  color: ${({ type }) => (type === "button" ? "white" : "black")};
   font-weight: 600;
   border: 1px solid transparent;
   border-radius: 5px;
@@ -23,8 +22,8 @@ export const StyledButton = styled(({ type, ...rest }) => <Button {...rest} />)`
   &:focus,
   &:active {
   }
-`;
+`
 
 StyledButton.defaultProps = {
   type: "button",
-};
+}

@@ -1,15 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import PropTypes from "prop-types";
+import React from "react"
+import styled from "styled-components"
 
-import Text from "./Text";
-import { COLORS } from "../../utils/constants";
+import Text from "./Text"
 
-export const StyledText = styled(({ color, ...rest }) => <Text {...rest} />)`
+export const StyledText = styled(({ ...rest }) => <Text {...rest} />)`
   display: inline-flex;
-  color: ${({ color }) => color};
-`;
-
-StyledText.propTypes = {
-  color: PropTypes.oneOf(COLORS),
-};
+  color: black;
+`

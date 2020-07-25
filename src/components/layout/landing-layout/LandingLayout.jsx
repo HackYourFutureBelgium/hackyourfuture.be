@@ -16,7 +16,7 @@ const LandingLayout = ({ isFullWidth, children }) => {
   return (
     <StyledLandingLayout>
       <TopBar />
-      <StyledMain isFullWidth={isFullWidth}>{children}</StyledMain>
+      <StyledMain>{children}</StyledMain>
     </StyledLandingLayout>
   )
 }
