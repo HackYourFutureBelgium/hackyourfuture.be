@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const StyledLandingLayout = styled.div`
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  height: 100%;
 `
 
 export const StyledMain = styled.main`

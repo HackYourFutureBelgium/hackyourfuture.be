@@ -4,7 +4,8 @@ import React from "react"
 // import Layout from "../components/layout"
 // import Image from "../components/image"
 // import SEO from "../components/seo"
-import LandingLayout from "../components/layout/landing-layout/LandingLayout"
+import LandingLayout from "../components/layout/landing-layout"
+import HomeHeader from "../components/page-sections/home-header"
 
 const IndexPage = () => (
   // <Layout>
@@ -18,7 +19,9 @@ const IndexPage = () => (
   //   <Link to="/page-2/">Go to page 2</Link> <br />
   //   <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   // </Layout>
-  <LandingLayout>body here</LandingLayout>
+  <LandingLayout>
+    <HomeHeader />
+  </LandingLayout>
 )
 
 export default IndexPage

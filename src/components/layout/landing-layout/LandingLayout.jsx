@@ -11,12 +11,14 @@ import PropTypes from "prop-types"
 
 import { StyledLandingLayout, StyledMain } from "./style"
 import TopBar from "../../top-bar/TopBar"
+import Footer from "../../footer/Footer"
 
 const LandingLayout = ({ isFullWidth, children }) => {
   return (
     <StyledLandingLayout>
       <TopBar />
       <StyledMain>{children}</StyledMain>
+      <Footer />
     </StyledLandingLayout>
   )
 }

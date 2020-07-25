@@ -108,6 +108,7 @@ section {
 
 body {
   line-height: 1;
+  min-height: 100vh;
 }
 
 ol,
@@ -144,4 +145,9 @@ a:focus,
 a:visited {
   text-decoration: none;
   color: black;
+}
+
+#___gatsby,
+#___gatsby > div {
+  height: 100vh;
 }

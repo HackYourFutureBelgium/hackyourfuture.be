@@ -8,5 +8,5 @@ export const StyledHeader = styled.header`
   height: 65px;
   box-sizing: border-box;
   background-color: ${COLOR.CONCRETE};
-  padding: ${SPACER.M};
+  padding: 0 ${SPACER.M};
 `
