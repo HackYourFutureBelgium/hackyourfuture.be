@@ -13,6 +13,8 @@ import BreadcrumbsUI from "./breadcrumb/breadcrumbs/Breadcrumbs"
 import CheckboxUI from "./checkbox/Checkbox"
 import InputUI from "./input/Input"
 import SpinnerUI from "./spinner/Spinner"
+import CollapseUI from "./collapse"
+import IconUI from "./icon"
 
 export const Button = StyledButton
 export const Image = StyledImage
@@ -24,3 +26,5 @@ export const Breadcrumbs = BreadcrumbsUI
 export const Checkbox = CheckboxUI
 export const Input = InputUI
 export const Spinner = SpinnerUI
+export const Collapse = CollapseUI
+export const Icon = IconUI

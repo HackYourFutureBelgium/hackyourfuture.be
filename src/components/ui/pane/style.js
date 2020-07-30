@@ -1,50 +1,68 @@
 import React from "react"
+import PropTypes from "prop-types"
 import styled from "styled-components"
+
+import { COLOR, SHADOW } from "../../../utils/constants"
 
 export const StyledPane = styled(
   ({
-    display,
+    alignItems,
+    background,
+    boxShadow,
     children,
     direction,
+    display,
     grow,
-    justifyContent,
-    alignItems,
-    width,
     height,
-    padding,
+    justifyContent,
     margin,
-    wrap,
-    maxWidth,
     maxHeight,
+    maxWidth,
+    padding,
+    width,
+    wrap,
     ...rest
   }) => <div {...rest}>{children}</div>
 )`
-  display: ${({ display }) => display};
+  align-items: ${({ alignItems }) => alignItems};
+  background: ${({ background }) => background};
+  box-shadow: ${({ boxShadow }) => boxShadow};
   box-sizing: border-box;
+  display: ${({ display }) => display};
   flex-direction: ${({ direction }) => direction};
   flex-grow: ${({ grow }) => grow};
-  justify-content: ${({ justifyContent }) => justifyContent};
-  align-items: ${({ alignItems }) => alignItems};
-  width: ${({ width }) => width};
-  max-width: ${({ maxWidth }) => maxWidth};
-  height: ${({ height }) => height};
-  max-height: ${({ maxHeight }) => maxHeight};
-  padding: ${({ padding }) => padding};
-  margin: ${({ margin }) => margin};
   flex-wrap: ${({ wrap }) => wrap};
+  height: ${({ height }) => height};
+  justify-content: ${({ justifyContent }) => justifyContent};
+  margin: ${({ margin }) => margin};
+  max-height: ${({ maxHeight }) => maxHeight};
+  max-width: ${({ maxWidth }) => maxWidth};
+  padding: ${({ padding }) => padding};
+  width: ${({ width }) => width};
 `
 
+StyledPane.propTypes = {
+  background: PropTypes.oneOf([
+    COLOR.CONCRETE,
+    COLOR.JACKSON_PURPLE,
+    COLOR.BLUE_VIOLET,
+  ]),
+  boxShadow: PropTypes.oneOf(["none", SHADOW.BOX]),
+}
+
 StyledPane.defaultProps = {
+  alignItems: "stretch",
+  background: "transparent",
+  boxShadow: "none",
+  direction: "row",
   display: "flex",
   grow: 0,
-  width: "auto",
   height: "auto",
-  padding: "0",
-  margin: "0",
-  direction: "row",
   justifyContent: "flex-start",
-  alignItems: "stretch",
-  wrap: "no-wrap",
-  maxWidth: "none",
+  margin: "0",
   maxHeight: "none",
+  maxWidth: "none",
+  padding: "0",
+  width: "auto",
+  wrap: "no-wrap",
 }

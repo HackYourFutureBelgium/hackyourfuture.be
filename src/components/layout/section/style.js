@@ -7,8 +7,8 @@ export const StyledSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${COLOR.CONCRETE};
   width: 100%;
   max-width: ${BREAKPOINT.L};
   padding: ${SPACER.L} 0;
+  margin: 0 auto;
 `

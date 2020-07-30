@@ -8,7 +8,7 @@ const NavLink = ({ children, ...props }) => {
 }
 
 NavLink.propTypes = {
-  children: PropTypes.oneOf(PropTypes.string, PropTypes.node),
+  children: PropTypes.any,
 }
 
 export default NavLink

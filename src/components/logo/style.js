@@ -4,5 +4,9 @@ export const StyledLogoContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 60%;
+
+  > * {
+    height: 100%;
+  }
 `

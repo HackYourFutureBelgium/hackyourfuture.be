@@ -8,7 +8,13 @@ import { BREAKPOINT } from "../../utils/constants"
 
 const TopBar = props => (
   <StyledHeader>
-    <Pane width="100%" maxWidth={BREAKPOINT.XL} margin="auto" height="100%">
+    <Pane
+      width="100%"
+      maxWidth={BREAKPOINT.XL}
+      margin="auto"
+      height="100%"
+      alignItems="center"
+    >
       <Logo />
       <TopNav />
     </Pane>

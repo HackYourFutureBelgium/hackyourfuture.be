@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import Text from "./Text"
-import { FONT_SIZE_TEXT } from "../../../utils/constants"
+import { FONT_SIZE_TEXT, FONT_FAMILY } from "../../../utils/constants"
 
 const getFontSize = size => {
   switch (size) {
@@ -26,6 +26,7 @@ export const StyledText = styled(({ textAlign, maxWidth, size, ...rest }) => (
   max-width: ${({ maxWidth }) => maxWidth};
   line-height: 160%;
   font-size: ${({ size }) => getFontSize(size)};
+  font-family: ${FONT_FAMILY.SPACE};
 `
 
 StyledText.defaultProps = {

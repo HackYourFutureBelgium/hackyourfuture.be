@@ -11,6 +11,12 @@ export const BREAKPOINT = {
  */
 export const COLOR = {
   CONCRETE: "#F2F2F2",
+  DOLPHIN_GRAY: "#656686",
+  WHITE: "#FFFFFF",
+  JACKSON_PURPLE: "#1C2294",
+  BLUE_VIOLET: "#4A50BB",
+  MERCURY: "#E5E5E5",
+  GRAY: "#7F7F7F",
 }
 
 export const SPACER = {
@@ -30,4 +36,13 @@ export const FONT_SIZE_TEXT = {
   L: "24px",
   M: "18px",
   S: "14px",
+}
+
+export const SHADOW = {
+  BOX: "0px 0px 53px rgba(0, 0, 0, 0.08)",
+}
+
+export const FONT_FAMILY = {
+  SPACE: "'Space Mono', monospace",
+  WORK: "'Work Sans', sans-serif",
 }
