@@ -9,6 +9,7 @@ export const StyledSection = styled.section`
   align-items: center;
   width: 100%;
   max-width: ${BREAKPOINT.L};
-  padding: ${SPACER.L} 0;
+  padding: ${SPACER.S} 0;
   margin: 0 auto;
+  border: 1px solid green;
 `

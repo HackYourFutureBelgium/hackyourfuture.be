@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import Text from "./Text"
-import { FONT_SIZE_TEXT, FONT_FAMILY } from "../../../utils/constants"
+import { FONT_SIZE_TEXT, FONT_FAMILY, COLOR } from "../../../utils/constants"
 
 const getFontSize = size => {
   switch (size) {
@@ -17,11 +17,11 @@ const getFontSize = size => {
   }
 }
 
-export const StyledText = styled(({ textAlign, maxWidth, size, ...rest }) => (
-  <Text {...rest} />
-))`
+export const StyledText = styled(
+  ({ textAlign, maxWidth, size, isWhite, ...rest }) => <Text {...rest} />
+)`
   display: inline-flex;
-  color: black;
+  color: ${({ isWhite }) => (isWhite ? COLOR.WHITE : COLOR.BLACK)};
   text-align: ${({ textAlign }) => textAlign};
   max-width: ${({ maxWidth }) => maxWidth};
   line-height: 160%;
@@ -33,4 +33,5 @@ StyledText.defaultProps = {
   textAlign: "left",
   maxWidth: "none",
   size: "m",
+  isWhite: false,
 }

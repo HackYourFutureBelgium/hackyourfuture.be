@@ -63,6 +63,6 @@ StyledPane.defaultProps = {
   maxHeight: "none",
   maxWidth: "none",
   padding: "0",
-  width: "auto",
+  width: "100%",
   wrap: "no-wrap",
 }

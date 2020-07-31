@@ -7,7 +7,7 @@ import { Title, Pane, Text } from "../../ui"
 const HomeHeader = () => (
   <StyledHomeHeader>
     <Section>
-      <Pane margin="100px 0" direction="column" alignItems="center">
+      <Pane margin="10px 0" direction="column" alignItems="center">
         <Title level={1} isUpperCase>
           Hack Your Future
         </Title>

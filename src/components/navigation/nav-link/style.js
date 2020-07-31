@@ -13,7 +13,9 @@ export const StyledNavLink = styled(Link)`
   text-transform: uppercase;
   padding: 10px 20px;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     color: black;
     background-color: ${COLOR.MERCURY};
   }
