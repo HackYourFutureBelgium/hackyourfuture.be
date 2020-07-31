@@ -1,0 +1,160 @@
+{
+  "stages": {
+    "develop": {
+      "plugins": [
+        {
+          "name": "babel-plugin-styled-components",
+          "stage": "develop",
+          "options": {
+            "plugins": [],
+            "minify": true,
+            "displayName": false,
+            "ssr": false
+          }
+        },
+        {
+          "name": "/Users/master/evan-drive/0-teach-code/h-h-y-f/0---the-big-idea/landing-page/website/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/master/evan-drive/0-teach-code/h-h-y-f/0---the-big-idea/landing-page/website/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/master/evan-drive/0-teach-code/h-h-y-f/0---the-big-idea/landing-page/website/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        }
+      ],
+      "presets": [
+        {
+          "name": "/Users/master/evan-drive/0-teach-code/h-h-y-f/0---the-big-idea/landing-page/website/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": []
+          }
+        }
+      ],
+      "options": {
+        "cacheDirectory": true,
+        "sourceType": "unambiguous"
+      }
+    },
+    "develop-html": {
+      "plugins": [
+        {
+          "name": "/Users/master/evan-drive/0-teach-code/h-h-y-f/0---the-big-idea/landing-page/website/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/master/evan-drive/0-teach-code/h-h-y-f/0---the-big-idea/landing-page/website/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/master/evan-drive/0-teach-code/h-h-y-f/0---the-big-idea/landing-page/website/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "babel-plugin-styled-components",
+          "stage": "develop-html",
+          "options": {
+            "plugins": [],
+            "minify": true,
+            "displayName": false,
+            "ssr": false
+          }
+        }
+      ],
+      "presets": [
+        {
+          "name": "/Users/master/evan-drive/0-teach-code/h-h-y-f/0---the-big-idea/landing-page/website/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": []
+          }
+        }
+      ],
+      "options": {
+        "cacheDirectory": true,
+        "sourceType": "unambiguous"
+      }
+    },
+    "build-html": {
+      "plugins": [
+        {
+          "name": "/Users/master/evan-drive/0-teach-code/h-h-y-f/0---the-big-idea/landing-page/website/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/master/evan-drive/0-teach-code/h-h-y-f/0---the-big-idea/landing-page/website/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/master/evan-drive/0-teach-code/h-h-y-f/0---the-big-idea/landing-page/website/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "babel-plugin-styled-components",
+          "stage": "build-html",
+          "options": {
+            "plugins": [],
+            "minify": true,
+            "displayName": false,
+            "ssr": true
+          }
+        }
+      ],
+      "presets": [
+        {
+          "name": "/Users/master/evan-drive/0-teach-code/h-h-y-f/0---the-big-idea/landing-page/website/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": []
+          }
+        }
+      ],
+      "options": {
+        "cacheDirectory": true,
+        "sourceType": "unambiguous"
+      }
+    },
+    "build-javascript": {
+      "plugins": [
+        {
+          "name": "/Users/master/evan-drive/0-teach-code/h-h-y-f/0---the-big-idea/landing-page/website/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/master/evan-drive/0-teach-code/h-h-y-f/0---the-big-idea/landing-page/website/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/master/evan-drive/0-teach-code/h-h-y-f/0---the-big-idea/landing-page/website/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "babel-plugin-styled-components",
+          "stage": "build-javascript",
+          "options": {
+            "plugins": [],
+            "minify": true,
+            "displayName": false,
+            "ssr": true
+          }
+        }
+      ],
+      "presets": [
+        {
+          "name": "/Users/master/evan-drive/0-teach-code/h-h-y-f/0---the-big-idea/landing-page/website/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": []
+          }
+        }
+      ],
+      "options": {
+        "cacheDirectory": true,
+        "sourceType": "unambiguous"
+      }
+    }
+  },
+  "browserslist": [
+    ">0.25%",
+    "not dead"
+  ]
+}
