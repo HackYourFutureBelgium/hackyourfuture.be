@@ -36,7 +36,7 @@
   ],
   "scripts": {
     "build": "gatsby build",
-    "gh-build": "gatsby build && mv public docs",
+    "gh-build": "gatsby build --prefix-paths && mv public docs",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
