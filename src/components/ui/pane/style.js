@@ -8,6 +8,8 @@ export const StyledPane = styled(
   ({
     alignItems,
     background,
+    backgroundImage,
+    backgroundSize,
     boxShadow,
     children,
     direction,
@@ -26,6 +28,8 @@ export const StyledPane = styled(
 )`
   align-items: ${({ alignItems }) => alignItems};
   background: ${({ background }) => background};
+  background-image: ${({ backgroundImage }) => backgroundImage};
+  background-size: ${({ backgroundSize }) => backgroundSize};
   box-shadow: ${({ boxShadow }) => boxShadow};
   box-sizing: border-box;
   display: ${({ display }) => display};
@@ -43,6 +47,7 @@ export const StyledPane = styled(
 
 StyledPane.propTypes = {
   background: PropTypes.oneOf([
+    "transparent",
     COLOR.CONCRETE,
     COLOR.JACKSON_PURPLE,
     COLOR.BLUE_VIOLET,
@@ -53,6 +58,8 @@ StyledPane.propTypes = {
 StyledPane.defaultProps = {
   alignItems: "stretch",
   background: "transparent",
+  backgroundImage: "none",
+  backgroundSize: "auto",
   boxShadow: "none",
   direction: "row",
   display: "flex",

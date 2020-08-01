@@ -3,8 +3,6 @@ import styled, { createGlobalStyle } from "styled-components"
 import { COLOR, FONT_FAMILY } from "../../../utils/constants"
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans:wght@600;700;900&display=swap');
-
   body {
     background-color: ${COLOR.MERCURY};
     font-family: ${FONT_FAMILY.SPACE};

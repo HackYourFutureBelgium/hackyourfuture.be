@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { BREAKPOINT, SPACER, COLOR } from "../../../utils/constants"
+import { BREAKPOINT, SPACER } from "../../../utils/constants"
 
 export const StyledSection = styled.section`
   display: flex;
@@ -11,5 +11,4 @@ export const StyledSection = styled.section`
   max-width: ${BREAKPOINT.L};
   padding: ${SPACER.S} 0;
   margin: 0 auto;
-  border: 1px solid green;
 `

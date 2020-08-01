@@ -1,6 +1,9 @@
+import React from "react"
 import styled from "styled-components"
 
-export const StyledImage = styled.img`
+export const StyledImage = styled(
+  ({ width, height, objectFit, radius, ...rest }) => <img {...rest}></img>
+)`
   width: ${({ width }) => width};
   height: ${({ height }) => height};
   object-fit: ${({ objectFit }) => objectFit};

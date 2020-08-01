@@ -9,10 +9,10 @@ const Collapse = ({ content, main }) => {
   const [showContent, setShowContent] = useState(false)
   const [contentHeight, setContentHeight] = useState(null)
   let contentElement
-  let setContentSize = () =>
-    setContentHeight(contentElement && contentElement.clientHeight)
 
   useEffect(() => {
+    let setContentSize = () =>
+      setContentHeight(contentElement && contentElement.clientHeight)
     setContentSize = debounce(setContentSize, 500)
     window.addEventListener("resize", setContentSize)
 
@@ -20,7 +20,7 @@ const Collapse = ({ content, main }) => {
       window.removeEventListener("resize", setContentSize)
       setContentSize.cancel()
     }
-  }, [])
+  }, [contentElement])
 
   const onToggleHandler = () => {
     setContentHeight(contentElement && contentElement.clientHeight)

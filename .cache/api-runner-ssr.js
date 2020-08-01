@@ -1,14 +1,11 @@
 var plugins = [{
-      plugin: require('/home/runner/work/website/website/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/kevintassi/Documents/project/hack-your-future-belgium/website/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/runner/work/website/website/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/gatsby-icon.png","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":"15dd2a89f07d861e03013cdc5345db9b"},
+      plugin: require('/Users/kevintassi/Documents/project/hack-your-future-belgium/website/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      options: {"plugins":[],"minify":false,"displayName":true},
     },{
-      plugin: require('/home/runner/work/website/website/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
-      options: {"plugins":[],"minify":true,"displayName":false},
-    },{
-      plugin: require('/home/runner/work/website/website/node_modules/gatsby-plugin-fontawesome-css/gatsby-ssr'),
+      plugin: require('/Users/kevintassi/Documents/project/hack-your-future-belgium/website/node_modules/gatsby-plugin-fontawesome-css/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

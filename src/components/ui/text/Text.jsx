@@ -1,7 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const Text = ({ is: Is, children, ...props }) => <Is {...props}>{children}</Is>
+const Text = ({ is: Is, children, isWhite, ...props }) => (
+  <Is {...props}>{children}</Is>
+)
 
 Text.propTypes = {
   children: PropTypes.node.isRequired,

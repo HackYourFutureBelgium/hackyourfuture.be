@@ -8,6 +8,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import { Helmet } from "react-helmet"
 
 import { GlobalStyle, StyledLandingLayout, StyledMain } from "./style"
 import TopBar from "../../top-bar/TopBar"
@@ -16,6 +17,15 @@ import Footer from "../../footer/Footer"
 const LandingLayout = ({ isFullWidth, children }) => {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Hack Your Future Belgium</title>
+        <link rel="canonical" href="https://hackyourfuture.be/" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans:wght@600;700;900&display=swap"
+          rel="stylesheet"
+        ></link>
+      </Helmet>
       <GlobalStyle />
       <StyledLandingLayout>
         <TopBar />
