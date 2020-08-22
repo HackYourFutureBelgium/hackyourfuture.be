@@ -1,30 +1,33 @@
 import React from "react"
 
-import { StyledHomeHeader } from "./style.js"
-import Section from "../../layout/section"
-import { Title, Pane, Text, Button } from "../../ui"
+import { Title, Pane, Text, Section, Wrapper } from "../../ui"
 
 const data = {
-  title: "Hack Your Future",
+  title: "Helping new talent into the tech world",
   description:
-    "HackYourFuture is a free 7-month web development program for talented refugees in Belgium with limited access to education and the labor market.",
-  cta: "Apply now",
+    "HackYourFuture is a free <b>8-month web development program</b> for passionate refugees and other disadvantaged people with limited access to education and the labor market.",
 }
 
 const HomeHeader = () => (
-  <StyledHomeHeader>
-    <Section>
-      <Pane margin="60px 0 30px 0" direction="column" alignItems="center">
-        <Title level={1} isUpperCase>
+  <Section>
+    <Wrapper>
+      <Pane
+        margin="60px 0 30px 0"
+        direction="column"
+        alignItems="center"
+        maxWidth="800px"
+      >
+        <Title level={1} size="XL" isUpperCase isCenter>
           {data.title}
         </Title>
-        <Text textAlign="center" maxWidth="470px">
-          {data.description}
-        </Text>
-        <Button>{data.cta}</Button>
+        <Text
+          textAlign="center"
+          maxWidth="470px"
+          dangerouslySetInnerHTML={{ __html: data.description }}
+        />
       </Pane>
-    </Section>
-  </StyledHomeHeader>
+    </Wrapper>
+  </Section>
 )
 
 export default HomeHeader

@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState } from "react"
 
-import { StyledInput } from "./style";
+import { InputContainer, StyledInput } from "./style"
+import Icon from "../icon"
 
-const Input = (props) => {
-  return <StyledInput {...props} />;
-};
+const Input = ({ icon, ...props }) => {
+  const [isFocused, setIsFocused] = useState(false)
 
-export default Input;
+  return (
+    <InputContainer isFocused={isFocused} hasExtraPaddingLeft={!!icon}>
+      {icon ? <Icon name={icon} /> : null}
+      <StyledInput
+        onBlur={() => setIsFocused(false)}
+        onFocus={() => setIsFocused(true)}
+        {...props}
+      />
+    </InputContainer>
+  )
+}
+
+export default Input

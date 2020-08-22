@@ -4,8 +4,9 @@ import { COLOR, FONT_FAMILY } from "../../../utils/constants"
 
 export const GlobalStyle = createGlobalStyle`
   body {
-    background-color: ${COLOR.MERCURY};
+    background-color: ${COLOR.WHITE};
     font-family: ${FONT_FAMILY.SPACE};
+    max-width: 100vw;
   }
 `
 

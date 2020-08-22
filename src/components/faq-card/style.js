@@ -11,7 +11,8 @@ export const StyledMain = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
+  padding: 25px 35px;
+  border: 1px solid ${({ isFocus }) => (isFocus ? "black" : "transparent")};
 `
 
 export const StyledContent = styled.div`

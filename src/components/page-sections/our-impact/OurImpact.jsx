@@ -1,9 +1,8 @@
 import React from "react"
 
-import { StyledOurImpact } from "./style.js"
-import Section from "../../layout/section"
-import { Title, Pane, Text } from "../../ui"
-import { SHADOW, COLOR, SPACER } from "../../../utils/constants"
+import { TopContainer, BottomContainer, Card } from "./style"
+import { Title, Pane, Text, Section, Wrapper } from "../../ui"
+import { SHADOW } from "../../../utils/constants"
 
 const data = {
   title: "Our impact",
@@ -26,8 +25,8 @@ const data = {
 }
 
 const OurImpact = () => (
-  <StyledOurImpact>
-    <Section>
+  <Section>
+    <Wrapper>
       <Pane
         direction="column"
         alignItems="center"
@@ -35,29 +34,23 @@ const OurImpact = () => (
         padding="50px"
         margin="50px 0"
       >
-        <div>
-          <Title level={3}>{data.title}</Title>
+        <TopContainer>
+          <Title level={2}>{data.title}</Title>
           <Text textAlign="center" maxWidth="800px">
             {data.description}
           </Text>
-        </div>
-        <Pane justifyContent="space-between">
+        </TopContainer>
+        <BottomContainer>
           {data.results.map((result, index) => (
-            <Pane
-              direction="column"
-              background={COLOR.JACKSON_PURPLE}
-              width="30%"
-              padding={SPACER.M}
-              key={index}
-            >
+            <Card key={index}>
               <Title isWhite>{result.title}</Title>
               <Text isWhite>{result.description}</Text>
-            </Pane>
+            </Card>
           ))}
-        </Pane>
+        </BottomContainer>
       </Pane>
-    </Section>
-  </StyledOurImpact>
+    </Wrapper>
+  </Section>
 )
 
 export default OurImpact

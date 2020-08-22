@@ -8,10 +8,10 @@ const FAQCard = ({ question, answer }) => (
   <StyledFaqCard>
     <Collapse
       content={<StyledContent tag="span">{answer}</StyledContent>}
-      main={isContentOpen => (
-        <StyledMain>
-          <Text>{question}</Text>
-          <Icon name="plus" />
+      main={(isContentOpen, isFocus) => (
+        <StyledMain isFocus={isFocus}>
+          <Text size="s">{question}</Text>
+          <Icon name={isContentOpen ? "minus" : "plus"} />
         </StyledMain>
       )}
     />

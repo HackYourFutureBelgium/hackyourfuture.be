@@ -3,9 +3,8 @@ const isProd = process.env.NODE_ENV === "production"
 module.exports = {
   pathPrefix: "/website",
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Hack Your Future Belgium`,
+    description: `Helping new talent into the tech world`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

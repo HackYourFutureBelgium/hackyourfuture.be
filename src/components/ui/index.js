@@ -3,7 +3,7 @@
  * You can export all from here to
  */
 
-import { StyledButton } from "./button/style"
+import StyledButton from "./button"
 import { StyledImage } from "./image/style"
 import { StyledPane } from "./pane/style"
 import { StyledText } from "./text/style"
@@ -15,6 +15,8 @@ import InputUI from "./input/Input"
 import SpinnerUI from "./spinner/Spinner"
 import CollapseUI from "./collapse"
 import IconUI from "./icon"
+import { StyledSection, StyledWrapper } from "./section"
+import DialogUI from "./dialog"
 
 export const Button = StyledButton
 export const Image = StyledImage
@@ -28,3 +30,6 @@ export const Input = InputUI
 export const Spinner = SpinnerUI
 export const Collapse = CollapseUI
 export const Icon = IconUI
+export const Section = StyledSection
+export const Wrapper = StyledWrapper
+export const Dialog = DialogUI

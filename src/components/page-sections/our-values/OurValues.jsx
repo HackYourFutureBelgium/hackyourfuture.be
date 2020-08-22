@@ -1,15 +1,14 @@
 import React from "react"
 
-import { StyledOurValues } from "./style.js"
-import Section from "../../layout/section"
-import { Title, Pane, Text, Image } from "../../ui"
+import { CardContainer, Card, Container } from "./style"
+import { Title, Text, Image, Section, Wrapper } from "../../ui"
 import illuCommunity from "../../../assets/illustrations/community.svg"
 import illuDiversity from "../../../assets/illustrations/diversity-inclusiveness.svg"
 import illuCommitment from "../../../assets/illustrations/commitment.svg"
 import illuOpen from "../../../assets/illustrations/open.svg"
 
 const data = {
-  title: "Our values",
+  title: "Our core values",
   values: [
     {
       title: "Community",
@@ -39,28 +38,24 @@ const data = {
 }
 
 const OurValues = () => (
-  <StyledOurValues>
-    <Section>
-      <Pane>
-        <Pane direction="column" alignItems="flex-start" width="150px">
-          <Title level={3}>{data.title}</Title>
-        </Pane>
-        <Pane grow={1} wrap="wrap">
+  <Section justifyContent="flex-end" padding="50px 0">
+    <Wrapper margin="0">
+      <Container>
+        <Title level={3}>{data.title}</Title>
+        <CardContainer>
           {data.values.map((value, index) => (
-            <Pane key={index} width="50%">
-              <Pane width="170px">
-                <Image src={value.image} />
-              </Pane>
-              <Pane direction="column" grow={1}>
-                <Title level={3}>{value.title}</Title>
-                <Text>{value.description}</Text>
-              </Pane>
-            </Pane>
+            <Card key={index}>
+              <Image src={value.image} />
+              <Title level={3} size="S" isUpperCase={false}>
+                {value.title}
+              </Title>
+              <Text>{value.description}</Text>
+            </Card>
           ))}
-        </Pane>
-      </Pane>
-    </Section>
-  </StyledOurValues>
+        </CardContainer>
+      </Container>
+    </Wrapper>
+  </Section>
 )
 
 export default OurValues

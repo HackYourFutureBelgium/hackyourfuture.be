@@ -1,7 +1,6 @@
 import React from "react"
 
-import { StyledFooter } from "./style"
-import { Title, Pane, Text, Image } from "../ui"
+import { Title, Pane, Text, Image, Section, Wrapper } from "../ui"
 
 import facebookUrl from "../../assets/social/facebook.svg"
 import twitterUrl from "../../assets/social/twitter.svg"
@@ -10,7 +9,7 @@ import linkedinUrl from "../../assets/social/linkedin.svg"
 
 const data = {
   title: "Hack Your Future",
-  address: "BeCentral Cantersteen 12 1000 Bruxelles",
+  address: "BeCentral\nCantersteen 12\n1000 Bruxelles",
   email: "contact@hackyourfuture.be",
   socials: [
     { link: "https://www.facebook.com/HackYFutureBE/", image: facebookUrl },
@@ -23,25 +22,33 @@ const data = {
   ],
 }
 
-const Footer = props => (
-  <StyledFooter>
-    <Pane direction="column">
-      <Title level={3} isUpperCase>
-        {data.title}
-      </Title>
-      <Text>{data.address}</Text>
-      <Text is="a" href="mailto:contact@hackyourfuture.be">
-        {data.email}
-      </Text>
-      <Pane>
-        {data.socials.map((social, index) => (
-          <Text is="a" href={social.link} target="_blank">
-            <Image src={social.image} width="26px" height="26px" />
-          </Text>
-        ))}
+const Footer = () => (
+  <Section hasShadow>
+    <Wrapper>
+      <Pane direction="column" alignItems="center">
+        <Title level={3} isUpperCase>
+          {data.title}
+        </Title>
+        <Text textAlign="center">{data.address}</Text>
+        <Text is="a" href="mailto:contact@hackyourfuture.be">
+          {data.email}
+        </Text>
+        <Pane justifyContent="center" margin="20px 0">
+          {data.socials.map((social, index) => (
+            <Text
+              is="a"
+              href={social.link}
+              target="_blank"
+              key={index}
+              margin="0 10px"
+            >
+              <Image src={social.image} width="26px" height="26px" />
+            </Text>
+          ))}
+        </Pane>
       </Pane>
-    </Pane>
-  </StyledFooter>
+    </Wrapper>
+  </Section>
 )
 
 export default Footer

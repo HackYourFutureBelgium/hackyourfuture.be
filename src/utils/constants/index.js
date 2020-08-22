@@ -6,6 +6,7 @@ export {
   FONT_SIZE_TEXT,
   SHADOW,
   FONT_FAMILY,
+  MEDIA_QUERY,
 } from "./style"
 
 export { KEY_CODE } from "./keyCodes"

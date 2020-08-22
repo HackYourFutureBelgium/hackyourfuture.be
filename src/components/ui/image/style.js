@@ -2,7 +2,9 @@ import React from "react"
 import styled from "styled-components"
 
 export const StyledImage = styled(
-  ({ width, height, objectFit, radius, ...rest }) => <img {...rest}></img>
+  ({ width, height, objectFit, radius, alt, ...rest }) => (
+    <img alt={alt} {...rest}></img>
+  )
 )`
   width: ${({ width }) => width};
   height: ${({ height }) => height};

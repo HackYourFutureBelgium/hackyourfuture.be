@@ -6,7 +6,7 @@ const Text = ({ is: Is, children, isWhite, ...props }) => (
 )
 
 Text.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   is: PropTypes.string,
   isWhite: PropTypes.bool,
 }

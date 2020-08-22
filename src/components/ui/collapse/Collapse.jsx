@@ -8,6 +8,8 @@ import { KEY_CODE } from "../../../utils/constants"
 const Collapse = ({ content, main }) => {
   const [showContent, setShowContent] = useState(false)
   const [contentHeight, setContentHeight] = useState(null)
+  const [isFocus, setIsFocus] = useState(false)
+
   let contentElement
 
   useEffect(() => {
@@ -41,8 +43,10 @@ const Collapse = ({ content, main }) => {
         onKeyDown={onKeyDown}
         role="button"
         tabIndex="0"
+        onFocus={() => setIsFocus(true)}
+        onBlur={() => setIsFocus(false)}
       >
-        {main(showContent)}
+        {main(showContent, isFocus)}
       </StyledMain>
       <StyledContent
         aria-hidden={!showContent}

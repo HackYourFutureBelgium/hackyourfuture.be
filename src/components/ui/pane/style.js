@@ -23,6 +23,7 @@ export const StyledPane = styled(
     padding,
     width,
     wrap,
+    zIndex,
     ...rest
   }) => <div {...rest}>{children}</div>
 )`
@@ -43,6 +44,7 @@ export const StyledPane = styled(
   max-width: ${({ maxWidth }) => maxWidth};
   padding: ${({ padding }) => padding};
   width: ${({ width }) => width};
+  z-index: ${({ zIndex }) => zIndex};
 `
 
 StyledPane.propTypes = {
@@ -51,6 +53,7 @@ StyledPane.propTypes = {
     COLOR.CONCRETE,
     COLOR.JACKSON_PURPLE,
     COLOR.BLUE_VIOLET,
+    COLOR.WHITE_LILAC,
   ]),
   boxShadow: PropTypes.oneOf(["none", SHADOW.BOX]),
 }
@@ -72,4 +75,5 @@ StyledPane.defaultProps = {
   padding: "0",
   width: "100%",
   wrap: "no-wrap",
+  zIndex: 0,
 }
