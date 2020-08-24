@@ -7,27 +7,27 @@
           "stage": "develop",
           "options": {
             "plugins": [],
-            "minify": false,
-            "displayName": true,
+            "minify": true,
+            "displayName": false,
             "ssr": false
           }
         },
         {
-          "name": "/Users/kevintassi/Documents/project/hack-your-future-belgium/website/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "name": "/home/runner/work/website/website/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/kevintassi/Documents/project/hack-your-future-belgium/website/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "name": "/home/runner/work/website/website/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/kevintassi/Documents/project/hack-your-future-belgium/website/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "name": "/home/runner/work/website/website/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
         }
       ],
       "presets": [
         {
-          "name": "/Users/kevintassi/Documents/project/hack-your-future-belgium/website/node_modules/@babel/preset-typescript/lib/index.js",
+          "name": "/home/runner/work/website/website/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
             "plugins": []
           }
@@ -41,15 +41,15 @@
     "develop-html": {
       "plugins": [
         {
-          "name": "/Users/kevintassi/Documents/project/hack-your-future-belgium/website/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "name": "/home/runner/work/website/website/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/kevintassi/Documents/project/hack-your-future-belgium/website/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "name": "/home/runner/work/website/website/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/kevintassi/Documents/project/hack-your-future-belgium/website/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "name": "/home/runner/work/website/website/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
         },
         {
@@ -57,15 +57,15 @@
           "stage": "develop-html",
           "options": {
             "plugins": [],
-            "minify": false,
-            "displayName": true,
+            "minify": true,
+            "displayName": false,
             "ssr": false
           }
         }
       ],
       "presets": [
         {
-          "name": "/Users/kevintassi/Documents/project/hack-your-future-belgium/website/node_modules/@babel/preset-typescript/lib/index.js",
+          "name": "/home/runner/work/website/website/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
             "plugins": []
           }
@@ -79,15 +79,15 @@
     "build-html": {
       "plugins": [
         {
-          "name": "/Users/kevintassi/Documents/project/hack-your-future-belgium/website/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "name": "/home/runner/work/website/website/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/kevintassi/Documents/project/hack-your-future-belgium/website/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "name": "/home/runner/work/website/website/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/kevintassi/Documents/project/hack-your-future-belgium/website/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "name": "/home/runner/work/website/website/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
         },
         {
@@ -95,15 +95,15 @@
           "stage": "build-html",
           "options": {
             "plugins": [],
-            "minify": false,
-            "displayName": true,
+            "minify": true,
+            "displayName": false,
             "ssr": true
           }
         }
       ],
       "presets": [
         {
-          "name": "/Users/kevintassi/Documents/project/hack-your-future-belgium/website/node_modules/@babel/preset-typescript/lib/index.js",
+          "name": "/home/runner/work/website/website/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
             "plugins": []
           }
@@ -117,15 +117,15 @@
     "build-javascript": {
       "plugins": [
         {
-          "name": "/Users/kevintassi/Documents/project/hack-your-future-belgium/website/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "name": "/home/runner/work/website/website/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/kevintassi/Documents/project/hack-your-future-belgium/website/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "name": "/home/runner/work/website/website/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
           "options": {}
         },
         {
-          "name": "/Users/kevintassi/Documents/project/hack-your-future-belgium/website/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "name": "/home/runner/work/website/website/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
         },
         {
@@ -133,15 +133,15 @@
           "stage": "build-javascript",
           "options": {
             "plugins": [],
-            "minify": false,
-            "displayName": true,
+            "minify": true,
+            "displayName": false,
             "ssr": true
           }
         }
       ],
       "presets": [
         {
-          "name": "/Users/kevintassi/Documents/project/hack-your-future-belgium/website/node_modules/@babel/preset-typescript/lib/index.js",
+          "name": "/home/runner/work/website/website/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
             "plugins": []
           }
