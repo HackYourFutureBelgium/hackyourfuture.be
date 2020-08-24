@@ -5,13 +5,13 @@ import Text from "./Text"
 import { FONT_SIZE_TEXT, FONT_FAMILY, COLOR } from "../../../utils/constants"
 
 export const StyledText = styled(
-  ({ textAlign, maxWidth, size, isWhite, margin, color, ...rest }) => (
+  ({ isCenter, maxWidth, size, isWhite, margin, color, ...rest }) => (
     <Text {...rest} />
   )
 )`
   color: ${({ isWhite, color }) =>
     isWhite ? COLOR.WHITE : color || "inherit"};
-  text-align: ${({ textAlign }) => textAlign};
+  text-align: ${({ isCenter }) => (isCenter ? "center" : "left")};
   max-width: ${({ maxWidth }) => maxWidth};
   line-height: 160%;
   font-size: ${({ size }) => FONT_SIZE_TEXT[size.toUpperCase()]};
@@ -28,7 +28,7 @@ export const StyledText = styled(
 `
 
 StyledText.defaultProps = {
-  textAlign: "left",
+  isCenter: false,
   maxWidth: "none",
   size: "m",
   isWhite: false,

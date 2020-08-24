@@ -24,8 +24,13 @@ export const StyledPane = styled(
     width,
     wrap,
     zIndex,
+    is,
     ...rest
-  }) => <div {...rest}>{children}</div>
+  }) => {
+    const El = is || "div"
+
+    return <El {...rest}>{children}</El>
+  }
 )`
   align-items: ${({ alignItems }) => alignItems};
   background: ${({ background }) => background};

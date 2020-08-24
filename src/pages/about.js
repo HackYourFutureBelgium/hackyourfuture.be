@@ -1,7 +1,29 @@
 import React from "react"
 
 import LandingLayout from "../components/layout/landing-layout"
+import AboutHeader from "../components/page-sections/about-header"
+import AboutValues from "../components/page-sections/about-values"
+import MissionVision from "../components/page-sections/mission-vision"
+import ImageDescription from "../components/page-sections/image-description"
+import OutTeam from "../components/page-sections/our-team"
 
-const AboutPage = () => <LandingLayout>TODO...</LandingLayout>
+import OurProgramImageUrl from "../images/our-program.png"
+
+const DescriptionHistoryData = {
+  title: "History",
+  description:
+    "HackYourFuture was initially founded in 2015 in Amsterdam.<br>Because our curriculum is 100% open, the school was replicated in many countries, including Belgium in 2018.<br><br>All International Chapters share the aim to enable refugees and disadvantaged people to build digital skills for a career in web development, facilitate the integration of newcomers, and address the shortage of qualified workforce in the IT sector.<br><br>HackYourFuture Belgium is an initiative of Open Knowledge Belgium.",
+  image: OurProgramImageUrl,
+}
+
+const AboutPage = () => (
+  <LandingLayout>
+    <AboutHeader />
+    <AboutValues />
+    <MissionVision />
+    <ImageDescription data={DescriptionHistoryData} />
+    <OutTeam />
+  </LandingLayout>
+)
 
 export default AboutPage

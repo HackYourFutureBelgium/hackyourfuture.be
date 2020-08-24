@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 export const StyledImage = styled(
   ({ width, height, objectFit, radius, alt, ...rest }) => (
-    <img alt={alt} {...rest}></img>
+    <img alt={alt} {...rest} />
   )
 )`
   width: ${({ width }) => width};

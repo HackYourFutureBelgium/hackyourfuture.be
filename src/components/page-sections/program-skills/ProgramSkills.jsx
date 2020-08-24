@@ -1,5 +1,6 @@
 import React from "react"
 
+import { Container, LeftContainer, RightContainer } from "./style"
 import { Title, Pane, Text, Section, Wrapper, Image, Button } from "../../ui"
 import { COLOR } from "../../../utils/constants"
 import htmlUrl from "../../../assets/images/html.png"
@@ -25,39 +26,35 @@ const data = {
 
 const ProgramSkills = () => (
   <Section background={COLOR.WHITE_LILAC}>
-    <Wrapper direction="row" justifyContent="space-between">
-      <Pane direction="column" alignItems="flex-start" width="350px">
-        <Title level={2}>{data.title}</Title>
-        <Pane margin="10px 0">
-          <Button>{data.cta1}</Button>
-        </Pane>
-        <Pane margin="10px 0">
-          <Button>{data.cta2}</Button>
-        </Pane>
-      </Pane>
-      <Pane
-        wrap="wrap"
-        width="70%"
-        direction="row"
-        justifyContent="flex-end"
-        maxWidth="600px"
-      >
-        {data.images.map((image, index) => {
-          return (
-            <Pane
-              key={index}
-              direction="column"
-              alignItems="center"
-              justifyContent="center"
-              width="200px"
-              height="150px"
-            >
-              <Image src={image.src} alt={image.name} width="85px" />
-              <Text textAlign="center">{image.name}</Text>
-            </Pane>
-          )
-        })}
-      </Pane>
+    <Wrapper>
+      <Container>
+        <LeftContainer>
+          <Title level={2}>{data.title}</Title>
+          <Pane margin="10px 0">
+            <Button>{data.cta1}</Button>
+          </Pane>
+          <Pane margin="10px 0">
+            <Button>{data.cta2}</Button>
+          </Pane>
+        </LeftContainer>
+        <RightContainer>
+          {data.images.map((image, index) => {
+            return (
+              <Pane
+                key={index}
+                direction="column"
+                alignItems="center"
+                justifyContent="center"
+                width="200px"
+                height="150px"
+              >
+                <Image src={image.src} alt={image.name} width="85px" />
+                <Text isCenter>{image.name}</Text>
+              </Pane>
+            )
+          })}
+        </RightContainer>
+      </Container>
     </Wrapper>
   </Section>
 )

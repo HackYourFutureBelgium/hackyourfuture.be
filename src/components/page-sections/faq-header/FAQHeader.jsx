@@ -13,7 +13,7 @@ const FAQHeader = () => (
       <Title level={1} size="L">
         {data.title}
       </Title>
-      <Text textAlign="center" maxWidth="470px">
+      <Text isCenter maxWidth="470px">
         {data.intro}
       </Text>
     </Wrapper>

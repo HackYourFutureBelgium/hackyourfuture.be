@@ -7,7 +7,7 @@ export const BREAKPOINT = {
 
 export const MEDIA_QUERY = {
   DESKTOP: `only screen and (min-width: ${BREAKPOINT.XL})`,
-  SMALL_DESKTOP: `only screen and (min-width: ${BREAKPOINT.L}) and (max-width: ${BREAKPOINT.XL})`,
+  SMALL_DESKTOP: `only screen and (min-width: ${BREAKPOINT.M}) and (max-width: ${BREAKPOINT.XL})`,
   TABLET: `only screen and (min-width: ${BREAKPOINT.S}) and (max-width: ${BREAKPOINT.M})`,
   TABLET_AND_DOWN: `only screen and (max-width: ${BREAKPOINT.M})`,
   MOBILE: `only screen and (max-width: ${BREAKPOINT.S})`,

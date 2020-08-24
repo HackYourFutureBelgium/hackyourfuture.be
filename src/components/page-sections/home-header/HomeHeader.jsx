@@ -21,7 +21,7 @@ const HomeHeader = () => (
           {data.title}
         </Title>
         <Text
-          textAlign="center"
+          isCenter
           maxWidth="470px"
           dangerouslySetInnerHTML={{ __html: data.description }}
         />

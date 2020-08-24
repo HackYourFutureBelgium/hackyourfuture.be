@@ -21,15 +21,15 @@ const ContactUs = () => {
           <Title isWhite>{data.title}</Title>
           <Text isWhite>{data.description}</Text>
           <Form>
-            <Text is="label" htmlFor="full-name" isWhite>
+            <Text as="label" htmlFor="full-name" isWhite>
               Full name
             </Text>
             <Input id="full-name" type="text" />
-            <Text is="label" htmlFor="email" isWhite>
+            <Text as="label" htmlFor="email" isWhite>
               Email address
             </Text>
             <Input type="email" id="email" />
-            <Text is="label" htmlFor="message" isWhite>
+            <Text as="label" htmlFor="message" isWhite>
               Message
             </Text>
             <Textarea

@@ -17,7 +17,7 @@ const VolunteerHeader = () => (
         <Title level={2} isUpperCase size="l">
           {data.title}
         </Title>
-        <Text textAlign="center" maxWidth="550px">
+        <Text isCenter maxWidth="550px">
           {data.description}
         </Text>
         <Pane justifyContent="center" margin="20px 0 0 0">

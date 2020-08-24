@@ -3,11 +3,11 @@ import PropTypes from "prop-types"
 
 import Icon from "../icon"
 
-const Button = ({ children, component, iconLeft, iconRight, ...props }) => {
-  const El = component || "button"
+const Button = ({ children, as, iconLeft, iconRight, ...props }) => {
+  const El = as || "button"
 
   return (
-    <El type={component} {...props}>
+    <El type={as} {...props}>
       {iconLeft && <Icon name={iconLeft} data-side="left" />}
       {children}
       {iconRight && <Icon name={iconRight} data-side="right" />}

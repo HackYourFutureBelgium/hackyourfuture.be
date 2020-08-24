@@ -36,7 +36,7 @@ const OurImpact = () => (
       >
         <TopContainer>
           <Title level={2}>{data.title}</Title>
-          <Text textAlign="center" maxWidth="800px">
+          <Text isCenter maxWidth="800px">
             {data.description}
           </Text>
         </TopContainer>

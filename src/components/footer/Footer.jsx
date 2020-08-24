@@ -29,14 +29,14 @@ const Footer = () => (
         <Title level={3} isUpperCase>
           {data.title}
         </Title>
-        <Text textAlign="center">{data.address}</Text>
-        <Text is="a" href="mailto:contact@hackyourfuture.be">
+        <Text isCenter>{data.address}</Text>
+        <Text as="a" href="mailto:contact@hackyourfuture.be">
           {data.email}
         </Text>
         <Pane justifyContent="center" margin="20px 0">
           {data.socials.map((social, index) => (
             <Text
-              is="a"
+              as="a"
               href={social.link}
               target="_blank"
               key={index}

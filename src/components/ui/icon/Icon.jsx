@@ -9,10 +9,19 @@ import {
   faArrowLeft,
   faArrowRight,
   faSearch,
+  faCheck,
+  faEnvelope,
 } from "@fortawesome/free-solid-svg-icons"
+
+import Linkedin from "../../../assets/illustrations/linkedin.svg"
+import Twitter from "../../../assets/illustrations/twitter.svg"
 
 const getIcon = name => {
   switch (name) {
+    case "envelope":
+      return faEnvelope
+    case "check":
+      return faCheck
     case "search":
       return faSearch
     case "arrow-right":
@@ -31,10 +40,21 @@ const getIcon = name => {
   }
 }
 
-const Icon = ({ name, ...props }) => (
-  <FontAwesomeIcon icon={getIcon(name)} {...props} />
-)
-
+const Icon = ({ name, color, ...props }) => {
+  if (["twitter", "linkedin"].includes(name)) {
+    // if (name === "twitter") return <Twitter />
+    // else if (name === "linkedin") return <Linkedin />
+    return null
+  } else {
+    return (
+      <FontAwesomeIcon
+        icon={getIcon(name)}
+        {...props}
+        style={{ color: color || "inherit" }}
+      />
+    )
+  }
+}
 Icon.propTypes = {
   name: PropTypes.oneOf([
     "plus",
@@ -44,6 +64,10 @@ Icon.propTypes = {
     "arrow-right",
     "bars",
     "search",
+    "check",
+    "envelope",
+    "linkedin",
+    "twitter",
   ]).isRequired,
 }
 

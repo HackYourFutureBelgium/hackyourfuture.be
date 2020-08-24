@@ -1,18 +1,18 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const Text = ({ is: Is, children, isWhite, ...props }) => (
-  <Is {...props}>{children}</Is>
+const Text = ({ as: As, children, isWhite, ...props }) => (
+  <As {...props}>{children}</As>
 )
 
 Text.propTypes = {
   children: PropTypes.node,
-  is: PropTypes.string,
+  as: PropTypes.string,
   isWhite: PropTypes.bool,
 }
 
 Text.defaultProps = {
-  is: "p",
+  as: "p",
   isWhite: false,
 }
 

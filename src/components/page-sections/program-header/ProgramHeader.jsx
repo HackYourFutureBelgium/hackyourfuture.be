@@ -15,13 +15,12 @@ const data = {
 
 const ProgramHeader = () => (
   <Section>
-    <Wrapper direction="row">
+    <Wrapper direction="row" justifyContent="flex-start">
       <Container>
         <Title level={1} size="XL">
           {data.title}
         </Title>
         <Text
-          maxWidth="45%"
           margin="10px 0"
           dangerouslySetInnerHTML={{ __html: data.description }}
         />
