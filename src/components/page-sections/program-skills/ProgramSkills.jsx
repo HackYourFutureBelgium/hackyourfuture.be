@@ -25,16 +25,28 @@ const data = {
 }
 
 const ProgramSkills = () => (
-  <Section background={COLOR.WHITE_LILAC}>
+  <Section>
     <Wrapper>
       <Container>
         <LeftContainer>
           <Title level={2}>{data.title}</Title>
           <Pane margin="10px 0">
-            <Button>{data.cta1}</Button>
+            <Button
+              as="a"
+              href="https://home.hackyourfuture.be/curriculum#the-modules"
+              target="_blank"
+            >
+              {data.cta1}
+            </Button>
           </Pane>
           <Pane margin="10px 0">
-            <Button>{data.cta2}</Button>
+            <Button
+              as="a"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSef3OH8546MJNllcvrv7KomHelqzrKNpnLRVbI1ZqbeajnluA/viewform"
+              target="_blank"
+            >
+              {data.cta2}
+            </Button>
           </Pane>
         </LeftContainer>
         <RightContainer>

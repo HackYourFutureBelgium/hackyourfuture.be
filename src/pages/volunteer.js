@@ -14,6 +14,7 @@ const testimonialAnthonyData = {
     "“I’m currently in a privileged position so I feel it is time for me to help the community that helped me when I was learning. Additionally, I want to help increase diversity in the development community. HackYourFuture gives me the opportunity to learn new soft skills like presenting and mentoring. And above all it is just fun!”",
   image: anthonyPictureUrl,
   cta: "Discover our Coaches Guidebook",
+  ctaLink: "https://home.hackyourfuture.be/coaches",
 }
 const testimonialEleniData = {
   name: "Eleni",
@@ -22,6 +23,7 @@ const testimonialEleniData = {
     "“Hack Your  Future is one of the greatest programs that I joined. It has opened many doors for me to learn a lot about software and web development. Without this program, I wouldn't be at the current job which requires good knowledge in front-end development”",
   image: eleniPictureUrl,
   cta: "Discover our Mentor Guidebook",
+  ctaLink: "https://home.hackyourfuture.be/mentors",
 }
 
 const VolunteerPage = () => (

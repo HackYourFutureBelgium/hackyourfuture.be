@@ -1,6 +1,6 @@
 import React from "react"
 
-import { TopContainer, BottomContainer, Card } from "./style"
+import { TopContainer, BottomContainer, Card, Container } from "./style"
 import { Title, Pane, Text, Section, Wrapper } from "../../ui"
 import { SHADOW } from "../../../utils/constants"
 
@@ -10,16 +10,18 @@ const data = {
     "We graduated over 80 people in Belgium and more than 200 globally. In Belgium, over 85% found and retained a high-quality job as a developer.",
   results: [
     {
+      title: "80",
+      description:
+        "Students graduated since HackYourFuture Belgium was founded in 2018",
+    },
+    {
+      title: "70%",
+      description:
+        "Of our graduates find an internship, a job or start university.",
+    },
+    {
       title: "200+",
-      description: "Graduates in the Netherlands, Denmark, Belgium and Canada.",
-    },
-    {
-      title: "80+",
-      description: "HackYourFuture graduates in Belgium since 2016.",
-    },
-    {
-      title: "+85%",
-      description: "Graduates employed as developers in Belgium.",
+      description: "Alumni in the Netherlands, Denmark, Belgium and Canada.",
     },
   ],
 }
@@ -27,13 +29,7 @@ const data = {
 const OurImpact = () => (
   <Section>
     <Wrapper>
-      <Pane
-        direction="column"
-        alignItems="center"
-        boxShadow={SHADOW.BOX}
-        padding="50px"
-        margin="50px 0"
-      >
+      <Container>
         <TopContainer>
           <Title level={2}>{data.title}</Title>
           <Text isCenter maxWidth="800px">
@@ -48,7 +44,7 @@ const OurImpact = () => (
             </Card>
           ))}
         </BottomContainer>
-      </Pane>
+      </Container>
     </Wrapper>
   </Section>
 )

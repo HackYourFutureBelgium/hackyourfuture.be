@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import { LeftContainer, RightContainer, Container } from "./style.js"
 import { Title, Pane, Text, Button, Section, Wrapper } from "../../ui"
@@ -6,7 +7,7 @@ import { Title, Pane, Text, Button, Section, Wrapper } from "../../ui"
 const ImageDescription = ({ data, isReverse }) => (
   <Section>
     <Wrapper>
-      <Container>
+      <Container hasPadding>
         <LeftContainer isReverse={isReverse}>
           {data.title && <Title level={2}>{data.title}</Title>}
           {data.subtitle && (
@@ -20,7 +21,17 @@ const ImageDescription = ({ data, isReverse }) => (
               dangerouslySetInnerHTML={{ __html: data.description }}
             />
           )}
-          {data.cta && <Button>{data.cta}</Button>}
+          {data.cta && (
+            <Button
+              as={data.isCtaExternal ? "a" : Link}
+              {...{ [data.isCtaExternal ? "href" : "to"]: data.ctaLink }}
+              variant="minimal"
+              iconRight="arrow-right"
+              target={data.isCtaExternal ? "_blank" : undefined}
+            >
+              {data.cta}
+            </Button>
+          )}
         </LeftContainer>
         <RightContainer isReverse={isReverse}>
           <Pane

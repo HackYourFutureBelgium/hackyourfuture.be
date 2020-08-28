@@ -54,8 +54,8 @@ const OurTeam = () => (
               height="200px"
               objectFit="cover"
             />
-            <Text>{member.fullName}</Text>
-            <Text>{member.role}</Text>
+            <Text isCenter>{member.fullName}</Text>
+            <Text isCenter>{member.role}</Text>
             <Pane>
               {member.links.map((link, index) => (
                 <Text

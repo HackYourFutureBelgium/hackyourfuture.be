@@ -27,6 +27,7 @@ export const COLOR = {
   GRAY: "#7F7F7F",
   BLACK: "#000000",
   WHITE_LILAC: "#F8F9FC",
+  SHARK: "#2D3037",
 }
 
 export const SPACER = {

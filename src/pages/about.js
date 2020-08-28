@@ -7,13 +7,13 @@ import MissionVision from "../components/page-sections/mission-vision"
 import ImageDescription from "../components/page-sections/image-description"
 import OutTeam from "../components/page-sections/our-team"
 
-import OurProgramImageUrl from "../images/our-program.png"
+import graduationUrl from "../assets/images/graduation.jpg"
 
 const DescriptionHistoryData = {
   title: "History",
   description:
-    "HackYourFuture was initially founded in 2015 in Amsterdam.<br>Because our curriculum is 100% open, the school was replicated in many countries, including Belgium in 2018.<br><br>All International Chapters share the aim to enable refugees and disadvantaged people to build digital skills for a career in web development, facilitate the integration of newcomers, and address the shortage of qualified workforce in the IT sector.<br><br>HackYourFuture Belgium is an initiative of Open Knowledge Belgium.",
-  image: OurProgramImageUrl,
+    "HackYourFuture was initially founded in 2015 in Amsterdam.<br/>Because our curriculum is 100% open, the school was replicated in many countries, including Belgium in 2018.<br/><br/>All International Chapters share the aim to enable refugees and disadvantaged people to build digital skills for a career in web development, facilitate the integration of newcomers, and address the shortage of qualified workforce in the IT sector.<br/><br/>HackYourFuture Belgium is an initiative of Open Knowledge Belgium.",
+  image: graduationUrl,
 }
 
 const AboutPage = () => (

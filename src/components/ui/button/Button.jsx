@@ -22,6 +22,7 @@ Button.propTypes = {
 Button.defaultProps = {
   children: undefined,
   iconLeft: null,
+  iconRight: null,
 }
 
 export default Button

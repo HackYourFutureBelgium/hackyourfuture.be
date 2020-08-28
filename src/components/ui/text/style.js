@@ -5,12 +5,9 @@ import Text from "./Text"
 import { FONT_SIZE_TEXT, FONT_FAMILY, COLOR } from "../../../utils/constants"
 
 export const StyledText = styled(
-  ({ isCenter, maxWidth, size, isWhite, margin, color, ...rest }) => (
-    <Text {...rest} />
-  )
+  ({ isCenter, maxWidth, size, isWhite, margin, ...rest }) => <Text {...rest} />
 )`
-  color: ${({ isWhite, color }) =>
-    isWhite ? COLOR.WHITE : color || "inherit"};
+  color: ${({ isWhite }) => (isWhite ? COLOR.WHITE : COLOR.SHARK)};
   text-align: ${({ isCenter }) => (isCenter ? "center" : "left")};
   max-width: ${({ maxWidth }) => maxWidth};
   line-height: 160%;

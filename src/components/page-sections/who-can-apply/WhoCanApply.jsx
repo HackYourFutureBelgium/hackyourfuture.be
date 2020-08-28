@@ -7,7 +7,7 @@ import { COLOR } from "../../../utils/constants"
 const data = {
   title: "Who can apply?",
   description:
-    "We teach motivated refugees and newcomers with limited access to education or the labor market who want to start their career in web development.The course is open to anyone staying in Belgium.Women are strongly recommended to apply!",
+    "We teach motivated refugees and newcomers with limited access to education or the labor market who want to start their career in web development. The course is open to anyone staying in Belgium. Women are strongly encouraged to apply!",
   items: [
     "You’re <b>+18 years</b> old",
     "You’re <b>extremely motivated</b> to start a <b>career in web development</b>.",
@@ -19,7 +19,7 @@ const data = {
 }
 
 const WhoCanApply = () => (
-  <Section>
+  <Section background={COLOR.WHITE_LILAC}>
     <Wrapper>
       <Container>
         <Title level={2}>{data.title}</Title>

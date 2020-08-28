@@ -17,6 +17,8 @@ export const Card = styled.div`
   width: 30%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   box-shadow: ${SHADOW.BOX};
   padding: 20px 40px;
 

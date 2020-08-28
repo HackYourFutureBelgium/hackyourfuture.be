@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { MEDIA_QUERY, COLOR, SPACER } from "../../../utils/constants"
+import { MEDIA_QUERY, COLOR, SPACER, SHADOW } from "../../../utils/constants"
 
 export const TopContainer = styled.div`
   display: flex;
@@ -36,5 +36,19 @@ export const Card = styled.div`
     &:not(:last-child) {
       margin-bottom: 20px;
     }
+  }
+`
+
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: ${SHADOW.BOX};
+  padding: 50px;
+  margin-bottom: 50px;
+
+  @media ${MEDIA_QUERY.MOBILE} {
+    padding: 20px;
+    margin-bottom: 0px;
   }
 `

@@ -17,13 +17,12 @@ const data = {
       image: illuCommunity,
     },
     {
-      description:
-        "You will become better expert of your own craft by teaching your knowledge ",
+      description: "You will become a better expert by teaching your knowledge",
       image: illuDiversity,
     },
     {
       description:
-        "You will be exposed to different cultures and different ways of thinking & working ",
+        "You will be exposed to different cultures and different ways of thinking & working",
       image: illuCommitment,
     },
     {

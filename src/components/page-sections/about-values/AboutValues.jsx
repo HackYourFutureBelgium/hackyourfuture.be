@@ -23,9 +23,14 @@ const data = {
 
 const AboutValues = () => (
   <Section background={COLOR.WHITE_LILAC}>
-    <Wrapper direction="row">
+    <Wrapper direction="row" style={{ flexWrap: "wrap" }}>
       {data.items.map(item => (
-        <Pane key={item.title} direction="column" alignItems="center">
+        <Pane
+          key={item.title}
+          direction="column"
+          alignItems="center"
+          width="230px"
+        >
           <Pane margin="0 0 20px 0" justifyContent="center">
             <Image src={item.illustration} />
           </Pane>

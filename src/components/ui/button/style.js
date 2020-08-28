@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Button from "./Button"
 import { COLOR, FONT_SIZE_TEXT } from "../../../utils/constants"
 
-const StyledButton = styled(({ type, variant, size, ...rest }) => (
+const StyledButton = styled(({ type, variant, size, isWhite, ...rest }) => (
   <Button {...rest} />
 ))`
   display: inline-flex;
@@ -18,7 +18,7 @@ const StyledButton = styled(({ type, variant, size, ...rest }) => (
     return isWhite ? "white" : COLOR.BLUE_VIOLET
   }};
   color: ${({ type, isWhite }) =>
-    type === "button" && !isWhite ? "white" : "black"};
+    type === "button" && !isWhite ? "white" : COLOR.SHARK};
   font-weight: 600;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -32,7 +32,7 @@ const StyledButton = styled(({ type, variant, size, ...rest }) => (
     if (variant === "minimal") {
       return `
         background-color: transparent;
-        color: black;
+        color: ${COLOR.BLUE_VIOLET};
       `
     }
   }}
@@ -46,7 +46,7 @@ const StyledButton = styled(({ type, variant, size, ...rest }) => (
     ${({ variant }) => {
       if (variant === "minimal") {
         return `
-          background-color: transparent;
+          background-color: ${COLOR.MERCURY};
         `
       }
     }}

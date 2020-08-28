@@ -7,7 +7,11 @@ const data = {
   description:
     "HackYourFuture is possible only thanks to our many volunteer coaches and mentors. Do you also want to help to make the tech industry more inclusive and become part of our community?",
   cta1: "join as a coach",
+  cta1Link:
+    "https://docs.google.com/forms/d/e/1FAIpQLSef3OH8546MJNllcvrv7KomHelqzrKNpnLRVbI1ZqbeajnluA/viewform",
   cta2: "Join as a mentor",
+  cta2Link:
+    "https://docs.google.com/forms/d/e/1FAIpQLSdsTmIgbCA2X02NUFsVSE-BQJIx6_KWpABujlZYA9PP8JgHJg/viewform",
 }
 
 const VolunteerHeader = () => (
@@ -21,9 +25,13 @@ const VolunteerHeader = () => (
           {data.description}
         </Text>
         <Pane justifyContent="center" margin="20px 0 0 0">
-          <Button>{data.cta1}</Button>
+          <Button as="a" href={data.cta1Link} target="_blank">
+            {data.cta1}
+          </Button>
           &nbsp; &nbsp;
-          <Button>{data.cta2}</Button>
+          <Button as="a" href={data.cta2Link} target="_blank">
+            {data.cta2}
+          </Button>
         </Pane>
       </Pane>
     </Wrapper>

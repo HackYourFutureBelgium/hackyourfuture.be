@@ -1,10 +1,15 @@
 import React from "react"
 import styled from "styled-components"
 
-import { BREAKPOINT, SPACER, SHADOW } from "../../../utils/constants"
+import {
+  BREAKPOINT,
+  SPACER,
+  SHADOW,
+  MEDIA_QUERY,
+} from "../../../utils/constants"
 
 export const StyledSection = styled(
-  ({ justifyContent, padding, hasShadow, background, ...rest }) => (
+  ({ justifyContent, padding, hasShadow, background, hasOverlay, ...rest }) => (
     <section {...rest} />
   )
 )`
@@ -15,6 +20,28 @@ export const StyledSection = styled(
   position: relative;
   box-shadow: ${({ hasShadow }) => (hasShadow ? SHADOW.BOX : "none")};
   background: ${({ background }) => background || "none"};
+  z-index: 1;
+
+  @media ${MEDIA_QUERY.MOBILE} {
+    padding: 20px;
+  }
+
+  ${({ hasOverlay }) => {
+    if (hasOverlay) {
+      return `
+        &:before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: #0004;
+          top: 0;
+          left: 0;
+          z-index: 1;
+        }
+      `
+    }
+  }}
 `
 
 StyledSection.defaultProps = {
