@@ -6,7 +6,7 @@
  * - Include the footer
  */
 
-import React from "react"
+import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 
@@ -14,7 +14,13 @@ import { GlobalStyle, StyledLandingLayout, StyledMain } from "./style"
 import TopBar from "../../top-bar/TopBar"
 import Footer from "../../footer/Footer"
 
-const LandingLayout = ({ isFullWidth, children }) => {
+const LandingLayout = ({ children, page }) => {
+  // useEffect(() => {
+  //   window.stripe = Stripe("pk_live_mFpKP0JmQWp9mQ2FjetxyzlH", {
+  //     stripeAccount: "acct_1DUXo0B6dm2WDTHv",
+  //   })
+  // }, [])
+
   return (
     <>
       <Helmet>
@@ -24,11 +30,12 @@ const LandingLayout = ({ isFullWidth, children }) => {
         <link
           href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans:wght@600;700;900&display=swap"
           rel="stylesheet"
-        ></link>
+        />
+        {/* <script src="https://js.stripe.com/v3/"></script> */}
       </Helmet>
       <GlobalStyle />
       <StyledLandingLayout>
-        <TopBar />
+        <TopBar page={page} />
         <StyledMain>{children}</StyledMain>
         <Footer />
       </StyledLandingLayout>
@@ -38,11 +45,6 @@ const LandingLayout = ({ isFullWidth, children }) => {
 
 LandingLayout.propTypes = {
   children: PropTypes.node,
-  /**
-   * isFullWidth define if the layout take full width of window or the
-   * maximum width defined by breakpoints inside the style
-   */
-  isFullWidth: PropTypes.bool,
 }
 
 LandingLayout.defaultProps = {

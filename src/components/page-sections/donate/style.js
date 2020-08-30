@@ -1,58 +1,82 @@
 import React from "react"
 import styled from "styled-components"
 
+import { COLOR, MEDIA_QUERY } from "../../../utils/constants"
+
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+`
+
+export const Ul = styled.ul`
+  display: flex;
+`
+
+export const Li = styled(({ ...props }) => <li {...props} />)`
+  display: flex;
+  border: 1px solid ${COLOR.JACKSON_PURPLE};
+  color: ${COLOR.JACKSON_PURPLE};
+  padding: 15px 20px;
+  cursor: pointer;
+  justify-content: center;
+
+  &:last-child {
+    flex-grow: 1;
+  }
+`
+
+export const FormSection = styled(({ direction, ...props }) => (
+  <div {...props} />
+))`
+  display: flex;
+  flex-direction: ${({ direction }) => direction};
+`
+
+FormSection.defaultProps = { direction: "column" }
+
 export const RadioLabel = styled(({ htmlFor, id, ...props }) => (
   <label htmlFor={htmlFor} {...props} />
 ))`
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
 `
 
 export const RadioInput = styled(({ ...props }) => <input {...props} />)`
-  position: absolute;
-  opacity: 0;
   cursor: pointer;
-  height: 0;
-  width: 0;
+  margin-right: 10px;
 `
 
-export const RadioCheckMark = styled(({ ...props }) => <span {...props} />)`
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-  border-radius: 50%;
+export const Container = styled.div`
+  display: flex;
+  width: 100%;
 
-  &:after {
-    content: "";
-    position: absolute;
-    display: none;
-    top: 9px;
-    left: 9px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: red;
+  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+    flex-direction: column;
   }
+`
 
-  ${RadioLabel}:checked ~ & {
-    border: 1px solid black;
-  }
-  ${RadioLabel}:checked ~ &:after {
-    display: block;
-  }
+export const LeftContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  /* padding: 50px 100px; */
+  border: 1px solid red;
 
-  ${RadioLabel}:hover & {
-    background-color: beige;
+  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+    width: 100%;
+    /* padding: 20px; */
+  }
+`
+
+export const RightContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border: 1px solid red;
+
+  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+    width: 100%;
   }
 `

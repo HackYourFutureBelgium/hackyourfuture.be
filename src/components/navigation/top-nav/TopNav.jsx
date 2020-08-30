@@ -1,19 +1,32 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import { StyledTopNav, StyledTopNavMobile } from "./style"
 import NavLink from "../nav-link/NavLink"
 import { Button } from "../../ui"
 
-const TopNav = ({ onBurgerNavClicked, isMobile }) => {
+const TopNav = ({ onBurgerNavClicked, isMobile, currentPage }) => {
   return (
     <>
       <StyledTopNav isMobile={isMobile}>
-        <NavLink to="/program">The program</NavLink>
-        <NavLink to="/volunteer">Volunteer</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/faq">FAQ</NavLink>
-        <NavLink to="/support-us">Support us</NavLink>
-        <Button>Apply now</Button>
+        <NavLink to="/program" isActive={currentPage === "program"}>
+          <span>The program</span>
+        </NavLink>
+        <NavLink to="/volunteer" isActive={currentPage === "volunteer"}>
+          <span>Volunteer</span>
+        </NavLink>
+        <NavLink to="/about" isActive={currentPage === "about"}>
+          <span>About</span>
+        </NavLink>
+        <NavLink to="/faq" isActive={currentPage === "faq"}>
+          <span>FAQ</span>
+        </NavLink>
+        <NavLink to="/support-us" isActive={currentPage === "support-us"}>
+          <span>Support us</span>
+        </NavLink>
+        <Button as={Link} to="/apply">
+          Apply now
+        </Button>
       </StyledTopNav>
       {!isMobile && (
         <StyledTopNavMobile>

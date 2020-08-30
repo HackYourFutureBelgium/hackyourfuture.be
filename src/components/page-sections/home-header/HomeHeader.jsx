@@ -11,6 +11,7 @@ const data = {
 const HomeHeader = () => (
   <Section
     background={`transparent url(${homeHeaderImageUrl}) no-repeat center center`}
+    style={{ backgroundSize: "cover" }}
     hasOverlay
   >
     <Wrapper>

@@ -27,7 +27,7 @@ const testimonialEleniData = {
 }
 
 const VolunteerPage = () => (
-  <LandingLayout>
+  <LandingLayout page="volunteer">
     <VolunteerHeader />
     <WhyVolunteer />
     <SingleTestimonial data={testimonialAnthonyData} />

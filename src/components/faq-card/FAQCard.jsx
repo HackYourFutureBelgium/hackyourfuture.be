@@ -3,15 +3,23 @@ import PropTypes from "prop-types"
 
 import { StyledFaqCard, StyledContent, StyledMain } from "./style"
 import { Collapse, Text, Icon } from "../ui"
+import { COLOR } from "../../utils/constants"
 
 const FAQCard = ({ question, answer }) => (
   <StyledFaqCard>
     <Collapse
-      content={<StyledContent tag="span">{answer}</StyledContent>}
+      content={
+        <StyledContent tag="span">
+          <Text dangerouslySetInnerHTML={{ __html: answer }} />
+        </StyledContent>
+      }
       main={(isContentOpen, isFocus) => (
         <StyledMain isFocus={isFocus}>
-          <Text size="s">{question}</Text>
-          <Icon name={isContentOpen ? "minus" : "plus"} />
+          <Text style={{ color: COLOR.BLUE_VIOLET }}>{question}</Text>
+          <Icon
+            name={isContentOpen ? "minus" : "plus"}
+            color={COLOR.BLUE_VIOLET}
+          />
         </StyledMain>
       )}
     />

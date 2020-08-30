@@ -22,8 +22,9 @@ const ImageDescription = ({ data, isReverse }) => (
             />
           )}
           {data.cta && (
+            // as={data.isCtaExternal ? "a" : Link}
             <Button
-              as={data.isCtaExternal ? "a" : Link}
+              as={Link}
               {...{ [data.isCtaExternal ? "href" : "to"]: data.ctaLink }}
               variant="minimal"
               iconRight="arrow-right"

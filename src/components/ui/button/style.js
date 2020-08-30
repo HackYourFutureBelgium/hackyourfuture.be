@@ -4,21 +4,17 @@ import styled from "styled-components"
 import Button from "./Button"
 import { COLOR, FONT_SIZE_TEXT } from "../../../utils/constants"
 
-const StyledButton = styled(({ type, variant, size, isWhite, ...rest }) => (
+const StyledButton = styled(({ variant, size, isWhite, ...rest }) => (
   <Button {...rest} />
 ))`
   display: inline-flex;
   font-size: ${({ size }) => size || FONT_SIZE_TEXT.S};
   line-height: 160%;
   text-decoration: none;
-  background-color: ${({ type, isWhite }) => {
-    if (type !== "button") {
-      return `transparent`
-    }
+  background-color: ${({ isWhite }) => {
     return isWhite ? "white" : COLOR.BLUE_VIOLET
   }};
-  color: ${({ type, isWhite }) =>
-    type === "button" && !isWhite ? "white" : COLOR.SHARK};
+  color: ${({ isWhite }) => (isWhite ? COLOR.SHARK : "white")};
   font-weight: 600;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -40,15 +36,15 @@ const StyledButton = styled(({ type, variant, size, isWhite, ...rest }) => (
   &:hover,
   &:focus,
   &:active {
-    background-color: ${({ type }) =>
-      type === "button" ? COLOR.JACKSON_PURPLE : COLOR.MERCURY};
-
     ${({ variant }) => {
       if (variant === "minimal") {
         return `
           background-color: ${COLOR.MERCURY};
         `
       }
+      return `
+        background-color: ${COLOR.JACKSON_PURPLE};
+      `
     }}
   }
 
@@ -59,9 +55,5 @@ const StyledButton = styled(({ type, variant, size, isWhite, ...rest }) => (
     margin-left: 6px;
   }
 `
-
-StyledButton.defaultProps = {
-  type: "button",
-}
 
 export default StyledButton

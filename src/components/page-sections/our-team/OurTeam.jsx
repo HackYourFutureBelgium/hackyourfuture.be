@@ -46,6 +46,7 @@ const OurTeam = () => (
   <Section>
     <Wrapper>
       <Container>
+        <Title></Title>
         {data.teams.map(member => (
           <Card key={member.fullName}>
             <Image
@@ -53,6 +54,7 @@ const OurTeam = () => (
               width="200px"
               height="200px"
               objectFit="cover"
+              hasOverlay
             />
             <Text isCenter>{member.fullName}</Text>
             <Text isCenter>{member.role}</Text>

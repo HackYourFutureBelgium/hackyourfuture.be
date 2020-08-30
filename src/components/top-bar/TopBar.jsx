@@ -6,7 +6,7 @@ import Logo from "../logo/Logo"
 import TopNav from "../navigation/top-nav/TopNav"
 import { BREAKPOINT } from "../../utils/constants"
 
-const TopBar = () => {
+const TopBar = ({ page }) => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
 
   return (
@@ -19,7 +19,10 @@ const TopBar = () => {
         alignItems="center"
       >
         <Logo />
-        <TopNav onBurgerNavClicked={() => setIsMobileNavOpen(true)} />
+        <TopNav
+          onBurgerNavClicked={() => setIsMobileNavOpen(true)}
+          currentPage={page}
+        />
       </Pane>
       <Dialog isVisible={isMobileNavOpen} isFullScreen>
         <MobileNavHeader>

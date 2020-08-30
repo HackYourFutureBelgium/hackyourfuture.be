@@ -17,7 +17,7 @@ const DescriptionHistoryData = {
 }
 
 const AboutPage = () => (
-  <LandingLayout>
+  <LandingLayout page="about">
     <AboutHeader />
     <AboutValues />
     <MissionVision />

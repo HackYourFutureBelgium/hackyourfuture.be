@@ -18,5 +18,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-fontawesome-css`,
+    {
+      resolve: `gatsby-source-stripe`,
+      options: {
+        objects: ["Session"],
+        secretKey: "pk_live_mFpKP0JmQWp9mQ2FjetxyzlH",
+        downloadFiles: true,
+        stripeAccount: "acct_1DUXo0B6dm2WDTHv",
+      },
+    },
   ],
 }

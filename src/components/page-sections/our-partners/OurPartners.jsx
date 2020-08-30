@@ -1,7 +1,6 @@
 import React from "react"
 
 import { TopContainer, BottomContainer } from "./style.js"
-// import Section from "../../ui/section/section"
 import { Title, Pane, Image, Button, Section, Wrapper } from "../../ui"
 import printSimpleUrl from "../../../assets/partners/print-simple.svg"
 import openKnowledgeUrl from "../../../assets/partners/open-knowledge.svg"

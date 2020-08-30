@@ -9,9 +9,15 @@ import {
 } from "../../../utils/constants"
 
 export const StyledSection = styled(
-  ({ justifyContent, padding, hasShadow, background, hasOverlay, ...rest }) => (
-    <section {...rest} />
-  )
+  ({
+    justifyContent,
+    padding,
+    paddingMobile,
+    hasShadow,
+    background,
+    hasOverlay,
+    ...rest
+  }) => <section {...rest} />
 )`
   display: flex;
   justify-content: ${({ justifyContent }) => justifyContent};
@@ -23,7 +29,7 @@ export const StyledSection = styled(
   z-index: 1;
 
   @media ${MEDIA_QUERY.MOBILE} {
-    padding: 20px;
+    padding: ${({ paddingMobile }) => paddingMobile || "20px"};
   }
 
   ${({ hasOverlay }) => {
@@ -50,9 +56,15 @@ StyledSection.defaultProps = {
 }
 
 export const StyledWrapper = styled(
-  ({ margin, direction, maxWidth, hasShadow, justifyContent, ...rest }) => (
-    <div {...rest} />
-  )
+  ({
+    margin,
+    direction,
+    maxWidth,
+    padding,
+    hasShadow,
+    justifyContent,
+    ...rest
+  }) => <div {...rest} />
 )`
   display: flex;
   flex-direction: ${({ direction }) => direction};
@@ -60,7 +72,7 @@ export const StyledWrapper = styled(
   align-items: center;
   width: 100%;
   max-width: ${({ maxWidth }) => maxWidth || BREAKPOINT.XL};
-  padding: ${SPACER.S} 0;
+  padding: ${({ padding }) => padding || `${SPACER.S} 0`};
   margin: ${({ margin }) => margin};
 
   ${({ hasShadow }) => {

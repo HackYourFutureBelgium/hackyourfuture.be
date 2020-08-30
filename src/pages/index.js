@@ -21,15 +21,21 @@ const ourProgramData = {
   image: OurProgramImageUrl,
 }
 
+const donateData = {
+  title: "Support the developers of tomorrow",
+  description:
+    "Help refugees build digital & soft skills for a career in web development. We are a non-profit organization. Thanks to your support we can improve and keep our program free of charge for students.",
+}
+
 const IndexPage = () => (
-  <LandingLayout>
+  <LandingLayout page="index">
     <HomeHeader />
     <ImageDescription data={ourProgramData} />
     <OurImpact />
     <OurValues />
-    <OurPartners />
     <SuccessStories />
-    <Donate />
+    <OurPartners />
+    <Donate data={donateData} />
     <ContactUs />
   </LandingLayout>
 )

@@ -3,7 +3,7 @@
  * You can export all from here to
  */
 
-import StyledButton from "./button"
+import ButtonUI from "./button"
 import { StyledImage } from "./image/style"
 import { StyledPane } from "./pane/style"
 import { StyledText } from "./text/style"
@@ -18,7 +18,7 @@ import IconUI from "./icon"
 import { StyledSection, StyledWrapper } from "./section"
 import DialogUI from "./dialog"
 
-export const Button = StyledButton
+export const Button = ButtonUI
 export const Image = StyledImage
 export const Pane = StyledPane
 export const Text = StyledText

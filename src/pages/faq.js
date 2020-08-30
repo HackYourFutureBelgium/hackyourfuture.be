@@ -5,7 +5,7 @@ import FAQHeader from "../components/page-sections/faq-header"
 import FAQList from "../components/page-sections/faq-list"
 
 const FAQPage = () => (
-  <LandingLayout>
+  <LandingLayout page="faq">
     <FAQHeader />
     <FAQList />
   </LandingLayout>

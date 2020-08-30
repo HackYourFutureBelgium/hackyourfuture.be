@@ -38,7 +38,7 @@ const DescriptionThreeData = {
 }
 
 const ProgramPage = () => (
-  <LandingLayout>
+  <LandingLayout page="program">
     <ProgramHeader />
     <WhoCanApply />
     <ProgramSkills />
