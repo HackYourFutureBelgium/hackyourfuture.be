@@ -1,27 +1,59 @@
 import React from "react"
 import styled from "styled-components"
 
-import { COLOR, MEDIA_QUERY } from "../../../utils/constants"
+import { COLOR, MEDIA_QUERY, FONT_FAMILY } from "../../../utils/constants"
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 `
 
 export const Ul = styled.ul`
   display: flex;
+  margin: 20px 0;
 `
 
-export const Li = styled(({ ...props }) => <li {...props} />)`
+export const Input = styled(({ isDisabled, ...props }) => <input {...props} />)`
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid ${COLOR.JACKSON_PURPLE};
+  margin: 20px 0;
+  font-size: 18px;
+  padding: 5px;
+  box-sizing: border-box;
+  color: ${COLOR.JACKSON_PURPLE};
+  background-color: transparent;
+  outline: none;
+`
+
+export const Li = styled(({ isActive, ...props }) => (
+  <li tabindex={0} {...props} />
+))`
   display: flex;
   border: 1px solid ${COLOR.JACKSON_PURPLE};
-  color: ${COLOR.JACKSON_PURPLE};
+  color: ${({ isActive }) => (isActive ? "white" : COLOR.JACKSON_PURPLE)};
   padding: 15px 20px;
   cursor: pointer;
   justify-content: center;
+  background-color: ${({ isActive }) =>
+    isActive ? COLOR.JACKSON_PURPLE : "white"};
+  font-family: ${FONT_FAMILY.WORK};
 
-  &:last-child {
-    flex-grow: 1;
+  &:not(:last-child) {
+    border-right: none;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: ${COLOR.JACKSON_PURPLE};
+    color: white;
+  }
+
+  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+    padding: 5px 10px;
+    align-items: center;
   }
 `
 
@@ -30,6 +62,10 @@ export const FormSection = styled(({ direction, ...props }) => (
 ))`
   display: flex;
   flex-direction: ${({ direction }) => direction};
+
+  &:first-child {
+    margin-bottom: 20px;
+  }
 `
 
 FormSection.defaultProps = { direction: "column" }
@@ -61,12 +97,10 @@ export const LeftContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 50%;
-  /* padding: 50px 100px; */
-  border: 1px solid red;
+  padding-right: 80px;
 
   @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
     width: 100%;
-    /* padding: 20px; */
   }
 `
 
@@ -74,9 +108,9 @@ export const RightContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 50%;
-  border: 1px solid red;
 
   @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
     width: 100%;
+    margin-top: 50px;
   }
 `

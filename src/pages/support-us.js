@@ -2,6 +2,7 @@ import React from "react"
 
 import LandingLayout from "../components/layout/landing-layout"
 import ImageDescription from "../components/page-sections/image-description"
+import SupportUsDetails from "../components/page-sections/support-us-details"
 import Donate from "../components/page-sections/donate"
 import teamWorkUrl from "../assets/images/teamwork.jpg"
 
@@ -21,6 +22,7 @@ const donateData = {
 const SupportUsPage = () => (
   <LandingLayout page="support-us">
     <ImageDescription data={WhyBecomePartnerData} />
+    <SupportUsDetails />
     <Donate data={donateData} />
   </LandingLayout>
 )

@@ -11,6 +11,7 @@ import {
   faSearch,
   faCheck,
   faEnvelope,
+  faSpinner,
 } from "@fortawesome/free-solid-svg-icons"
 
 import Linkedin from "../../../assets/illustrations/linkedin.svg"
@@ -18,6 +19,8 @@ import Twitter from "../../../assets/illustrations/twitter.svg"
 
 const getIcon = name => {
   switch (name) {
+    case "spinner":
+      return faSpinner
     case "envelope":
       return faEnvelope
     case "check":
@@ -50,6 +53,7 @@ const Icon = ({ name, color, ...props }) => {
       <FontAwesomeIcon
         icon={getIcon(name)}
         {...props}
+        pulse={name === "spinner"}
         style={{ color: color || "inherit" }}
       />
     )
@@ -66,8 +70,7 @@ Icon.propTypes = {
     "search",
     "check",
     "envelope",
-    "linkedin",
-    "twitter",
+    "spinner",
   ]).isRequired,
 }
 

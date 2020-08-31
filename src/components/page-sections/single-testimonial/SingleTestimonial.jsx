@@ -18,10 +18,20 @@ const SingleTestimonial = ({ data, isReverse }) => (
         </PictureContainer>
         <QuoteContainer isReverse={isReverse}>
           <ContentContainer>
-            <Title level={4} size="s" isUpperCase={false}>
+            <Title
+              level={4}
+              size="s"
+              isUpperCase={false}
+              style={{ marginBottom: "0" }}
+            >
               {data.name}
             </Title>
-            <Text color={COLOR.BLUE_VIOLET} size="xs">
+            <Text
+              color={COLOR.BLUE_VIOLET}
+              size="xs"
+              isPurple
+              style={{ marginBottom: "20px" }}
+            >
               {data.role}
             </Text>
             <Text>{data.quote}</Text>

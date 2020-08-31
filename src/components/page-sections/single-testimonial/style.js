@@ -21,8 +21,8 @@ export const PictureContainer = styled(({ isReverse, ...props }) => (
   <div {...props} />
 ))`
   display: flex;
-  width: ${({ isReverse }) => (isReverse ? "25%" : "50%")};
-  min-width: ${({ isReverse }) => (isReverse ? "25%" : "50%")};
+  width: 50%;
+  min-width: 50%;
   order: ${({ isReverse }) => (isReverse ? 2 : 1)};
 
   @media ${MEDIA_QUERY.TABLET_AND_DOWN} {

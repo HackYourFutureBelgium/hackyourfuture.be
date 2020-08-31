@@ -5,14 +5,21 @@ import Text from "./Text"
 import { FONT_SIZE_TEXT, FONT_FAMILY, COLOR } from "../../../utils/constants"
 
 export const StyledText = styled(
-  ({ isCenter, maxWidth, size, isWhite, margin, ...rest }) => <Text {...rest} />
+  ({ isCenter, maxWidth, size, isWhite, margin, isWorkFont, ...rest }) => (
+    <Text {...rest} />
+  )
 )`
-  color: ${({ isWhite }) => (isWhite ? COLOR.WHITE : COLOR.SHARK)};
+  color: ${({ isWhite, isPurple }) => {
+    if (isWhite) return "white"
+    if (isPurple) return COLOR.JACKSON_PURPLE
+    return COLOR.SHARK
+  }};
   text-align: ${({ isCenter }) => (isCenter ? "center" : "left")};
   max-width: ${({ maxWidth }) => maxWidth};
   line-height: 160%;
   font-size: ${({ size }) => FONT_SIZE_TEXT[size.toUpperCase()]};
-  font-family: ${FONT_FAMILY.SPACE};
+  font-family: ${({ isWorkFont }) =>
+    isWorkFont ? FONT_FAMILY.WORK : FONT_FAMILY.SPACE};
   margin: ${({ margin }) => margin};
   white-space: pre-wrap;
   word-break: break-word;
@@ -21,6 +28,7 @@ export const StyledText = styled(
     display: inline;
     color: ${COLOR.BLUE_VIOLET};
     font-weight: inherit;
+    font-weight: 600;
   }
 `
 

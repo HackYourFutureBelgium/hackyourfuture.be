@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { LeftContainer, RightContainer, Container } from "./style.js"
-import { Title, Pane, Text, Button, Section, Wrapper } from "../../ui"
+import { Title, Pane, Text, ButtonMinimal, Section, Wrapper } from "../../ui"
 
 const ImageDescription = ({ data, isReverse }) => (
   <Section>
@@ -23,7 +23,7 @@ const ImageDescription = ({ data, isReverse }) => (
           )}
           {data.cta && (
             // as={data.isCtaExternal ? "a" : Link}
-            <Button
+            <ButtonMinimal
               as={Link}
               {...{ [data.isCtaExternal ? "href" : "to"]: data.ctaLink }}
               variant="minimal"
@@ -31,7 +31,7 @@ const ImageDescription = ({ data, isReverse }) => (
               target={data.isCtaExternal ? "_blank" : undefined}
             >
               {data.cta}
-            </Button>
+            </ButtonMinimal>
           )}
         </LeftContainer>
         <RightContainer isReverse={isReverse}>

@@ -7,7 +7,7 @@ import { SHADOW } from "../../../utils/constants"
 const data = {
   title: "Our impact",
   description:
-    "We graduated over 80 people in Belgium and more than 200 globally. In Belgium, over 85% found and retained a high-quality job as a developer.",
+    "We graduated over 80 people in Belgium and more than 200 globally. In Belgium, over 70% found and retained a high-quality job as a developer.",
   results: [
     {
       title: "80",

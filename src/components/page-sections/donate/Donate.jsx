@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
+import getStripe from "../../../utils/stripe"
 
 import {
   Form,
@@ -10,8 +11,10 @@ import {
   RightContainer,
   Ul,
   Li,
+  Input,
 } from "./style"
 import { Title, Button, Text, Section, Wrapper } from "../../ui"
+import { COLOR } from "../../../utils/constants"
 
 const PAYMENT_API =
   "https://wt-00b50724a47109acb762597a6836a906-0.sandbox.auth0-extend.com/stripe-payment"
@@ -19,10 +22,16 @@ const PAYMENT_API =
 const Donate = ({ data }) => {
   const [isMonthly, setIsMonthly] = useState(true)
   const [amount, setAmount] = useState(10)
+  const [isLoading, setIsLoading] = useState(false)
 
-  // useEffect(() => {
-
-  // }, [])
+  const redirectToCheckout = async sessionId => {
+    const stripe = await getStripe()
+    const { error } = await stripe.redirectToCheckout({ sessionId })
+    if (error) {
+      console.log("ERROR STRIPE: ", error)
+      setIsLoading(false)
+    }
+  }
 
   const getPaymentSession = data => {
     return fetch(`${PAYMENT_API}/session`, {
@@ -36,27 +45,33 @@ const Donate = ({ data }) => {
   }
 
   const onSubmit = () => {
-    // const amount = parseInt($amountField.value) * 100
-
+    setIsLoading(true)
     const data = {}
     if (isMonthly) data.amount = amount * 100
     else data.plan = `monthly-${parseInt(amount)}`
 
     getPaymentSession(data)
       .then(session => {
-        if (session.error) throw session.error
-        return stripe.redirectToCheckout({ sessionId: session.id })
+        if (session.error) {
+          console.log("ERROR STRIPE SESSION:", session.error)
+          setIsLoading(false)
+        }
+        return redirectToCheckout(session.id)
       })
       .then(result => {
-        if (result.error) throw session.error
+        if (result.error) {
+          console.log("ERROR STRIPE RESULT: ", result.error)
+          setIsLoading(false)
+        }
       })
       .catch(err => {
         console.error(err)
+        setIsLoading(false)
       })
   }
 
   return (
-    <Section>
+    <Section background={COLOR.WHITE_LILAC} style={{ marginBottom: "50px" }}>
       <Wrapper>
         <Container>
           <LeftContainer>
@@ -74,7 +89,9 @@ const Donate = ({ data }) => {
                     checked={!isMonthly}
                     onChange={() => setIsMonthly(false)}
                   />
-                  <Text>One time</Text>
+                  <Text isWorkFont isPurple>
+                    One time
+                  </Text>
                 </RadioLabel>
                 <RadioLabel htmlFor="monthly">
                   <RadioInput
@@ -84,30 +101,47 @@ const Donate = ({ data }) => {
                     checked={isMonthly}
                     onChange={() => setIsMonthly(true)}
                   />
-                  <Text>Monthly</Text>
+                  <Text isWorkFont isPurple>
+                    Monthly
+                  </Text>
                 </RadioLabel>
               </FormSection>
               <FormSection>
-                <Text as="label" htmlFor="amount-options">
+                <Text as="label" htmlFor="amount-options" isPurple isWorkFont>
                   Select your amount
                 </Text>
                 <Ul id="amount-options">
-                  <Li onClick={() => setAmount(10)}>€10</Li>
-                  <Li onClick={() => setAmount(25)}>€25</Li>
-                  <Li onClick={() => setAmount(50)}>€50</Li>
-                  <Li onClick={() => setAmount(100)}>€100</Li>
-                  <Li onClick={() => setAmount(2000)}>Full scholarship</Li>
+                  <Li onClick={() => setAmount(10)} isActive={amount === 10}>
+                    €10
+                  </Li>
+                  <Li onClick={() => setAmount(25)} isActive={amount === 25}>
+                    €25
+                  </Li>
+                  <Li onClick={() => setAmount(50)} isActive={amount === 50}>
+                    €50
+                  </Li>
+                  <Li onClick={() => setAmount(100)} isActive={amount === 100}>
+                    €100
+                  </Li>
+                  <Li
+                    onClick={() => setAmount(2000)}
+                    isActive={amount === 2000}
+                  >
+                    Full scholarship
+                  </Li>
                 </Ul>
-                <Text as="label" htmlFor="amount">
-                  Select your amount
+                <Text as="label" htmlFor="amount" isPurple isWorkFont>
+                  Amount
                 </Text>
-                <input
+                <Input
                   type="number"
                   value={amount}
-                  onChange={({ target: { value } }) => setAmount(value)}
+                  onChange={({ target: { value } }) => setAmount(Number(value))}
                 />
               </FormSection>
-              <Button onClick={onSubmit}>Donate</Button>
+              <Button onClick={onSubmit} isLoading={isLoading}>
+                Donate
+              </Button>
             </Form>
           </RightContainer>
         </Container>

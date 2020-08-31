@@ -9,7 +9,7 @@ export const LeftContainer = styled(({ isReverse, ...rest }) => (
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 0 50px 0 0;
   padding: ${({ isReverse }) => (isReverse ? "0 0 0 50px" : "0 50px 0 0")};
   width: 50%;

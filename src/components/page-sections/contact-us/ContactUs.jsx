@@ -32,7 +32,7 @@ const ContactUs = () => {
   }
 
   return (
-    <Section padding="0" paddingMobile="0">
+    <Section padding="0" paddingMobile="0" style={{ marginBottom: "50px" }}>
       <Container>
         <LeftContainer>
           <Title isWhite>{data.title}</Title>

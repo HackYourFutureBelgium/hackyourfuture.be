@@ -24,6 +24,8 @@ export const Card = styled.div`
 
   > img {
     margin-bottom: ${SPACER.M};
+    min-height: 70px;
+    object-fit: contain;
   }
 
   @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
