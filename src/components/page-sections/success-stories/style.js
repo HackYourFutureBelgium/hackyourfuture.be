@@ -68,8 +68,8 @@ export const CarouselCard = styled.div`
 
 export const Btn = styled.button`
   position: absolute;
-  left: ${({ side }) => (side === "left" ? "-40px" : "auto")};
-  right: ${({ side }) => (side === "right" ? "-40px" : "auto")};
+  left: ${({ side }) => (side === "left" ? "-50px" : "auto")};
+  right: ${({ side }) => (side === "right" ? "-50px" : "auto")};
   top: 50%;
   transform: translateY(-50%);
   z-index: 100;

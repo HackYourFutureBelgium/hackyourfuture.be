@@ -25,6 +25,8 @@ export const StyledPane = styled(
     wrap,
     zIndex,
     is,
+    position,
+    minWidth,
     ...rest
   }) => {
     const El = is || "div"
@@ -39,6 +41,7 @@ export const StyledPane = styled(
   box-shadow: ${({ boxShadow }) => boxShadow};
   box-sizing: border-box;
   display: ${({ display }) => display};
+  flex: ${({ width }) => `1 1 ${width}`};
   flex-direction: ${({ direction }) => direction};
   flex-grow: ${({ grow }) => grow};
   flex-wrap: ${({ wrap }) => wrap};
@@ -46,10 +49,12 @@ export const StyledPane = styled(
   justify-content: ${({ justifyContent }) => justifyContent};
   margin: ${({ margin }) => margin};
   max-height: ${({ maxHeight }) => maxHeight};
+  min-width: ${({ minWidth }) => minWidth};
   max-width: ${({ maxWidth }) => maxWidth};
   padding: ${({ padding }) => padding};
   width: ${({ width }) => width};
   z-index: ${({ zIndex }) => zIndex};
+  position: ${({ position }) => position};
 `
 
 StyledPane.propTypes = {
@@ -77,8 +82,10 @@ StyledPane.defaultProps = {
   margin: "0",
   maxHeight: "none",
   maxWidth: "none",
+  minWidth: "none",
   padding: "0",
   width: "100%",
   wrap: "no-wrap",
   zIndex: 0,
+  position: "static",
 }

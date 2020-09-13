@@ -28,7 +28,7 @@ export const Input = styled(({ isDisabled, ...props }) => <input {...props} />)`
 `
 
 export const Li = styled(({ isActive, ...props }) => (
-  <li tabindex={0} {...props} />
+  <li tabIndex={0} {...props} />
 ))`
   display: flex;
   border: 1px solid ${COLOR.JACKSON_PURPLE};

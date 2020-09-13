@@ -13,7 +13,7 @@ import {
   Li,
   Input,
 } from "./style"
-import { Title, Button, Text, Section, Wrapper } from "../../ui"
+import { Title, Button, Text, Section, Wrapper, Pane } from "../../ui"
 import { COLOR } from "../../../utils/constants"
 
 const PAYMENT_API =
@@ -75,8 +75,10 @@ const Donate = ({ data }) => {
       <Wrapper>
         <Container>
           <LeftContainer>
-            <Title>{data.title}</Title>
-            <Text dangerouslySetInnerHTML={{ __html: data.description }} />
+            <Pane maxWidth="450px" direction="column">
+              <Title>{data.title}</Title>
+              <Text dangerouslySetInnerHTML={{ __html: data.description }} />
+            </Pane>
           </LeftContainer>
           <RightContainer>
             <Form>

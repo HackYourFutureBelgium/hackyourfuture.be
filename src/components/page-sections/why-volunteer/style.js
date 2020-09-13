@@ -21,10 +21,16 @@ export const TasksContainer = styled.div`
   }
 `
 
-export const TaskContainer = styled.div`
+export const Task = styled.div`
   display: flex;
   width: 50%;
   padding: 20px;
+
+  > div {
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+  }
 
   @media ${MEDIA_QUERY.MOBILE} {
     width: 100%;

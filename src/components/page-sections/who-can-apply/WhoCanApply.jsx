@@ -31,7 +31,7 @@ const WhoCanApply = () => (
             {data.items.map((item, index) => (
               <Li key={index}>
                 <Text dangerouslySetInnerHTML={{ __html: item }} />
-                <Icon name="check" color={COLOR.JACKSON_PURPLE} />
+                <Icon name="check" color={COLOR.BLUE_VIOLET} />
               </Li>
             ))}
           </Ul>

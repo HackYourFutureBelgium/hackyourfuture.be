@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import { Container, AbsoluteContainer } from "./style"
 import { Title, Text, Section, Wrapper, Image, Button } from "../../ui"
 import imageUrl from "../../../assets/images/new-career.jpg"
+import { COLOR } from "../../../utils/constants"
 
 const data = {
   title: "Your new career starts here",
@@ -20,15 +21,25 @@ const ProgramHeader = () => (
   <Section style={{ marginBottom: "20px" }}>
     <Wrapper direction="row" justifyContent="flex-start">
       <Container>
-        <Title level={1} size="XL">
+        <Title level={1} size="L" color={COLOR.BLUE_VIOLET}>
           {data.title}
         </Title>
         <Text
           margin="10px 0"
           dangerouslySetInnerHTML={{ __html: data.description }}
         />
-        <Text margin="10px 0">{data.cta1}</Text>
-        <Text margin="10px 0">{data.cta2}</Text>
+        <Text
+          margin="10px 0"
+          style={{ textDecoration: "underline", color: COLOR.BLUE_VIOLET }}
+        >
+          {data.cta1}
+        </Text>
+        <Text
+          margin="10px 0 50px 0"
+          style={{ textDecoration: "underline", color: COLOR.BLUE_VIOLET }}
+        >
+          {data.cta2}
+        </Text>
         <Button as={Link} to={data.ctaLink}>
           {data.cta}
         </Button>

@@ -13,11 +13,13 @@ export const GlobalStyle = createGlobalStyle`
 export const StyledLandingLayout = styled.div`
   display: flex;
   flex-direction: column;
+  flex: 0 0 auto;
   height: 100%;
 `
 
 export const StyledMain = styled.main`
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   margin: 0 auto;
   flex-grow: 1;

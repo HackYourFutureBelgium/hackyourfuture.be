@@ -30,11 +30,18 @@ const AboutValues = () => (
           direction="column"
           alignItems="center"
           width="230px"
+          padding="0 20px"
         >
           <Pane margin="0 0 20px 0" justifyContent="center">
-            <Image src={item.illustration} />
+            <Image src={item.illustration} height="60px" width="60px" />
           </Pane>
-          <Title level={3} size="xs" isCenter>
+          <Title
+            level={3}
+            size="xs"
+            isCenter
+            isUpperCase={false}
+            color={COLOR.BLUE_VIOLET}
+          >
             {item.title}
           </Title>
         </Pane>

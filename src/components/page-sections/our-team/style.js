@@ -3,10 +3,20 @@ import styled from "styled-components"
 
 import { MEDIA_QUERY, SHADOW } from "../../../utils/constants"
 
+export const CardsContainer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+    flex-direction: column;
+  }
+`
+
 export const Container = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 
   @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
     flex-direction: column;

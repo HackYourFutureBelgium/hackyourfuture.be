@@ -4,6 +4,7 @@ import { COLOR, MEDIA_QUERY } from "../../../utils/constants"
 
 export const Container = styled.div`
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   align-items: flex-start;
 `
@@ -42,7 +43,7 @@ export const Li = styled.li`
     display: block;
     width: 25px;
     height: 25px;
-    border: 2px solid ${COLOR.JACKSON_PURPLE};
+    border: 2px solid ${COLOR.BLUE_VIOLET};
     border-radius: 100%;
     position: absolute;
     top: 0px;
@@ -53,5 +54,6 @@ export const Li = styled.li`
     position: absolute;
     left: 0;
     top: 4px;
+    transform: scale(0.7);
   }
 `

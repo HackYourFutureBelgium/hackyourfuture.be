@@ -29,14 +29,15 @@ const SingleTestimonial = ({ data, isReverse }) => (
             <Text
               color={COLOR.BLUE_VIOLET}
               size="xs"
-              isPurple
+              isPurpleLight
+              isWorkFont
               style={{ marginBottom: "20px" }}
             >
               {data.role}
             </Text>
             <Text>{data.quote}</Text>
           </ContentContainer>
-          <Button as="a" href={data.ctaLink} target="_blank">
+          <Button as="a" href={data.ctaLink} target="_blank" hasRadius={false}>
             {data.cta}
           </Button>
         </QuoteContainer>

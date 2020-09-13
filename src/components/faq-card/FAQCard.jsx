@@ -15,7 +15,9 @@ const FAQCard = ({ question, answer }) => (
       }
       main={(isContentOpen, isFocus) => (
         <StyledMain isFocus={isFocus}>
-          <Text style={{ color: COLOR.BLUE_VIOLET }}>{question}</Text>
+          <Text style={{ color: COLOR.BLUE_VIOLET }} isWorkFont>
+            {question}
+          </Text>
           <Icon
             name={isContentOpen ? "minus" : "plus"}
             color={COLOR.BLUE_VIOLET}

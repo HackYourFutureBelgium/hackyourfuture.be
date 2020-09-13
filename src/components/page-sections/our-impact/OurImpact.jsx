@@ -27,7 +27,7 @@ const data = {
 }
 
 const OurImpact = () => (
-  <Section>
+  <Section padding="0">
     <Wrapper>
       <Container>
         <TopContainer>

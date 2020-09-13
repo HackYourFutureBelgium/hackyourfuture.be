@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-import { COLOR, FONT_SIZE_TEXT } from "../../../utils/constants"
+import { COLOR, FONT_SIZE_TEXT, FONT_FAMILY } from "../../../utils/constants"
 
 export const StyledNavLink = styled(({ isActive, ...props }) => (
   <Link {...props} />
@@ -15,16 +15,17 @@ export const StyledNavLink = styled(({ isActive, ...props }) => (
   line-height: 160%;
   text-transform: uppercase;
   padding: 10px 20px;
+  font-family: ${FONT_FAMILY.WORK};
 
   &:hover,
   &:focus,
   &:active {
     color: black;
-    background-color: ${COLOR.MERCURY};
   }
 
   span {
     position: relative;
+    font-family: ${FONT_FAMILY.WORK};
 
     &:after {
       content: "";

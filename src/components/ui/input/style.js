@@ -15,12 +15,6 @@ export const InputContainer = styled.div`
   padding-left: ${({ hasExtraPaddingLeft }) =>
     hasExtraPaddingLeft ? "10px" : "0"};
   color: ${COLOR.BLUE_VIOLET};
-  /* > i:first-child {
-    margin: 0 2px 0 10px;
-  }
-  > i:last-child {
-    margin: 0 10px 0 2px;
-  } */
 `
 
 export const StyledInput = styled.input`
@@ -31,4 +25,8 @@ export const StyledInput = styled.input`
   padding: 12px 10px;
   color: ${COLOR.BLUE_VIOLET};
   font-size: ${({ size }) => size};
+
+  ::placeholder {
+    color: ${COLOR.BLUE_VIOLET};
+  }
 `

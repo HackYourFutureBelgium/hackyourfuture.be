@@ -27,6 +27,7 @@ export const StyledSection = styled(
   box-shadow: ${({ hasShadow }) => (hasShadow ? SHADOW.BOX : "none")};
   background: ${({ background }) => background || "none"};
   z-index: 1;
+  flex: 0 0 auto;
 
   @media ${MEDIA_QUERY.MOBILE} {
     padding: ${({ paddingMobile }) => paddingMobile || "20px"};

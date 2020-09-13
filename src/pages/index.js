@@ -30,7 +30,7 @@ const donateData = {
 const IndexPage = () => (
   <LandingLayout page="index">
     <HomeHeader />
-    <ImageDescription data={ourProgramData} />
+    <ImageDescription data={ourProgramData} hasRectangleBackground />
     <OurImpact />
     <OurValues />
     <SuccessStories />

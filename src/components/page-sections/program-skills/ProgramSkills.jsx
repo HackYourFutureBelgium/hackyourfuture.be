@@ -3,12 +3,12 @@ import React from "react"
 import { Container, LeftContainer, RightContainer } from "./style"
 import { Title, Pane, Text, Section, Wrapper, Image, Button } from "../../ui"
 import { COLOR } from "../../../utils/constants"
-import htmlUrl from "../../../assets/images/html.png"
-import cssUrl from "../../../assets/images/css.png"
-import javascriptUrl from "../../../assets/images/javascript.png"
-import nodejsUrl from "../../../assets/images/nodejs.png"
-import mysqlUrl from "../../../assets/images/mysql.png"
-import reactjsUrl from "../../../assets/images/reactjs.png"
+import htmlUrl from "../../../assets/images/html.svg"
+import cssUrl from "../../../assets/images/css.svg"
+import javascriptUrl from "../../../assets/images/javascript.svg"
+import nodejsUrl from "../../../assets/images/node-js.svg"
+import mysqlUrl from "../../../assets/images/sql-lite.svg"
+import reactjsUrl from "../../../assets/images/react-js.svg"
 
 const data = {
   title: "8-month program",
@@ -60,8 +60,16 @@ const ProgramSkills = () => (
                 width="200px"
                 height="150px"
               >
-                <Image src={image.src} alt={image.name} width="85px" />
-                <Text isCenter>{image.name}</Text>
+                <Image
+                  src={image.src}
+                  alt={image.name}
+                  width="65px"
+                  height="60px"
+                  style={{ objectFit: "contain" }}
+                />
+                <Text isCenter isPurple margin="10px 0 0 0" isWorkFont>
+                  {image.name}
+                </Text>
               </Pane>
             )
           })}

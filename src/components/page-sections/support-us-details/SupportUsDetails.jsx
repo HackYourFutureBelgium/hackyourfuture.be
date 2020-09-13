@@ -38,13 +38,13 @@ const data = {
 }
 
 const SupportUsDetails = () => (
-  <Section>
+  <Section padding="0 20px">
     <Wrapper>
       <Container>
         {data.items.map(item => (
           <Card key={item.title}>
             <Image src={item.illustration} width="70px" height="70px" />
-            <Title level={2} size="s">
+            <Title level={2} size="m">
               {item.title}
             </Title>
             <Text>{item.description}</Text>

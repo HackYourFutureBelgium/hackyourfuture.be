@@ -162,8 +162,15 @@ const FAQList = () => {
   return (
     <Section>
       <Wrapper>
-        <Pane margin="0 0 20px 0" alignItems="flex-start" width="100%">
-          <Input type="text" onChange={onSearch} icon="search" />
+        <Pane margin="0 0 20px 0" alignItems="flex-start">
+          <Pane width="400px">
+            <Input
+              type="text"
+              onChange={onSearch}
+              icon="search"
+              placeholder="Search a keyword"
+            />
+          </Pane>
         </Pane>
 
         {!isFilterMode &&
@@ -209,12 +216,11 @@ const FAQList = () => {
               boxShadow={SHADOW.BOX}
               margin="0 0 40px 0"
             >
-              {filteredFaqs.map(faq => (
-                <FAQCard
-                  key={faq.question}
-                  question={faq.question}
-                  answer={faq.answer}
-                />
+              {filteredFaqs.map((faq, index, self) => (
+                <Fragment key={`${index}-fragment`}>
+                  <FAQCard question={faq.question} answer={faq.answer} />
+                  {self.length - 1 !== index && <Separator />}
+                </Fragment>
               ))}
             </Pane>
           </Pane>

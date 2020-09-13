@@ -21,7 +21,12 @@ const donateData = {
 
 const SupportUsPage = () => (
   <LandingLayout page="support-us">
-    <ImageDescription data={WhyBecomePartnerData} />
+    <ImageDescription
+      data={WhyBecomePartnerData}
+      hasBigTitle
+      hasTitleLightPurple
+      sectionPadding="0 20px"
+    />
     <SupportUsDetails />
     <Donate data={donateData} />
   </LandingLayout>

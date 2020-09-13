@@ -36,7 +36,7 @@ export const StyledTitle = styled(
     "xs" === size.toLowerCase() ? `0` : SPACER.M};
   text-transform: ${({ isUpperCase }) => (isUpperCase ? "uppercase" : "none")};
   font-family: ${FONT_FAMILY.WORK};
-  font-weight: 900;
+  font-weight: 700;
   color: ${({ isWhite, color }) =>
     isWhite ? color || COLOR.WHITE : color || COLOR.JACKSON_PURPLE};
   text-align: ${({ isCenter }) => (isCenter ? "center" : "left")};

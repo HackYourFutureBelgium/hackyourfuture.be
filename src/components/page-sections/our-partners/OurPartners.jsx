@@ -32,7 +32,14 @@ const OurPartners = () => (
       <BottomContainer>
         {data.partnerImages.map((value, index) => (
           <Pane width="170px" key={index}>
-            <Image src={value} width="100%" />
+            <Image
+              src={value}
+              width="100%"
+              style={{
+                filter: "grayscale(1)",
+                opacity: index === 1 || index === 3 ? "0.3" : 1,
+              }}
+            />
           </Pane>
         ))}
       </BottomContainer>

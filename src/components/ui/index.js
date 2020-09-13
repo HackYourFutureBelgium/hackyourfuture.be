@@ -4,7 +4,6 @@
  */
 
 import ButtonUI from "./button"
-import ButtonMinimalUI from "./button-minimal"
 import { StyledImage } from "./image/style"
 import { StyledPane } from "./pane/style"
 import { StyledText } from "./text/style"
@@ -20,7 +19,6 @@ import { StyledSection, StyledWrapper } from "./section"
 import DialogUI from "./dialog"
 
 export const Button = ButtonUI
-export const ButtonMinimal = ButtonMinimalUI
 export const Image = StyledImage
 export const Pane = StyledPane
 export const Text = StyledText

@@ -14,8 +14,9 @@ import {
   faSpinner,
 } from "@fortawesome/free-solid-svg-icons"
 
-import Linkedin from "../../../assets/illustrations/linkedin.svg"
-import Twitter from "../../../assets/illustrations/twitter.svg"
+import linkedin from "../../../assets/illustrations/linkedin.svg"
+import twitter from "../../../assets/illustrations/twitter.svg"
+import mail from "../../../assets/social/mail.svg"
 
 const getIcon = name => {
   switch (name) {
@@ -44,10 +45,28 @@ const getIcon = name => {
 }
 
 const Icon = ({ name, color, ...props }) => {
-  if (["twitter", "linkedin"].includes(name)) {
-    // if (name === "twitter") return <Twitter />
-    // else if (name === "linkedin") return <Linkedin />
-    return null
+  if (["twitter", "linkedin", "mail"].includes(name)) {
+    if (name === "twitter")
+      return (
+        <img
+          src={twitter}
+          style={{ width: "15px", height: "15px", objectFit: "contain" }}
+        />
+      )
+    else if (name === "linkedin")
+      return (
+        <img
+          src={linkedin}
+          style={{ width: "15px", height: "15px", objectFit: "contain" }}
+        />
+      )
+    else if (name === "mail")
+      return (
+        <img
+          src={mail}
+          style={{ width: "15px", height: "15px", objectFit: "contain" }}
+        />
+      )
   } else {
     return (
       <FontAwesomeIcon

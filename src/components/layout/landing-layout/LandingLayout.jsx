@@ -21,7 +21,7 @@ const LandingLayout = ({ children, page }) => (
       <title>Hack Your Future Belgium</title>
       <link rel="canonical" href="https://hackyourfuture.be/" />
       <link
-        href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans:wght@600;700;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;600;900&family=Work+Sans:wght@300;600;700&display=swap"
         rel="stylesheet"
       />
     </Helmet>

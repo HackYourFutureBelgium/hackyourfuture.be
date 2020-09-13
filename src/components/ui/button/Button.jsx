@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 
 import Icon from "../icon"
 
-const Button = ({ children, as, iconLeft, iconRight, isLoading, ...props }) => {
-  const El = "p" || "button"
+const Button = ({ children, is, iconLeft, iconRight, isLoading, ...props }) => {
+  const El = is || "button"
 
   let iconLeftContent = isLoading ? "spinner" : iconLeft
 
