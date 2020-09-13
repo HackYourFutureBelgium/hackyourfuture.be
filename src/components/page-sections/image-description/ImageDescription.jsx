@@ -72,6 +72,7 @@ const ImageDescription = ({
             height="100%"
             position="relative"
             zIndex="auto"
+            style={{ minHeight: "300px" }}
           />
         </RightContainer>
       </Container>

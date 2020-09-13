@@ -62,7 +62,12 @@ const OurTeam = () => (
                 height="180px"
                 objectFit="cover"
                 radius="100%"
-                style={{ marginBottom: "20px", filter: "grayscale(1)" }}
+                style={{
+                  marginBottom: "20px",
+                  filter: "grayscale(1)",
+                  minHeight: "180px",
+                  minWidth: "180px",
+                }}
               />
               <Title
                 level={4}
