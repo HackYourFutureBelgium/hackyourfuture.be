@@ -42,7 +42,11 @@ const ProgramPage = () => (
     <ProgramHeader />
     <WhoCanApply />
     <ProgramSkills />
-    <ImageDescription data={DescriptionOneData} hasPurpleBackground />
+    <ImageDescription
+      data={DescriptionOneData}
+      hasPurpleBackground
+      hasExceptionalYOffset
+    />
     <ImageDescription data={DescriptionTwoData} isReverse hasPurpleBackground />
     <ImageDescription data={DescriptionThreeData} hasPurpleBackground />
   </LandingLayout>

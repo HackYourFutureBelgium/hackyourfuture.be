@@ -13,6 +13,7 @@ const ImageDescription = ({
   hasBigTitle,
   hasTitleLightPurple,
   sectionPadding,
+  hasExceptionalYOffset,
 }) => (
   <Section
     padding={sectionPadding}
@@ -22,7 +23,10 @@ const ImageDescription = ({
   >
     <Wrapper>
       <Container hasPadding>
-        <LeftContainer isReverse={isReverse}>
+        <LeftContainer
+          isReverse={isReverse}
+          hasExceptionalYOffset={hasExceptionalYOffset}
+        >
           {data.title && (
             <Title
               level={2}

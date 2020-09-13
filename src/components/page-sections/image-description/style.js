@@ -15,6 +15,11 @@ export const LeftContainer = styled(({ isReverse, ...rest }) => (
   padding: ${({ isReverse }) => (isReverse ? "0 0 0 50px" : "0 50px 0 0")};
   width: 50%;
   order: ${({ isReverse }) => (isReverse ? 2 : 1)};
+  ${({ hasExceptionalYOffset }) => {
+    if (hasExceptionalYOffset) {
+      return `transform: translateY(-56px);`
+    }
+  }}
 
   > p {
     margin-bottom: 20px;
