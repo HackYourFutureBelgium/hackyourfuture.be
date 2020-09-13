@@ -77,7 +77,7 @@ const SuccessStories = () => {
   }
 
   return (
-    <Section>
+    <Section style={{ overflow: "hidden" }}>
       <Wrapper>
         <Container>
           <Title level={2}>{data.title}</Title>
