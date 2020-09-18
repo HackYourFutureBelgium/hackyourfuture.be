@@ -1,7 +1,6 @@
 const isProd = process.env.NODE_ENV === "production"
 
 module.exports = {
-  pathPrefix: "/website",
   siteMetadata: {
     title: `Hack Your Future Belgium`,
     description: `Helping new talent into the tech world`,
