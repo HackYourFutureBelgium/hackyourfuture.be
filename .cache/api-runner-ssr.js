@@ -1,11 +1,11 @@
 var plugins = [{
-      plugin: require('/home/runner/work/website/website/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/master/evan-drive/0-teach-code/h-h-y-f/0---the-big-idea/landing-page/website--hyfbe/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/runner/work/website/website/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      plugin: require('/Users/master/evan-drive/0-teach-code/h-h-y-f/0---the-big-idea/landing-page/website--hyfbe/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[],"minify":true,"displayName":false},
     },{
-      plugin: require('/home/runner/work/website/website/node_modules/gatsby-plugin-fontawesome-css/gatsby-ssr'),
+      plugin: require('/Users/master/evan-drive/0-teach-code/h-h-y-f/0---the-big-idea/landing-page/website--hyfbe/node_modules/gatsby-plugin-fontawesome-css/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
