@@ -11,7 +11,7 @@ const data = {
   description:
     "HackYourFuture is a <b>free 8-month web development program</b> for passionate refugees and vulnerable newcomers in Belgium. You don’t need any technical background to start.<br/><br/>We launch new classes 3 times a year.<br/><b>Women are strongly encouraged to apply!</b><br><br>",
   cta1: "Next class starts : 20 September (Full)",
-  cta2: "Following class starts: 10 January 2020",
+  cta2: "Following class starts: February 2020 (To be confirmed)",
   cta: "Apply Now",
   ctaLink: "/apply",
   image: imageUrl,
