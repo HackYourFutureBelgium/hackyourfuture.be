@@ -35,6 +35,7 @@ const ProgramSkills = () => (
               as="a"
               href="https://home.hackyourfuture.be/curriculum#the-modules"
               target="_blank"
+              rel="noopener noreferrer"
             >
               {data.cta1}
             </Button>
@@ -44,6 +45,7 @@ const ProgramSkills = () => (
               as="a"
               href="https://docs.google.com/forms/d/e/1FAIpQLSef3OH8546MJNllcvrv7KomHelqzrKNpnLRVbI1ZqbeajnluA/viewform"
               target="_blank"
+              rel="noopener noreferrer"
             >
               {data.cta2}
             </Button>

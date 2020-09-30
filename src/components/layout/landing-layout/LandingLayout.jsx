@@ -16,8 +16,9 @@ import Footer from "../../footer/Footer"
 
 const LandingLayout = ({ children, page }) => (
   <>
-    <Helmet>
+    <Helmet htmlAttributes={{ lang: "en"}} >
       <meta charSet="utf-8" />
+      <meta name="description" content="Helping new talent into the tech world" />
       <title>Hack Your Future Belgium</title>
       <link rel="canonical" href="https://hackyourfuture.be/" />
       <link
