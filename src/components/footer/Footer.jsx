@@ -39,6 +39,7 @@ const Footer = () => (
               as="a"
               href={social.link}
               target="_blank"
+              rel="noopener noreferrer"
               key={index}
               margin="0 10px"
             >
