@@ -4,8 +4,6 @@ module.exports = {
   },
   extends: `react-app`,
   rules: {
-    required: {
-      some: ["nesting", "id"],
-    },
+    "no-inner-declarations": 1
   },
 }
