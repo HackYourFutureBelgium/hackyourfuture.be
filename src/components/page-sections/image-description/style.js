@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import { MEDIA_QUERY, COLOR } from "../../../utils/constants"
+import { MEDIA_QUERY } from "../../../utils/constants"
 
 export const LeftContainer = styled(({ isReverse, ...rest }) => (
   <div {...rest} />
