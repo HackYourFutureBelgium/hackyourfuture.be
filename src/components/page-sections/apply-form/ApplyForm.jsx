@@ -6,7 +6,7 @@ import { Title, Section, Wrapper } from "../../ui"
 const data = {
   title: "Apply now",
   applyForm:
-    "https://docs.google.com/forms/d/e/1FAIpQLSf5lqmVhTPQPbz-y4vr3_sVtfhPar4InYcgXQhVXRJmj3nQVw/viewform",
+    "https://forms.gle/sgUfejSp8PuTb87n8",
 }
 
 const ApplyForm = () => (
