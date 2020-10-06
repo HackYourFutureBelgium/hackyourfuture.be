@@ -1,0 +1,18 @@
+name: Run end-to-end tests
+
+on:
+  pull-request:
+    branches: [ main, develop ]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          start: npm start
+          # this waits for 60 seconds by default, which should be more than enough time
+          wait-on: 'http://localhost:8080'
