@@ -1,4 +1,3 @@
-import React from "react"
 import styled from "styled-components"
 
 import { MEDIA_QUERY, SHADOW } from "../../../utils/constants"
