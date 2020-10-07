@@ -15,4 +15,4 @@ jobs:
         with:
           start: npm start
           # this waits for 60 seconds by default, which should be more than enough time
-          wait-on: 'http://localhost:8080'
+          wait-on: 'http://localhost:8000'
