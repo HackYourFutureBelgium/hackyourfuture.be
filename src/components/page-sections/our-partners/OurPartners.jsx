@@ -37,6 +37,13 @@ const OurPartners = () => (
             <Image
               src={value}
               width="100%"
+              // // old grey-out styling for the <Image> elements
+              // //   removed so the logos will be colored
+              // //   preserved for posterity
+              // style={{
+              //   filter: "grayscale(1)",
+              //   opacity: index === 1 || index === 3 ? "0.3" : 1,
+              // }}
             />
           </Pane>
         ))}
@@ -46,13 +53,3 @@ const OurPartners = () => (
 )
 
 export default OurPartners
-
-/* old grey-out styling for the <Image> elements
-    removed so the logos will be colored
-    preserved for posterity
-
-style={{
-  filter: "grayscale(1)",
-  opacity: index === 1 || index === 3 ? "0.3" : 1,
-}}
-*/
