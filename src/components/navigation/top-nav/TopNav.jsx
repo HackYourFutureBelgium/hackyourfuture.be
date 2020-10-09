@@ -24,20 +24,24 @@ const TopNav = ({ onBurgerNavClicked, isMobile, currentPage }) => {
         <NavLink to="/support-us" isActive={currentPage === "support-us"}>
           <span>Support us</span>
         </NavLink>
-        <Button as={Link} to="/apply">
-          Apply now
+        <a href={'https://forms.gle/audHcMFhTKA2iaQN8'} target="_blank">
+          <Button>
+            Apply now
         </Button>
+        </a>
       </StyledTopNav>
-      {!isMobile && (
-        <StyledTopNavMobile>
-          <Button
-            iconLeft="bars"
-            onClick={onBurgerNavClicked}
-            variant="minimal"
-            size="28px"
-          />
-        </StyledTopNavMobile>
-      )}
+      {
+        !isMobile && (
+          <StyledTopNavMobile>
+            <Button
+              iconLeft="bars"
+              onClick={onBurgerNavClicked}
+              variant="minimal"
+              size="28px"
+            />
+          </StyledTopNavMobile>
+        )
+      }
     </>
   )
 }

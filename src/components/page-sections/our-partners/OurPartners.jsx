@@ -7,6 +7,7 @@ import openKnowledgeUrl from "../../../assets/partners/open-knowledge.svg"
 import digitalBelgiumUrl from "../../../assets/partners/digital-belgium.svg"
 import arteveldeUrl from "../../../assets/partners/artevelde-hogeschool.svg"
 import bruxellesEmploiUrl from "../../../assets/partners/bruxelles-emploi.svg"
+import microsoftUrl from "../../../assets/partners/microsoft.svg"
 
 const data = {
   title: "Our partners",
@@ -17,6 +18,7 @@ const data = {
     digitalBelgiumUrl,
     arteveldeUrl,
     bruxellesEmploiUrl,
+    microsoftUrl,
   ],
 }
 
@@ -35,10 +37,6 @@ const OurPartners = () => (
             <Image
               src={value}
               width="100%"
-              style={{
-                filter: "grayscale(1)",
-                opacity: index === 1 || index === 3 ? "0.3" : 1,
-              }}
             />
           </Pane>
         ))}
@@ -48,3 +46,13 @@ const OurPartners = () => (
 )
 
 export default OurPartners
+
+
+/* removed styling so logos will be colored.
+    preserved styling for posterity
+
+  style={{
+    filter: "grayscale(1)",
+    opacity: index === 1 || index === 3 ? "0.3" : 1,
+  }}
+*/
