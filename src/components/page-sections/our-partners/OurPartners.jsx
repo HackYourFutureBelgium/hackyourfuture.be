@@ -7,6 +7,7 @@ import openKnowledgeUrl from "../../../assets/partners/open-knowledge.svg"
 import digitalBelgiumUrl from "../../../assets/partners/digital-belgium.svg"
 import arteveldeUrl from "../../../assets/partners/artevelde-hogeschool.svg"
 import bruxellesEmploiUrl from "../../../assets/partners/bruxelles-emploi.svg"
+import microsoftUrl from "../../../assets/partners/microsoft.svg"
 
 const data = {
   title: "Our partners",
@@ -17,6 +18,7 @@ const data = {
     digitalBelgiumUrl,
     arteveldeUrl,
     bruxellesEmploiUrl,
+    microsoftUrl,
   ],
 }
 
