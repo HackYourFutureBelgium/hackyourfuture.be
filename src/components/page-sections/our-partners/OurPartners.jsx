@@ -27,7 +27,12 @@ const OurPartners = () => (
     <Wrapper>
       <TopContainer>
         <Title level={2}>{data.title}</Title>
-        <Button variant="minimal" iconRight="arrow-right">
+        <Button
+          is="a"
+          variant="minimal"
+          iconRight="arrow-right"
+          href="link here"
+        >
           {data.cta}
         </Button>
       </TopContainer>
