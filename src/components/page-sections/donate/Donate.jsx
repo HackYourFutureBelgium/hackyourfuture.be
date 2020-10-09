@@ -44,7 +44,8 @@ const Donate = ({ data }) => {
     }).then(r => r.json())
   }
 
-  const onSubmit = () => {
+  const onSubmit = e => {
+    e.preventDefault()
     setIsLoading(true)
     const data = {}
     if (isMonthly) data.amount = amount * 100
