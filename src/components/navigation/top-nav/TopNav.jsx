@@ -24,7 +24,11 @@ const TopNav = ({ onBurgerNavClicked, isMobile, currentPage }) => {
         <NavLink to="/support-us" isActive={currentPage === "support-us"}>
           <span>Support us</span>
         </NavLink>
-        <Button as={Link} to="/apply">
+        <Button
+          is="a"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSd6V6JyhWH3M4dhmXnAWcdMHCVEdcdQJyT1DzXZodvHufSrJQ/viewform?usp=sf_link"
+          target="_blank"
+        >
           Apply now
         </Button>
       </StyledTopNav>
