@@ -13,7 +13,8 @@ const data = {
   cta1: "Next class starts : 20 September (Full)",
   cta2: "Following class starts: February 2020 (To be confirmed)",
   cta: "Apply Now",
-  ctaLink: "/apply",
+  ctaLink:
+    "https://docs.google.com/forms/d/e/1FAIpQLSd6V6JyhWH3M4dhmXnAWcdMHCVEdcdQJyT1DzXZodvHufSrJQ/viewform?usp=sf_link",
   image: imageUrl,
 }
 
@@ -40,7 +41,7 @@ const ProgramHeader = () => (
         >
           {data.cta2}
         </Text>
-        <Button as={Link} to={data.ctaLink}>
+        <Button is="a" href={data.ctaLink} tagret="_blank">
           {data.cta}
         </Button>
       </Container>
