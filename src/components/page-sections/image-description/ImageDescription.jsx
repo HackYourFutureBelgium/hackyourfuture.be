@@ -19,6 +19,7 @@ const ImageDescription = ({
     padding={sectionPadding}
     style={{
       backgroundColor: hasPurpleBackground ? COLOR.WHITE_LILAC : "none",
+      overflow: "hidden",
     }}
   >
     <Wrapper>

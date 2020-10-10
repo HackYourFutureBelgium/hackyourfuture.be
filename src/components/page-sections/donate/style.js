@@ -87,6 +87,7 @@ export const RadioInput = styled(({ ...props }) => <input {...props} />)`
 export const Container = styled.div`
   display: flex;
   width: 100%;
+  overflow: hidden;
 
   @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
     flex-direction: column;
