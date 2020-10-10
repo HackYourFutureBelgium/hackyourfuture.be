@@ -12,6 +12,7 @@ import microsoftUrl from "../../../assets/partners/microsoft.svg"
 const data = {
   title: "Our partners",
   cta: "Become a partner",
+  ctaLink: "mailto:contact@hackyourfuture.be",
   partnerImages: [
     printSimpleUrl,
     openKnowledgeUrl,
@@ -27,7 +28,12 @@ const OurPartners = () => (
     <Wrapper>
       <TopContainer>
         <Title level={2}>{data.title}</Title>
-        <Button variant="minimal" iconRight="arrow-right">
+        <Button
+          is="a"
+          variant="minimal"
+          iconRight="arrow-right"
+          href={data.ctaLink}
+        >
           {data.cta}
         </Button>
       </TopContainer>
