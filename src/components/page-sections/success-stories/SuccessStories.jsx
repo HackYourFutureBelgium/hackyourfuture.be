@@ -47,7 +47,7 @@ const data = {
     {
       picture: gitaUrl,
       name: "Gita",
-      company: "The Test Leader",
+      company: "ttl.be",
       role: "QA Developer",
       quote:
         "What HYF brought to me is you should never give up and always try to find a way when you’re stuck. I’ve learned that dreaming big without big efforts will bring you nowhere. HackYourFuture was part of my journey to become who I am now.",
