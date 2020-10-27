@@ -4,6 +4,6 @@ module.exports = {
   },
   extends: `react-app`,
   rules: {
-    "no-inner-declarations": 1
+    "no-inner-declarations": 1,
   },
 }

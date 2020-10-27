@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const StyledBreadcrumbs = styled.ul`
   display: flex;
@@ -14,4 +14,4 @@ export const StyledBreadcrumbs = styled.ul`
       }
     }
   }
-`;
+`
