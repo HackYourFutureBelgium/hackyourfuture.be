@@ -46,13 +46,13 @@ const data = {
     {
       question: "I am not living in Belgium. Can I still apply?",
       answer:
-        "HackYourFuture is also present in other countries like <a href='https://www.hackyourfuture.net/international/' target='_blank'>the Netherlands and Denmark</a>. If we’re not active (yet) in your country, please reach out to us, so we can connect you with similar coding schools across Europe. Or you can choose to do self-study. All the resources we use in the HackYourFuture Belgium program are available online and you can find it <a href='https://home.hackyourfuture.be/curriculum' target='_blank'>here</a>",
+        "HackYourFuture is also present in other countries like <a href='https://www.hackyourfuture.net/international/' target='_blank' rel='noopener noreferrer nofollow'>the Netherlands and Denmark</a>. If we’re not active (yet) in your country, please reach out to us, so we can connect you with similar coding schools across Europe. Or you can choose to do self-study. All the resources we use in the HackYourFuture Belgium program are available online and you can find it <a href='https://home.hackyourfuture.be/curriculum' target='_blank' rel='noopener noreferrer nofollow'>here</a>",
       category: CATEGORY.APPLICANT,
     },
     {
       question: "When does the new class start?",
       answer:
-        "Keep an eye on <a href='' target='_blank'>The Program</a> page to find out when the next class will start! We also communicate on social media when a new call for applications is launched.",
+        "Keep an eye on <a href='' target='_blank' rel='noopener noreferrer nofollow'>The Program</a> page to find out when the next class will start! We also communicate on social media when a new call for applications is launched.",
       category: CATEGORY.APPLICANT,
     },
     {
@@ -64,13 +64,13 @@ const data = {
     {
       question: "How much time do I need to dedicate as a coach?",
       answer:
-        "The time you might spend with us depends on which role you take. You can discover the different coaching roles <a href='https://home.hackyourfuture.be/coaches/coaching-roles' target='_blank'>here</a>!<br/><br/>Please <a href='https://docs.google.com/forms/d/e/1FAIpQLSef3OH8546MJNllcvrv7KomHelqzrKNpnLRVbI1ZqbeajnluA/viewform' target='_blank'>reach out to us</a> so we can discuss it in a call. We’re happy to see your face while explaining how you can become part of our mission.",
+        "The time you might spend with us depends on which role you take. You can discover the different coaching roles <a href='https://home.hackyourfuture.be/coaches/coaching-roles' target='_blank' rel='noopener noreferrer nofollow'>here</a>!<br/><br/>Please <a href='https://docs.google.com/forms/d/e/1FAIpQLSef3OH8546MJNllcvrv7KomHelqzrKNpnLRVbI1ZqbeajnluA/viewform' target='_blank' rel='noopener noreferrer nofollow'>reach out to us</a> so we can discuss it in a call. We’re happy to see your face while explaining how you can become part of our mission.",
       category: CATEGORY.VOLUNTEER,
     },
     {
       question: "Where can I find the curriculum?",
       answer:
-        "Our open curriculum can be found <a href='https://home.hackyourfuture.be/curriculum' target='_blank'>here</a>.<br/><br/>For a more profound dive, don’t hesitate to explore our <a target='°blank' href='https://github.com/HackYourFutureBelgium'>Github page</a>!",
+        "Our open curriculum can be found <a href='https://home.hackyourfuture.be/curriculum' target='_blank' rel='noopener noreferrer nofollow'>here</a>.<br/><br/>For a more profound dive, don’t hesitate to explore our <a target='°blank' href='https://github.com/HackYourFutureBelgium'>Github page</a>!",
       category: CATEGORY.VOLUNTEER,
     },
     {
@@ -94,13 +94,13 @@ const data = {
     {
       question: "What does a mentor do at HackYourFuture?",
       answer:
-        "We provide our graduates-to-be with a personal mentor, with whom they do a mentorship journey. During 6 weeks, our voluntary mentors guide our students towards finding a first internship or job experience, helping them with their CV and LinkedIn profile, giving them feedback on their motivational letters and doing mock interviews.<br/><br/>Please <a target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLSdsTmIgbCA2X02NUFsVSE-BQJIx6_KWpABujlZYA9PP8JgHJg/viewform'>reach out to us</a> so we can discuss it in a call. We’re happy to see your face while explaining how you can become part of our mission.",
+        "We provide our graduates-to-be with a personal mentor, with whom they do a mentorship journey. During 6 weeks, our voluntary mentors guide our students towards finding a first internship or job experience, helping them with their CV and LinkedIn profile, giving them feedback on their motivational letters and doing mock interviews.<br/><br/>Please <a target='_blank' rel='noopener noreferrer nofollow' href='https://docs.google.com/forms/d/e/1FAIpQLSdsTmIgbCA2X02NUFsVSE-BQJIx6_KWpABujlZYA9PP8JgHJg/viewform'>reach out to us</a> so we can discuss it in a call. We’re happy to see your face while explaining how you can become part of our mission.",
       category: CATEGORY.VOLUNTEER,
     },
     {
       question: "How can I hire students?",
       answer:
-        "After the 8-months program, our students will be looking to do an internship between 1 and 3 months. On top of having a degree from the home country, the students have learned the basics of web development. If you’d like to find out more about how we teach and our curriculum, <a href='https://home.hackyourfuture.be/curriculum#the-modules' target='_blank'>click here</a>. They usually have the basics of French and/or Dutch and are incredibly eager to learn!",
+        "After the 8-months program, our students will be looking to do an internship between 1 and 3 months. On top of having a degree from the home country, the students have learned the basics of web development. If you’d like to find out more about how we teach and our curriculum, <a href='https://home.hackyourfuture.be/curriculum#the-modules' target='_blank' rel='noopener noreferrer nofollow'>click here</a>. They usually have the basics of French and/or Dutch and are incredibly eager to learn!",
       category: CATEGORY.PARTNERS,
     },
     {
@@ -112,7 +112,7 @@ const data = {
     {
       question: "How can I support HackYourFuture?",
       answer:
-        "HackYourFuture Belgium can only improve thanks to the help of our donors and sponsors. By supporting our organisation, you have an impact on the lives of newcomers in Belgium, who want to work hard to take their future into their own hands.<br/><br/>If you want to donate, please visit our <a href='/support-us' target='_blank'>Support us</a> page.<br/><br/>If you’d like to support us on a more structural basis, please contact us via <a href='mailto:contact@hackyourfuture.be'>contact@hackyourfuture.be</a>.<br/><br/>We’d love to hear from you and explore the most appropriate way of collaborating!",
+        "HackYourFuture Belgium can only improve thanks to the help of our donors and sponsors. By supporting our organisation, you have an impact on the lives of newcomers in Belgium, who want to work hard to take their future into their own hands.<br/><br/>If you want to donate, please visit our <a href='/support-us' target='_blank' rel='noopener noreferrer nofollow'>Support us</a> page.<br/><br/>If you’d like to support us on a more structural basis, please contact us via <a href='mailto:contact@hackyourfuture.be'>contact@hackyourfuture.be</a>.<br/><br/>We’d love to hear from you and explore the most appropriate way of collaborating!",
       category: CATEGORY.PARTNERS,
     },
     {
