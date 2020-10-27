@@ -41,7 +41,7 @@ const ProgramHeader = () => (
         >
           {data.cta2}
         </Text>
-        <Button is="a" href={data.ctaLink} tagret="_blank">
+        <Button is="a" href={data.ctaLink} target="_blank" rel="noopener noreferrer nofollow">
           {data.cta}
         </Button>
       </Container>
