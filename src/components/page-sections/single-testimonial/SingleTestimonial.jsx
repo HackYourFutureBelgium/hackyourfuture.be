@@ -37,7 +37,7 @@ const SingleTestimonial = ({ data, isReverse }) => (
             </Text>
             <Text>{data.quote}</Text>
           </ContentContainer>
-          <Button as="a" href={data.ctaLink} target="_blank" hasRadius={false}>
+          <Button as="a" href={data.ctaLink} target="_blank" rel="noopener noreferrer nofollow" hasRadius={false}>
             {data.cta}
           </Button>
         </QuoteContainer>
