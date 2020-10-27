@@ -13,12 +13,14 @@ import { Helmet } from "react-helmet"
 import { GlobalStyle, StyledLandingLayout, StyledMain } from "./style"
 import TopBar from "../../top-bar/TopBar"
 import Footer from "../../footer/Footer"
+import favicon from "../../../assets/images/favicon.png"
 
 const LandingLayout = ({ children, page }) => (
   <>
     <Helmet htmlAttributes={{ lang: "en"}} >
       <meta charSet="utf-8" />
       <meta name="description" content="Helping new talent into the tech world" />
+      <link rel="shortcut icon" href={favicon}></link>
       <title>Hack Your Future Belgium</title>
       <link rel="canonical" href="https://hackyourfuture.be/" />
       <link
