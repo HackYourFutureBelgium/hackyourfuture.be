@@ -4,7 +4,7 @@ import styled from "styled-components"
 export const StyledImage = styled(
   ({ width, height, objectFit, radius, alt, ...rest }) => (
     // this empty string is to prevent screenreaders from reading the source of the img, which is the default behavior in some systems
-    <img alt={alt || ''} {...rest} />
+    <img alt={alt || ""} {...rest} />
   )
 )`
   width: ${({ width }) => width};

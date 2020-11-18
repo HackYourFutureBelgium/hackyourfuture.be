@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const StyledContainer = styled.div`
   display: block;
   position: relative;
   width: 100%;
   box-sizing: border-box;
-`;
+`
 
 export const StyledDropdown = styled.div`
   position: absolute;
@@ -21,7 +21,7 @@ export const StyledDropdown = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`;
+`
 
 export const StyledDropdownList = styled.ul`
   box-sizing: border-box;
@@ -29,7 +29,7 @@ export const StyledDropdownList = styled.ul`
   height: 100%;
   overflow-y: auto;
   padding: 5px 0;
-`;
+`
 
 export const StyledDropdownListItem = styled.li`
   list-style-type: none;
@@ -40,4 +40,4 @@ export const StyledDropdownListItem = styled.li`
   &:hover {
     background-color: #ebebeb;
   }
-`;
+`

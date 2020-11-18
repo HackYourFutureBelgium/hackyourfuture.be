@@ -59,6 +59,8 @@ const ImageDescription = ({
             <Button
               is="a"
               href={data.ctaLink}
+              target="_blank"
+              rel="noopener noreferrer nofollow"
               variant="minimal"
               iconRight="arrow-right"
             >

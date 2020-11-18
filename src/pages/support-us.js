@@ -11,6 +11,8 @@ const WhyBecomePartnerData = {
   description:
     "Do you want to increase your corporate social responsibility? Do you want to make your team stronger by increasing its diversity? Do you want to have social impact in society? We offer several ways of partnering.Get in touch!",
   cta: "contact us",
+  ctaLink: "mailto:contact@hackyourfuture.be",
+  isCtaExternal: true,
   image: teamWorkUrl,
 }
 const donateData = {

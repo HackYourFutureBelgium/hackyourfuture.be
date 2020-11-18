@@ -92,6 +92,8 @@ const OurTeam = () => (
                     key={`${index}-${member.fullName}`}
                     as="a"
                     href={link.link}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
                   >
                     <Icon
                       name={link.icon}

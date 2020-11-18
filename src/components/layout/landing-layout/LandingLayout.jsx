@@ -17,11 +17,14 @@ import favicon from "../../../assets/images/favicon.png"
 
 const LandingLayout = ({ children, page }) => (
   <>
-    <Helmet htmlAttributes={{ lang: "en"}} >
+    <Helmet htmlAttributes={{ lang: "en" }}>
       <meta charSet="utf-8" />
-      <meta name="description" content="Helping new talent into the tech world" />
-      <link rel="shortcut icon" href={favicon}></link>
+      <meta
+        name="description"
+        content="Helping new talent into the tech world"
+      />
       <title>Hack Your Future Belgium</title>
+      <link rel="shortcut icon" href={favicon}></link>
       <link rel="canonical" href="https://hackyourfuture.be/" />
       <link
         href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;600;900&family=Work+Sans:wght@300;600;700&display=swap"
