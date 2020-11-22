@@ -1,5 +1,9 @@
 import React, { useState } from "react"
 import getStripe from "../../../utils/stripe"
+import {
+  getSessionPlan,
+  getSessionDonation,
+} from "../../../utils/stripe/session"
 
 import {
   Form,
@@ -16,12 +20,10 @@ import {
 import { Title, Button, Text, Section, Wrapper, Pane } from "../../ui"
 import { COLOR } from "../../../utils/constants"
 
-const PAYMENT_API =
-  "https://wt-00b50724a47109acb762597a6836a906-0.sandbox.auth0-extend.com/stripe-payment"
-
 const Donate = ({ data }) => {
   const [isMonthly, setIsMonthly] = useState(true)
   const [amount, setAmount] = useState(10)
+  const [message, setMessage] = useState()
   const [isLoading, setIsLoading] = useState(false)
 
   const redirectToCheckout = async sessionId => {
@@ -33,32 +35,18 @@ const Donate = ({ data }) => {
     }
   }
 
-  const getPaymentSession = data => {
-    return fetch(`${PAYMENT_API}/session`, {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json; charset=utf-8",
-      },
-      body: JSON.stringify(data),
-    }).then(r => r.json())
-  }
-
-  const onSubmit = e => {
+  const onSubmit = async e => {
     e.preventDefault()
     setIsLoading(true)
-    const data = {}
-    if (isMonthly) data.amount = amount * 100
-    else data.plan = `monthly-${parseInt(amount)}`
 
-    getPaymentSession(data)
-      .then(session => {
-        if (session.error) {
-          console.log("ERROR STRIPE SESSION:", session.error)
-          setIsLoading(false)
-        }
-        return redirectToCheckout(session.id)
-      })
+    let session
+    if (isMonthly) {
+      session = await getSessionPlan(`monthly-${parseInt(amount)}`)
+    } else {
+      session = await getSessionDonation(amount * 100, message)
+    }
+
+    redirectToCheckout(session.id)
       .then(result => {
         if (result.error) {
           console.log("ERROR STRIPE RESULT: ", result.error)
@@ -140,6 +128,14 @@ const Donate = ({ data }) => {
                   type="number"
                   value={amount}
                   onChange={({ target: { value } }) => setAmount(Number(value))}
+                />
+                <Text as="label" htmlFor="message" isPurple isWorkFont>
+                  Message
+                </Text>
+                <Input
+                  type="text"
+                  value={message}
+                  onChange={({ target: { value } }) => setMessage(value)}
                 />
               </FormSection>
               <Button onClick={onSubmit} isLoading={isLoading}>
