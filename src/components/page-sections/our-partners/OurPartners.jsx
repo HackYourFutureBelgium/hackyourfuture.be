@@ -8,6 +8,7 @@ import digitalBelgiumUrl from "../../../assets/partners/digital-belgium.svg"
 import arteveldeUrl from "../../../assets/partners/artevelde-hogeschool.svg"
 import bruxellesEmploiUrl from "../../../assets/partners/bruxelles-emploi.svg"
 import microsoftUrl from "../../../assets/partners/microsoft.svg"
+import DUOforaJOBUrl from "../../../assets/partners/duo_logo.png"
 
 const data = {
   title: "Our partners",
@@ -20,6 +21,7 @@ const data = {
     arteveldeUrl,
     bruxellesEmploiUrl,
     microsoftUrl,
+    DUOforaJOBUrl,
   ],
 }
 
