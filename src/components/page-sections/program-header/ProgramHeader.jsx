@@ -14,7 +14,7 @@ const data = {
   cta2: "Following class starts: February 2020 (To be confirmed)",
   cta: "Apply Now",
   ctaLink:
-    "https://docs.google.com/forms/d/e/1FAIpQLSd6V6JyhWH3M4dhmXnAWcdMHCVEdcdQJyT1DzXZodvHufSrJQ/viewform?usp=sf_link",
+    "https://forms.gle/rhpRV1idKswXpyMUA",
   image: imageUrl,
 }
 
