@@ -10,11 +10,11 @@ const data = {
   title: "Your new career starts here",
   description:
     "HackYourFuture is a <b>free 8-month web development program</b> for passionate refugees and vulnerable newcomers in Belgium. You don’t need any technical background to start.<br/><br/>We launch new classes 3 times a year.<br/><b>Women are strongly encouraged to apply!</b><br><br>",
-  cta1: "Next class starts : 20 September (Full)",
-  cta2: "Following class starts: February 2020 (To be confirmed)",
+  cta1: "Next class starts : February 2021 (applications closed)",
+  cta2: "Next call for applications: March 2021",
   cta: "Apply Now",
   ctaLink:
-    "https://forms.gle/rhpRV1idKswXpyMUA",
+    "https://forms.gle/p2LRjj9yWdwL6XV29",
   image: imageUrl,
 }
 
