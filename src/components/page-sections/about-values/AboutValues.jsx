@@ -10,7 +10,7 @@ import connectionIllu from "../../../assets/illustrations/connection.svg"
 
 const data = {
   items: [
-    { illustration: communityIllu, title: "A passionate and divers community" },
+    { illustration: communityIllu, title: "A passionate and diverse community" },
     { illustration: diversityIllu, title: "Volunteers who truly care" },
     { illustration: handsIllu, title: " A dedicated team" },
     { illustration: strongIllu, title: "A family where empowerment is key" },
