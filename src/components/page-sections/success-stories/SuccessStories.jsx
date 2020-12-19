@@ -7,7 +7,7 @@ import {
   CarouselCard,
   Btn,
 } from "./style"
-import { Section, Wrapper, Icon, Text, Title, Image } from "../../ui"
+import { Section, Wrapper, Icon, Text, Title, Pane } from "../../ui"
 import hanimUrl from "../../../assets/alumni/hanim.jpg"
 import edouardoUrl from "../../../assets/alumni/edouardo.jpg"
 import gitaUrl from "../../../assets/alumni/gita.jpg"
@@ -87,27 +87,30 @@ const SuccessStories = () => {
             <CarouselContent activeIndex={activeIndex}>
               {data.stories.map((story, index) => (
                 <CarouselCard key={index} isActive={index === activeIndex}>
-                  <div>
-                    <Image src={story.picture} alt={story.name} />
-                    <Title
-                      level={4}
-                      size="xs"
-                      isUpperCase={false}
-                      isCenter
-                      style={{ marginBottom: "0" }}
-                    >
-                      {`${story.name} - ${story.company}`}
-                    </Title>
-                    <Text
-                      isCenter
-                      margin="0 0 20px 0"
-                      style={{ color: COLOR.BLUE_VIOLET, fontWeight: 600 }}
-                      isWorkFont
-                    >
-                      {story.role}
-                    </Text>
-                    <Text isCenter>"{story.quote}"</Text>
-                  </div>
+                  <Pane
+                    backgroundImage={`url(${story.picture})`}
+                    backgroundSize="cover"
+                    title={story.name}
+                  >
+                  </Pane>
+                  <Title
+                    level={4}
+                    size="xs"
+                    isUpperCase={false}
+                    isCenter
+                    style={{ marginBottom: "0" }}
+                  >
+                    {`${story.name} - ${story.company}`}
+                  </Title>
+                  <Text
+                    isCenter
+                    margin="0 0 20px 0"
+                    style={{ color: COLOR.BLUE_VIOLET, fontWeight: 600 }}
+                    isWorkFont
+                  >
+                    {story.role}
+                  </Text>
+                  <Text isCenter>"{story.quote}"</Text>
                 </CarouselCard>
               ))}
             </CarouselContent>

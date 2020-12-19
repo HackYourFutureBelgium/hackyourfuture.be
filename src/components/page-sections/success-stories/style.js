@@ -37,26 +37,21 @@ export const CarouselCard = styled.div`
   opacity: ${({ isActive }) => (isActive ? 1 : 0.6)};
   transition: all 0.3s ease;
   transform: ${({ isActive }) => (isActive ? "none" : "scale(0.8)")};
+  text-align: center;
+  box-shadow: ${SHADOW.BOX};
+  padding: 50px;
 
-  > div {
-    box-sizing: border-box;
-    text-align: center;
-    box-shadow: ${SHADOW.BOX};
-    width: 100%;
-    height: 100%;
-    padding: 50px;
-
-    @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
-      padding: 20px;
-    }
+  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+    padding: 20px;
   }
 
-  img {
+  > div {
     width: 150px;
     height: 150px;
     border-radius: 100%;
-    object-fit: cover;
+    margin: auto;
     margin-bottom: 20px;
+    background-position: center;
     filter: grayscale(100%);
 
     @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
