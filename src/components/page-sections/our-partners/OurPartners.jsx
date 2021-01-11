@@ -9,6 +9,7 @@ import arteveldeUrl from "../../../assets/partners/artevelde-hogeschool.svg"
 import bruxellesEmploiUrl from "../../../assets/partners/bruxelles-emploi.svg"
 import microsoftUrl from "../../../assets/partners/microsoft.svg"
 import DUOforaJOBUrl from "../../../assets/partners/duo_logo.png"
+import DigitalSkillsAndJobsCoalition from "../../../assets/partners/DSJC-Member-NEGATIVE-200px.png"
 
 const data = {
   title: "Our partners",
@@ -22,6 +23,7 @@ const data = {
     bruxellesEmploiUrl,
     microsoftUrl,
     DUOforaJOBUrl,
+    DigitalSkillsAndJobsCoalition
   ],
 }
 
