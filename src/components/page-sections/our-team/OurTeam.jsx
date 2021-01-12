@@ -25,9 +25,8 @@ const data = {
       fullName: "Evan Cole",
       role: "Educational Coordinator",
       links: [
-        { icon: "mail", src: "mailto:evan@hackyourfuture.be" },
-        { icon: "twitter", src: "" },
-        { icon: "linkedin", src: "https://www.linkedin.com/in/evan-cole/" },
+        { icon: "mail", link: "mailto:evan@hackyourfuture.be" },
+        { icon: "linkedin", link: "https://www.linkedin.com/in/evan-cole/" },
       ],
     },
     {
