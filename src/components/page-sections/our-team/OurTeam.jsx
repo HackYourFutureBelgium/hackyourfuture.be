@@ -14,7 +14,6 @@ const data = {
       role: "General Coordinator",
       links: [
         { icon: "mail", link: "mailto:lien@hackyourfuture.be" },
-        { icon: "twitter", link: "" },
         {
           icon: "linkedin",
           link: "https://www.linkedin.com/in/lien-arits-88722683/",
