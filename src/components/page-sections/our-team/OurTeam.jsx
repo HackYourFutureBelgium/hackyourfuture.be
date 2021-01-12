@@ -17,7 +17,8 @@ const data = {
         { icon: "twitter", link: "" },
         {
           icon: "linkedin",
-          link: "https://www.linkedin.com/in/lien-arits-88722683/"},
+          link: "https://www.linkedin.com/in/lien-arits-88722683/",
+        },
       ],
     },
     {
@@ -30,12 +31,10 @@ const data = {
         { icon: "linkedin", src: "https://www.linkedin.com/in/evan-cole/" },
       ],
     },
-  ],
-}
-   {
-     fullName: "You?",
-     role: "Partnership & Communications Coordinator",
-     links: [
+    {
+      fullName: "You?",
+      role: "Partnership & Communications Coordinator",
+      links: [
         { icon: "mail", link: "mailto:contact@hackyourfuture.be" },
         { icon: "twitter", link: "https://twitter.com/HackYFutureBE" },
         {
@@ -44,6 +43,8 @@ const data = {
         },
       ],
     },
+  ],
+}
 
 const OurTeam = () => (
   <Section>
