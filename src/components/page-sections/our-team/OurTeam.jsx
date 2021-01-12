@@ -3,36 +3,21 @@ import React from "react"
 import { Card, Container, CardsContainer } from "./style.js"
 import { Title, Text, Section, Wrapper, Image, Icon, Pane } from "../../ui"
 
-import manonUrl from "../../../assets/team/manon.jpg"
 import lienUrl from "../../../assets/team/lien.png"
 import evanUrl from "../../../assets/team/evan.png"
 
 const data = {
   teams: [
     {
-      picture: manonUrl,
-      fullName: "Manon Brulard",
-      role: "Co-Founder & General Coordinator",
-      links: [
-        { icon: "mail", link: "mailto:manon@hackyourfuture.be" },
-        { icon: "twitter", link: "https://twitter.com/BrulardManon" },
-        {
-          icon: "linkedin",
-          link: "https://www.linkedin.com/in/manon-brulard-6a84833a/",
-        },
-      ],
-    },
-    {
       picture: lienUrl,
       fullName: "Lien Arits",
-      role: "Community & Communication Coordinator",
+      role: "General Coordinator",
       links: [
         { icon: "mail", link: "mailto:lien@hackyourfuture.be" },
         { icon: "twitter", link: "" },
         {
           icon: "linkedin",
-          link: "https://www.linkedin.com/in/lien-arits-88722683/",
-        },
+          link: "https://www.linkedin.com/in/lien-arits-88722683/"},
       ],
     },
     {
@@ -47,6 +32,18 @@ const data = {
     },
   ],
 }
+   {
+     fullName: "You?",
+     role: "Partnership & Communications Coordinator",
+     links: [
+        { icon: "mail", link: "mailto:contact@hackyourfuture.be" },
+        { icon: "twitter", link: "https://twitter.com/HackYFutureBE" },
+        {
+          icon: "linkedin",
+          link: "https://www.linkedin.com/company/hackyourfuture-belgium/",
+        },
+      ],
+    },
 
 const OurTeam = () => (
   <Section>
