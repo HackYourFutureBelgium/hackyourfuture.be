@@ -5,6 +5,7 @@ import { Title, Text, Section, Wrapper, Image, Icon, Pane } from "../../ui"
 
 import lienUrl from "../../../assets/team/lien.png"
 import evanUrl from "../../../assets/team/evan.png"
+import youUrl from "../../../assets/team/you-wanted.png"
 
 const data = {
   teams: [
@@ -30,6 +31,7 @@ const data = {
       ],
     },
     {
+      picture: youwantedURL
       fullName: "You?",
       role: "Partnership & Communications Coordinator",
       links: [
