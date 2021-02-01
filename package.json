@@ -6,7 +6,7 @@
   "author": "HYF <contact@hackyourfuture.be>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.13",
     "@stripe/stripe-js": "^1.11.0",
     "babel-plugin-styled-components": "^1.12.0",
