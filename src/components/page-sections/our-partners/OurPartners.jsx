@@ -10,6 +10,10 @@ import bruxellesEmploiUrl from "../../../assets/partners/bruxelles-emploi.svg"
 import microsoftUrl from "../../../assets/partners/microsoft.svg"
 import DUOforaJOBUrl from "../../../assets/partners/duo_logo.png"
 import DigitalSkillsAndJobsCoalition from "../../../assets/partners/DSJC-Member-NEGATIVE-200px.png"
+import DatacampUrl from "../../../assets/partners/datacamp_logo.svg"
+import UXAntwerpUrl from "../../../assets/partners/UXAntwerp_logo.png"
+import OpenRecognitionAllianceUrl from "../../../assets/partners/ORA-logo-2.png"
+import BruxellesFormationUrl from "../../../assets/partners/Bruxelles-Formation_logo.png"
 
 const data = {
   title: "Our partners",
@@ -23,7 +27,11 @@ const data = {
     bruxellesEmploiUrl,
     microsoftUrl,
     DUOforaJOBUrl,
-    DigitalSkillsAndJobsCoalition
+    DigitalSkillsAndJobsCoalition,
+    DatacampUrl,
+    UXAntwerpUrl,
+    OpenRecognitionAllianceUrl,
+    BruxellesFormationUrl
   ],
 }
 
