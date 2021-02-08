@@ -51,7 +51,7 @@ const OurPartners = () => (
       </TopContainer>
       <BottomContainer>
         {data.partnerImages.map((value, index) => (
-          <Pane width="170px" key={index}>
+          <Pane width="170px" display="inline-block" key={index}>
             <Image
               src={value}
               width="100%"
