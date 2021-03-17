@@ -14,19 +14,19 @@ const data = {
       illustration: zoomUrl,
       title: "Recruit students",
       description:
-        "You can support us and increase diversity in your company at the same time. Please visit our alumni platform or reach out to us if you’re looking for talented junior web developers with strong soft skills and a high sense for collaboration.",
+        "You can support us and increase diversity in your company at the same time. Please reach out to us if you’re looking for talented junior web developers with strong soft skills and a high sense for collaboration.",
     },
     {
       illustration: heartsUrl,
       title: "Corporate Volunteering",
       description:
-        "Your employees can contribute to our community as voluntary coaches or mentors. We’re also happy to have one of your company-ambassadors for our HackTheTalks - inspirational speeches on Sundays before class starts.",
+        "Your employees can contribute to our community as voluntary coaches or mentors. We’re also happy to have one of your company-ambassadors for our Career Skills Sessions - inspirational speeches on Sundays before class starts.",
     },
     {
       illustration: handUrl,
-      title: "Bootcamp Partner & Financial Support",
+      title: "Financial Support",
       description:
-        "Do you have a project you’d like to explore? Would you like to give an opportunity to incredibly motivated students? We can discuss the most appropriate way for partnering.",
+        "Would you like to give opportunities to incredibly motivated students? We have different tiers for financial support. We'll be most happy to discuss the most appropriate for your company or start-up.",
     },
     {
       illustration: screenUrl,
