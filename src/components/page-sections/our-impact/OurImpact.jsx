@@ -7,20 +7,20 @@ import { SHADOW } from "../../../utils/constants"
 const data = {
   title: "Our impact",
   description:
-    "We graduated over 80 people in Belgium and more than 200 globally. In Belgium, over 70% found and retained a high-quality job as a developer.",
+    "We graduated over 100 people in Belgium and more than 300 globally. In Belgium, over 70% found and retained a high-quality job as a developer.",
   results: [
     {
-      title: "80",
+      title: "100",
       description:
         "Students graduated since HackYourFuture Belgium was founded in 2018",
     },
     {
       title: "70%",
       description:
-        "Of our graduates find an internship, a job or start university.",
+        "Of our graduates find an internship, a job or start advanced studies.",
     },
     {
-      title: "200+",
+      title: "300+",
       description: "Alumni in the Netherlands, Denmark, Belgium and Canada.",
     },
   ],
