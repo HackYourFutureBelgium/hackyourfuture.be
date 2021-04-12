@@ -12,11 +12,11 @@ import hackthetalkUrl from "../assets/images/hack-the-talk.jpg"
 
 const DescriptionOneData = {
   title: "But that's not it",
-  subtitle: "Bootcamp",
+  subtitle: "Final Project",
   description:
-    "We challenge our graduates to a 4-weeks intensive bootcamp, where they build open source projects with a social impact. During the bootcamp, the students get acquainted with new skills, discover new ways to collaborate, processes and learn about the industry best practices that are expected in the local labor market.",
+    "We challenge our graduates to a 6-weeks final project sprint, where they build open source projects with a social impact. During the final project spring, the students get acquainted with new skills, discover new ways to collaborate, processes and learn about the industry best practices that are expected in the local labor market.",
   cta: "Discover more",
-  ctaLink: "https://bootcamp.hackyourfuture.be/",
+  ctaLink: "https://home.hackyourfuture.be/curriculum/final-project",
   isCtaExternal: true,
   image: bootcampUrl,
 }
@@ -31,9 +31,9 @@ const DescriptionTwoData = {
   image: mentorshipUrl,
 }
 const DescriptionThreeData = {
-  subtitle: "HackTheTalks",
+  subtitle: "Career Skills Sessions",
   description:
-    "On Sunday mornings, before class starts, we regularly organize HackTheTalks. These are inspirational sessions by experts, within and outside the IT sector, to share their knowledge with our community. It can be about how to organize a healthy work environment, it may as well be about how to constantly keep updated as a junior web developer. In other words, highly valuable mornings!",
+    "On Sunday mornings, before class starts, we regularly organize Career Skills Sessions. These are inspirational sessions by experts, within and outside the IT and HR sector, to share their knowledge with our community. It can be about how to organize a healthy work environment, it may as well be about how to constantly keep updated as a junior web developer. In other words, highly valuable mornings!",
   image: hackthetalkUrl,
 }
 
