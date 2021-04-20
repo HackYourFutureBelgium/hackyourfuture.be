@@ -5,7 +5,7 @@ import { Title, Text, Section, Wrapper, Image, Icon, Pane } from "../../ui"
 
 import lienUrl from "../../../assets/team/lien.png"
 import evanUrl from "../../../assets/team/evan.png"
-import youWantedUrl from "../../../assets/team/you-wanted.jpg"
+import lizhenUrl from "../../../assets/team/lizhen.jpg"
 
 const data = {
   teams: [
@@ -32,15 +32,14 @@ const data = {
       ],
     },
     {
-      picture: youWantedUrl,
-      fullName: "You?",
+      picture: lizhenUrl,
+      fullName: "Lizhen Xu",
       role: "Partnership & Communications Coordinator",
       links: [
-        { icon: "mail", link: "mailto:contact@hackyourfuture.be" },
-        { icon: "twitter", link: "https://twitter.com/HackYFutureBE" },
+        { icon: "mail", link: "mailto:lizhen@hackyourfuture.be" },
         {
           icon: "linkedin",
-          link: "https://www.linkedin.com/company/hackyourfuture-belgium/",
+          link: "https://www.linkedin.com/in/lizhenxu/",
         },
       ],
     },
