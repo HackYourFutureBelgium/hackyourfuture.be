@@ -15,7 +15,7 @@ import OurProgramImageUrl from "../assets/images/our-program.jpg"
 const ourProgramData = {
   title: "Our program",
   description:
-    "Our <b>8-month</b> program is divided into <b>14 modules</b>. After the program, students join a <b>4-week intensive bootcamp</b> to work on a real project with a real partner. Our training takes place at <b>BeCentral</b> (Brussels) every <b>Sunday</b>. During the week, students are supported online in their <b>self-study</b>, homework and peer learning.",
+    "Our <b>8-month</b> program is divided into <b>12 modules</b>. The last module is a <b>6-weeks intensive Final Project</b> where students work on a real project with a real partner. Our training takes place at <b>BeCentral</b> (Brussels) every <b>Sunday</b>. During the week, students are supported online in their <b>self-study</b>, homework and peer learning.",
   cta: "Discover more",
   ctaLink: "/program",
   image: OurProgramImageUrl,
