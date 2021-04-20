@@ -34,7 +34,7 @@ const data = {
     {
       picture: lizhenUrl,
       fullName: "Lizhen Xu",
-      role: "Partnership & Communications Coordinator",
+      role: "Partnerships & Communication Coordinator",
       links: [
         { icon: "mail", link: "mailto:lizhen@hackyourfuture.be" },
         {
