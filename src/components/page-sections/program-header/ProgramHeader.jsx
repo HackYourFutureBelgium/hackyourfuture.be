@@ -14,7 +14,7 @@ const data = {
   cta2: "Next Deadline for Applications: To be announced",
   cta: "Apply Now",
   ctaLink:
-    "https://docs.google.com/forms/d/e/1FAIpQLSfS0215I6BCy1jzpWmxv9UxYxp5I25ZcoWhSxijhcUImLELcg/viewform",
+    "https://forms.gle/5ZfYgfoypAgEd8i27",
   image: imageUrl,
 }
 
