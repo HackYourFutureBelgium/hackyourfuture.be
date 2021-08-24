@@ -26,7 +26,7 @@ const TopNav = ({ onBurgerNavClicked, isMobile, currentPage }) => {
         </NavLink>
         <Button
           is="a"
-          href="https://forms.gle/5ZfYgfoypAgEd8i27"
+          href="https://forms.gle/aGWSqUFWva9WYq1j7"
           target="_blank"
           rel="noopener noreferrer nofollow"
         >
