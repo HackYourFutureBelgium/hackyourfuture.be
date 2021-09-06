@@ -14,7 +14,7 @@ const data = {
   cta2: "Next call for Applications: to be announced",
   cta: "Apply Now",
   ctaLink:
-    "https://forms.gle/aGWSqUFWva9WYq1j7",
+    "https://forms.gle/fdX4C88nDK6iK8BT9",
   image: imageUrl,
 }
 
