@@ -23,7 +23,8 @@ export const Container = styled.div`
 `
 
 export const Card = styled.div`
-  width: 30%;
+  width: 25%;
+  margin:0 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
