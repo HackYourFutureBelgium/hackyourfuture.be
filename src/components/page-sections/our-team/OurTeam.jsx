@@ -6,22 +6,11 @@ import { Title, Text, Section, Wrapper, Image, Icon, Pane } from "../../ui"
 import lienUrl from "../../../assets/team/lien.png"
 import evanUrl from "../../../assets/team/evan.png"
 import lizhenUrl from "../../../assets/team/lizhen.jpg"
+import gelilaUrl from "../../../assets/team/gelila.jpg"
 
 const data = {
   teams: [
-    {
-      picture: lienUrl,
-      fullName: "Lien Arits",
-      role: "General Coordinator",
-      links: [
-        { icon: "mail", link: "mailto:lien@hackyourfuture.be" },
-        { icon: "twitter", link: "https://twitter.com/LienArits" },
-        {
-          icon: "linkedin",
-          link: "https://www.linkedin.com/in/lien-arits-88722683/",
-        },
-      ],
-    },
+    
     {
       picture: evanUrl,
       fullName: "Evan Cole",
@@ -43,6 +32,28 @@ const data = {
         },
       ],
     },
+     { 
+    picture: gelilaUrl,
+    fullName: "Gelila Ali",
+    role: "Educational Officer",
+    links: [
+      { icon: "mail", link: "mailto:gelila@hackyourfuture.be" },
+      { icon: "linkedin", link: "https://www.linkedin.com/in/gelilaali/" },
+    ]
+    },
+    // {
+    //   picture: lienUrl,
+    //   fullName: "Lien Arits",
+    //   role: "Team",
+    //   links: [
+    //     { icon: "mail", link: "mailto:lien@hackyourfuture.be" },
+    //     { icon: "twitter", link: "https://twitter.com/LienArits" },
+    //     {
+    //       icon: "linkedin",
+    //       link: "https://www.linkedin.com/in/lien-arits-88722683/",
+    //     },
+    //   ],
+    // }
   ],
 }
 
