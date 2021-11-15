@@ -14,7 +14,11 @@ import DatacampUrl from "../../../assets/partners/DCD_logo_regular.png"
 import UXAntwerpUrl from "../../../assets/partners/UXAntwerp_logo.png"
 import OpenRecognitionAllianceUrl from "../../../assets/partners/ORA-logo-2.png"
 import BruxellesFormationUrl from "../../../assets/partners/Bruxelles-Formation_logo.png"
-
+import Antwerp from "../../../assets/partners/antwerp-stad.jpg"
+import Axxes from "../../../assets/partners/axxes.png"
+import Epitech from "../../../assets/partners/EPITECH-TECHNOLOGY.png"
+import Vbo from "../../../assets/partners/vbo_feb.png"
+import Agoria from "../../../assets/partners/agoria.png"
 const data = {
   title: "Our partners",
   cta: "Become a partner",
@@ -31,7 +35,13 @@ const data = {
     DatacampUrl,
     UXAntwerpUrl,
     OpenRecognitionAllianceUrl,
-    BruxellesFormationUrl
+    BruxellesFormationUrl,
+    Axxes,
+    Antwerp,
+    Epitech,
+    Vbo,
+    Agoria
+
   ],
 }
 
