@@ -11,7 +11,7 @@ import Donate from "../components/page-sections/donate"
 import ContactUs from "../components/page-sections/contact-us"
 
 import OurProgramImageUrl from "../assets/images/our-program.jpg"
-import TagManager from 'react-gtm-module'
+
 
 const ourProgramData = {
   title: "Our program",
@@ -27,10 +27,7 @@ const donateData = {
   description:
     "Help refugees build digital & soft skills for a career in web development. We are a non-profit organization. Thanks to your support we can improve and keep our program free of charge for students.",
 }
-const tagManagerArgs = {
-  gtmId: "GTM-P6B8TKB",
-}
-TagManager.initialize(tagManagerArgs)
+
 
 const IndexPage = () => (
   <LandingLayout page="index">
