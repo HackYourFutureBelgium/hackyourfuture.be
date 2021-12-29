@@ -11,7 +11,7 @@ import mysqlUrl from "../../../assets/images/sql-lite.svg"
 import reactjsUrl from "../../../assets/images/react-js.svg"
 
 const data = {
-  title: "8-month program",
+  title: "9-month program",
   cta1: "Discover the full curriculum here",
   cta2: "Become a coach",
   images: [

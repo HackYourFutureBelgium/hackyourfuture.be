@@ -58,7 +58,7 @@ const data = {
     {
       question: "How long does the program take?",
       answer:
-        "Our curriculum is divided into 14 modules. In total it takes 8 months. After graduating, you will get support from a voluntary mentor to look for an internship or job.",
+        "Our curriculum is divided into 12 modules. In total it takes 9 months. After graduating, you will get support from a voluntary mentor to look for an internship or job.",
       category: CATEGORY.APPLICANT,
     },
     {
@@ -76,7 +76,7 @@ const data = {
     {
       question: "Where do classes take place on Sunday?",
       answer:
-        "We normally organize all our Sunday classes at BeCentral, on top of Brussels Central Station. However, during the COVID-19 pandemic, the classes take place remotely.",
+        "We normally organize all our Sunday classes at Epitech, near Metro station Botanique. However, during the COVID-19 pandemic, the classes can take place remotely.",
       category: CATEGORY.VOLUNTEER,
     },
     {
@@ -100,7 +100,7 @@ const data = {
     {
       question: "How can I hire students?",
       answer:
-        "After the 8-months program, our students will be looking to do an internship between 1 and 3 months. On top of having a degree from the home country, the students have learned the basics of web development. If you’d like to find out more about how we teach and our curriculum, <a href='https://home.hackyourfuture.be/curriculum#the-modules' target='_blank' rel='noopener noreferrer nofollow'>click here</a>. They usually have the basics of French and/or Dutch and are incredibly eager to learn!",
+        "After the 9-months program, our students will be looking to do an internship between 1 and 3 months. On top of having a degree from the home country, the students have learned the basics of web development. If you’d like to find out more about how we teach and our curriculum, <a href='https://home.hackyourfuture.be/curriculum#the-modules' target='_blank' rel='noopener noreferrer nofollow'>click here</a>. They usually have the basics of French and/or Dutch and are incredibly eager to learn!",
       category: CATEGORY.PARTNERS,
     },
     {

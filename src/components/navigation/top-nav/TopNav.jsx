@@ -26,7 +26,7 @@ const TopNav = ({ onBurgerNavClicked, isMobile, currentPage }) => {
         </NavLink>
         <Button
           is="a"
-          href="https://www.cognitoforms.com/HYF1/StudentApplicationFormCurrentlyClosed"
+          href="https://form.typeform.com/to/yf5pj6AM"
           target="_blank"
           rel="noopener noreferrer nofollow"
         >
