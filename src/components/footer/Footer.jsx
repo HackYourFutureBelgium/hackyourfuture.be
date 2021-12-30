@@ -6,7 +6,6 @@ import facebookUrl from "../../assets/social/facebook.svg"
 import twitterUrl from "../../assets/social/twitter.svg"
 import githubUrl from "../../assets/social/github.svg"
 import linkedinUrl from "../../assets/social/linkedin.svg"
-import livechatUrl from "../../assets/social/livechat.svg"
 
 const data = {
   title: "Hack Your Future (part of Open Knowledge Belgium)",
