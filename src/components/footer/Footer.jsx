@@ -18,7 +18,10 @@ const data = {
     {
       link: "https://www.linkedin.com/company/hackyourfuture-belgium/",
       image: linkedinUrl,
-    },
+    },{
+      link:"https://www.livechat.com/",
+      image:"https://cdn.livechatinc.com/website/media/img/resources/logos/livechat-black.svg"
+    }
   ],
 }
 
@@ -43,7 +46,7 @@ const Footer = () => (
               key={index}
               margin="0 10px"
             >
-              <Image src={social.image} width="26px" height="26px" />
+              <Image src={social.image} height="26px" />
             </Text>
           ))}
         </Pane>
