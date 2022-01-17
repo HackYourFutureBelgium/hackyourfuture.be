@@ -7,6 +7,7 @@ import lienUrl from "../../../assets/team/lien.png"
 import evanUrl from "../../../assets/team/evan.png"
 import lizhenUrl from "../../../assets/team/lizhen.jpg"
 import gelilaUrl from "../../../assets/team/gelila.jpg"
+import yoshiUrl from "../../../assets/team/yoshi.jpg"
 
 const data = {
   teams: [
@@ -14,7 +15,7 @@ const data = {
     {
       picture: evanUrl,
       fullName: "Evan Cole",
-      role: "Educational Coordinator",
+      role: "Instructional Designer",
       links: [
         { icon: "mail", link: "mailto:evan@hackyourfuture.be" },
         { icon: "linkedin", link: "https://www.linkedin.com/in/evan-cole/" },
@@ -23,7 +24,7 @@ const data = {
     {
       picture: lizhenUrl,
       fullName: "Lizhen Xu",
-      role: "Partnerships & Communication Coordinator",
+      role: "General manager & Partnerships Coordinator",
       links: [
         { icon: "mail", link: "mailto:lizhen@hackyourfuture.be" },
         {
@@ -35,25 +36,25 @@ const data = {
      { 
     picture: gelilaUrl,
     fullName: "Gelila Ali",
-    role: "Educational Officer",
+    role: "Educational Officer @lab Antwerp",
     links: [
       { icon: "mail", link: "mailto:gelila@hackyourfuture.be" },
       { icon: "linkedin", link: "https://www.linkedin.com/in/gelilaali/" },
     ]
     },
-    // {
-    //   picture: lienUrl,
-    //   fullName: "Lien Arits",
-    //   role: "Team",
-    //   links: [
-    //     { icon: "mail", link: "mailto:lien@hackyourfuture.be" },
-    //     { icon: "twitter", link: "https://twitter.com/LienArits" },
-    //     {
-    //       icon: "linkedin",
-    //       link: "https://www.linkedin.com/in/lien-arits-88722683/",
-    //     },
-    //   ],
-    // }
+     {
+       picture: yoshiUrl,
+       fullName: "Yoshi Malaise",
+       role: "Educational coordinator & researcher",
+       links: [
+         { icon: "mail", link: "mailto:yoshi@hackyourfuture.be" },
+      
+         {
+        icon: "linkedin",
+        link: "https://www.linkedin.com/in/yoshi-malaise/",
+      },
+    ],
+     }
   ],
 }
 

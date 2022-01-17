@@ -27,8 +27,9 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin:5px;
   align-items: center;
-  box-shadow: ${SHADOW.BOX};
+  box-shadow: 5px 4px 8px 5px rgba(0, 0, 0, 0.1);
   padding: 20px 40px;
 
   @media ${MEDIA_QUERY.SMALL_DESKTOP} {
