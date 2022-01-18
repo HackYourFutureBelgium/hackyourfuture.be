@@ -6,7 +6,8 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  flex-wrap:wrap;
+  
 `
 
 export const Content = styled.div`
@@ -25,6 +26,7 @@ export const Card = styled.div`
   flex-direction: column;
   box-shadow: ${SHADOW.BOX};
   padding: 40px 50px;
+  margin:10px;
 
   @media ${MEDIA_QUERY.SMALL_DESKTOP} {
     width: 80%;
