@@ -24,7 +24,6 @@ const AboutPage = () => (
     <MissionVision />
     <ImageDescription data={DescriptionHistoryData} />
     <OurTeam />
-    <JoinUs/>
   </LandingLayout>
 )
 

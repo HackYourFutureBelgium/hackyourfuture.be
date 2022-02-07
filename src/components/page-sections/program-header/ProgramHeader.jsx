@@ -13,7 +13,7 @@ const data = {
   cta1: "Class starts: mid-February 2022 (Applications OPEN)",
   cta: "Apply Now",
   ctaLink:
-    "https://form.typeform.com/to/yf5pj6AM",
+    "https://form.typeform.com/to/SQbn9nP1",
   image: imageUrl,
 }
 
