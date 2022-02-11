@@ -8,6 +8,7 @@ import evanUrl from "../../../assets/team/evan.png"
 import lizhenUrl from "../../../assets/team/lizhen.jpg"
 import gelilaUrl from "../../../assets/team/gelila.jpg"
 import yoshiUrl from "../../../assets/team/yoshi.jpg"
+import danielUrl from "../../../assets/team/Daniel-Halasz.jpg"
 
 const data = {
   teams: [
@@ -54,7 +55,15 @@ const data = {
         link: "https://www.linkedin.com/in/yoshi-malaise/",
       },
     ],
-     }
+     },{ 
+    picture: danielUrl,
+    fullName: "Daniel Galzsz",
+    role: "Educational Officer @lab Brussles",
+    links: [
+      { icon: "mail", link: "mailto:daniel@hackyourfuture.be" },
+      { icon: "linkedin", link: "https://www.linkedin.com/in/danielhalaszphotography/" },
+    ]
+    },
   ],
 }
 
@@ -113,6 +122,7 @@ const OurTeam = () => (
                 ))}
               </Pane>
             </Card>
+            
           ))}
         </CardsContainer>
       </Container>

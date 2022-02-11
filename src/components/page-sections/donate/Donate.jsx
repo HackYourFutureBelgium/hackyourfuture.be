@@ -115,8 +115,8 @@ const Donate = ({ data }) => {
                     €100
                   </Li>
                   <Li
-                    onClick={() => setAmount(2000)}
-                    isActive={amount === 2000}
+                    onClick={() => setAmount(5000)}
+                    isActive={amount === 5000}
                   >
                     Full scholarship
                   </Li>

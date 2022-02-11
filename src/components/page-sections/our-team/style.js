@@ -5,7 +5,8 @@ import { MEDIA_QUERY, SHADOW } from "../../../utils/constants"
 export const CardsContainer = styled.div`
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap:wrap;
 
   @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
     flex-direction: column;
@@ -16,21 +17,22 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-
+  
   @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
     flex-direction: column;
   }
 `
 
 export const Card = styled.div`
-  width: 30%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin:5px;
+  margin: 5px;
   align-items: center;
   box-shadow: 5px 4px 8px 5px rgba(0, 0, 0, 0.1);
   padding: 20px 40px;
+  border-radius: 7px;
 
   @media ${MEDIA_QUERY.SMALL_DESKTOP} {
     /* width: 48%; */
