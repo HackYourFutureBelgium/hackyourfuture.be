@@ -43,7 +43,7 @@ const ProgramSkills = () => (
           <Pane margin="10px 0">
             <Button
               as="a"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSef3OH8546MJNllcvrv7KomHelqzrKNpnLRVbI1ZqbeajnluA/viewform"
+              href="https://form.typeform.com/to/yfzzQxtI"
               target="_blank"
               rel="noopener noreferrer nofollow"
             >
