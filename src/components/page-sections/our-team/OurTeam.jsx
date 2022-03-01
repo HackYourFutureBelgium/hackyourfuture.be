@@ -57,7 +57,7 @@ const data = {
     ],
      },{ 
     picture: danielUrl,
-    fullName: "Daniel Galzsz",
+    fullName: "Daniel Halasz",
     role: "Educational Officer @lab Brussles",
     links: [
       { icon: "mail", link: "mailto:daniel@hackyourfuture.be" },
