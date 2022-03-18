@@ -4,6 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `Hack Your Future Belgium`,
     description: `Helping new talent into the tech world`,
+    keywords: "Code,html,CSS,refugees,webdevelompent,coding"
   },
   plugins: [
     {
