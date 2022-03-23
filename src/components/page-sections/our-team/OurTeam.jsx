@@ -3,16 +3,27 @@ import React from "react"
 import { Card, Container, CardsContainer } from "./style.js"
 import { Title, Text, Section, Wrapper, Image, Icon, Pane } from "../../ui"
 
-import lienUrl from "../../../assets/team/lien.png"
-import evanUrl from "../../../assets/team/evan.png"
-import lizhenUrl from "../../../assets/team/lizhen.jpg"
-import gelilaUrl from "../../../assets/team/gelila.jpg"
-import yoshiUrl from "../../../assets/team/yoshi.jpg"
-import danielUrl from "../../../assets/team/Daniel-Halasz.jpg"
+import hindUrl from "../../../assets/team/Hind.jpg"
+import evanUrl from "../../../assets/team/Evan.jpg"
+import lizhenUrl from "../../../assets/team/Lizhen.jpg"
+import gelilaUrl from "../../../assets/team/Gelila.jpg"
+import yoshiUrl from "../../../assets/team/Yoshi.jpg"
+import danielUrl from "../../../assets/team/Daniel.jpg"
 
 const data = {
   teams: [
-    
+    {
+      picture: danielUrl,
+      fullName: "Daniel Halasz",
+      role: "Educational Officer @ HYF Lab Brussels",
+      links: [
+        { icon: "mail", link: "mailto:daniel@hackyourfuture.be" },
+        {
+          icon: "linkedin",
+          link: "https://www.linkedin.com/in/danielhalaszphotography/",
+        },
+      ],
+    },
     {
       picture: evanUrl,
       fullName: "Evan Cole",
@@ -23,9 +34,30 @@ const data = {
       ],
     },
     {
+      picture: gelilaUrl,
+      fullName: "Gelila Ali",
+      role: "Educational Officer @ HYF Lab Antwerp",
+      links: [
+        { icon: "mail", link: "mailto:gelila@hackyourfuture.be" },
+        { icon: "linkedin", link: "https://www.linkedin.com/in/gelilaali/" },
+      ],
+    },
+    {
+      picture: hindUrl,
+      fullName: "Hind Channa",
+      role: "Communication and Community Officer",
+      links: [
+        { icon: "mail", link: "mailto:hind@hackyourfuture.be" },
+        {
+          icon: "linkedin",
+          link: "https://www.linkedin.com/in/hind-channa-223b07176/",
+        },
+      ],
+    },
+    {
       picture: lizhenUrl,
       fullName: "Lizhen Xu",
-      role: "General manager",
+      role: "General Manager",
       links: [
         { icon: "mail", link: "mailto:lizhen@hackyourfuture.be" },
         {
@@ -34,35 +66,19 @@ const data = {
         },
       ],
     },
-     { 
-    picture: gelilaUrl,
-    fullName: "Gelila Ali",
-    role: "Educational Officer @lab Antwerp",
-    links: [
-      { icon: "mail", link: "mailto:gelila@hackyourfuture.be" },
-      { icon: "linkedin", link: "https://www.linkedin.com/in/gelilaali/" },
-    ]
-    },
-     {
-       picture: yoshiUrl,
-       fullName: "Yoshi Malaise",
-       role: "Educational coordinator & researcher",
-       links: [
-         { icon: "mail", link: "mailto:yoshi@hackyourfuture.be" },
-      
-         {
-        icon: "linkedin",
-        link: "https://www.linkedin.com/in/yoshi-malaise/",
-      },
-    ],
-     },{ 
-    picture: danielUrl,
-    fullName: "Daniel Halasz",
-    role: "Educational Officer @lab Brussles",
-    links: [
-      { icon: "mail", link: "mailto:daniel@hackyourfuture.be" },
-      { icon: "linkedin", link: "https://www.linkedin.com/in/danielhalaszphotography/" },
-    ]
+
+    {
+      picture: yoshiUrl,
+      fullName: "Yoshi Malaise",
+      role: "Educational Coordinator & Researcher",
+      links: [
+        { icon: "mail", link: "mailto:yoshi@hackyourfuture.be" },
+
+        {
+          icon: "linkedin",
+          link: "https://www.linkedin.com/in/yoshi-malaise/",
+        },
+      ],
     },
   ],
 }
@@ -122,7 +138,6 @@ const OurTeam = () => (
                 ))}
               </Pane>
             </Card>
-            
           ))}
         </CardsContainer>
       </Container>
