@@ -19,7 +19,7 @@ const WhyDigtalent = ()=>{
     <Wrapper>
         <Container>
           <TextContainer>
-              <Text>
+              <Textt>
                 <Title  direction="row" >{data.titel}</Title>
               {data.description.map((item, index) => (
            <Ul>
@@ -28,8 +28,7 @@ const WhyDigtalent = ()=>{
               </Li>
               </Ul>
             ))}
-            </Text>  
-          </TextContainer>
+            </Textt>  
           <Button
           is="a"
           href="https://docs.google.com/forms/d/18mkjWFDjqHW-_FV4tnqk_Zg2-lHuPCC4tAfwtsUeO9A/edit"
@@ -38,6 +37,7 @@ const WhyDigtalent = ()=>{
         >
           Register now for the next info day
         </Button>   
+          </TextContainer>
 
               <AbsoluteContainer>
         <Image src={data.image} width="90%" height="100%" objectFit="cover" />
