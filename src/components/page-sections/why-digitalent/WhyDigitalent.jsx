@@ -1,7 +1,7 @@
 import React from "react"
 
 import {  Ul, Li,TextContainer,AbsoluteContainer,Container, Textt} from "./style"
-import { Title, Text, Image, Section, Wrapper, } from "../../ui"
+import { Title, Text, Image, Section, Wrapper, Button } from "../../ui"
 import imageUrl from "../../../assets/images/new-career.jpg"
 
 const data ={
