@@ -28,15 +28,15 @@ const WhyDigtalent = ()=>{
               </Li>
               </Ul>
             ))}
+              <Button
+              is="a"
+              href="https://docs.google.com/forms/d/18mkjWFDjqHW-_FV4tnqk_Zg2-lHuPCC4tAfwtsUeO9A/edit"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              Register now for the next info day
+            </Button>   
             </Textt>  
-          <Button
-          is="a"
-          href="https://docs.google.com/forms/d/18mkjWFDjqHW-_FV4tnqk_Zg2-lHuPCC4tAfwtsUeO9A/edit"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-        >
-          Register now for the next info day
-        </Button>   
           </TextContainer>
 
               <AbsoluteContainer>
