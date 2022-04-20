@@ -16,7 +16,7 @@ const TopNav = ({ onBurgerNavClicked, isMobile, currentPage }) => {
           <span>Volunteer</span>
         </NavLink>
          <NavLink to="/digitalent" isActive={currentPage === "digitalent"}>
-          <span>Digitalent</span>
+          <span>Digitalents</span>
         </NavLink>
         <NavLink to="/about" isActive={currentPage === "about"}>
           <span>About</span>

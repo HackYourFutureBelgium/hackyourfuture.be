@@ -1,43 +1,27 @@
 import React from "react"
 
-import {Container, Tle,Ul,Li,AbsoluteContainer, TextContainer } from "./style"
-import {Section, Wrapper,Title,Text ,Image } from "../../ui"
-//import { COLOR } from "../../../utils/constants"
+import {Section, Wrapper,Title,Text ,Image,Icon } from "../../ui"
 import imageUrl from "../../../assets/images/bootcamp.jpg"
+import SingleTestimonial from "../single-testimonial/SingleTestimonial"
 
 
 const data ={
-    titel:"Objective",
-    text: "In co-creation with hiring companies, train or upskill 100 persons with already someknowledge in programming:",
-    description:[
-        "Increasing number of graduates who after a year are still unemployed </br>",
-        "Digitalents aims at bridging the gap </br></br>"],
+    name:"Objective",
+    cta: "Check-out our partners",
+    ctaLink: "https://hackyourfuture.be/",
+    quote:[
+      "In co-creation with hiring companies, train or upskill 100 persons with already someknowledge in programming",
+        ",Increasing number of graduates who after a year are still unemployed and  ",
+        "Digitalents aims at bridging the gap"],
     image: imageUrl
 
 }
 const Objective = ()=>{
     return(
-    <Section>
-    <Wrapper>
-      <Container >
-        <TextContainer>
-        <Title><Tle>{data.titel}</Tle></Title>
-        <Text>{data.text}</Text>
-        {data.description.map((item, index) => (
-           <Ul>
-              <Li key={index}>
-                <Text  dangerouslySetInnerHTML={{ __html: item }} />
-              </Li>
-              </Ul>
-            ))}
-             </TextContainer>
-      </Container>
-      <AbsoluteContainer>
-        <Image src={data.image} width="70%" height="70%" objectFit="cover" />
-      </AbsoluteContainer>
-    </Wrapper>
-  </Section>
-
+      <Section padding="0" paddingMobile="10" style={{ marginBottom: "50px",paddingTop: "20px" }}>
+      <SingleTestimonial data={data} />
+       </Section>
+ 
     )
 
 };

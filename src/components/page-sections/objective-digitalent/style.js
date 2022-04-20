@@ -1,23 +1,38 @@
-import React from "react"
 import styled from "styled-components"
 
 import { COLOR, MEDIA_QUERY } from "../../../utils/constants"
 
-export const Container = styled.div`
-  margin-top: 100px;
-  display: flex;
-  margin-left: 30vw;
-  flex-direction: column;
+export const TextContainer = styled.div`
   width: 100%;
-
-  background-color: ${COLOR.WHITE_LILAC};
-  max-width: 65%;
-  margin-bottom: 100px;
-  padding-bottom: 100px;
-`
-export const Tle = styled.div`
   display: flex;
-  justify-content: center;
+  position:absolute;
+  justify-content: space-between;
+
+  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+    flex-direction: column;
+  }
+`
+export const Card = styled.div`
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  padding: 30px;
+  max-width: 550px;
+  z-index: 1;
+  background: ${COLOR.WHITE_LILAC};
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px #d0d0d0;
+
+  @media ${MEDIA_QUERY.SMALL_DESKTOP} {
+    width: 48%;
+  }
+  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+    width: 100%;
+
+    &:first-child {
+      margin-bottom: 50px;
+    }
+  }
 `
 
 export const Ul = styled.ul`
@@ -30,7 +45,6 @@ export const Li = styled.li`
   padding-left: 30px;
   margin: 3px 0;
   color: ${COLOR.WHITE_LILAC};
-  
 
   &:after {
     content: "";
@@ -43,37 +57,23 @@ export const Li = styled.li`
     top: 4px;
     left: 1px;
   }
+  > svg {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    transform: scale(0.7);
+  }
 `
 
 export const AbsoluteContainer = styled.div`
   position: absolute;
-  top: 10%;
-  left:5%;
-  right: 40%;
-  width: 70%;
+  width: 50%;
   height: 100%;
-  
+  min-height: 400px;
+  right: 7%;
+  z-index: -1;
+
   @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
     display: none;
-  }`
-
-  export const TextContainer = styled.div`
-  position: relative;
-  z-index:1;
-  padding:15px;
-  left: 60%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  height: 300px;
-  width: 550px;
-  background: ${COLOR.WHITE_LILAC};
-  border-radius: 5px;
-  box-shadow: 0 0 10px 1px #d0d0d0;
- 
-
-  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
-    width: 100%;
-    margin-bottom: 40px;
-    margin-left:90px;
-    padding-right: 0;
-  }`
+  }
+`

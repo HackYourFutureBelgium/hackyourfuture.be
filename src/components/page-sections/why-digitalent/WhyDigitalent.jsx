@@ -1,43 +1,26 @@
 import React from "react"
 
-import {  Ul, Li,TextContainer,AbsoluteContainer,Container, Textt} from "./style"
-import { Title, Text, Image, Section, Wrapper, } from "../../ui"
+import SingleTestimonial from "../single-testimonial/SingleTestimonial"
+import { Title, Section, Wrapper,Text,Icon,Image } from "../../ui"
+import { COLOR } from "../../../utils/constants"
 import imageUrl from "../../../assets/images/new-career.jpg"
 
 const data ={
-    titel:"Why Digitalents?",
-    description:[
-        "Companies have more hiring needs for specific profiles </br>",
-        "Increasing number of graduates who after a year are still unemployed </br>",
-        "Digitalents aims at bridging the gap </br></br>"],
+    name:"Why Digitalents?",
+    quote:[
+        "✅Companies have more hiring needs for specific profiles",
+        "                 ✅Increasing number of graduates who after a year are still unemployed                ",
+        "✅Digitalents aims at bridging the gap"],
+    cta: "register now for our recruitment day",
+    ctaLink: "https://docs.google.com/forms/d/1P8JxEyHHRNJs06e6_NpxrkuzQba1CGRacRtYbIV9N9k/edit#responses",
     image: imageUrl
 
 }
 const WhyDigtalent = ()=>{
     return(
-    <Section >
-    <Wrapper>
-        <Container>
-          <TextContainer>
-              <Textt>
-                <Title  direction="row" >{data.titel}</Title>
-              {data.description.map((item, index) => (
-           <Ul>
-              <Li key={index}>
-                <Text  dangerouslySetInnerHTML={{ __html: item }} />
-              </Li>
-              </Ul>
-            ))}
-            </Textt>
-            </TextContainer>
-
-              <AbsoluteContainer>
-        <Image src={data.image} width="90%" height="100%" objectFit="cover" />
-      </AbsoluteContainer>
-        </Container>
-    </Wrapper>
-    </Section>
-    
+    <Section padding="0" paddingMobile="10" style={{ marginBottom: "0px",paddingTop: "0px" }}>
+      <SingleTestimonial data={data} isReverse/>
+       </Section>
 
     )
 
