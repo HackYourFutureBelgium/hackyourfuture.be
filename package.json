@@ -9,7 +9,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
-    "@stripe/stripe-js": "^1.16.0",
+    "@stripe/stripe-js": "^1.29.0",
     "babel-plugin-styled-components": "^1.13.2",
     "gatsby": "2.32.13",
     "gatsby-image": "^3.10.0",
