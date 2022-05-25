@@ -11,7 +11,7 @@ const data ={
         "✅Companies have more hiring needs for specific profiles",
         "                 ✅Increasing number of graduates who after a year are still unemployed                ",
         "✅Digitalents aims at bridging the gap"],
-    cta: "register now for our recruitment day",
+    cta: "Apply now for our Digitalents training",
     ctaLink: "https://docs.google.com/forms/d/1P8JxEyHHRNJs06e6_NpxrkuzQba1CGRacRtYbIV9N9k/edit#responses",
     image: imageUrl
 
