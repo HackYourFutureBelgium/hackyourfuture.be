@@ -6,7 +6,7 @@ export const CardsContainer = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 
   @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
     flex-direction: column;
@@ -17,7 +17,7 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  
+
   @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
     flex-direction: column;
   }

@@ -91,8 +91,7 @@ const SuccessStories = () => {
                     backgroundImage={`url(${story.picture})`}
                     backgroundSize="cover"
                     title={story.name}
-                  >
-                  </Pane>
+                  ></Pane>
                   <Title
                     level={4}
                     size="xs"

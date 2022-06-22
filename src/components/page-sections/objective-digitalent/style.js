@@ -5,7 +5,7 @@ import { COLOR, MEDIA_QUERY } from "../../../utils/constants"
 export const TextContainer = styled.div`
   width: 100%;
   display: flex;
-  position:absolute;
+  position: absolute;
   justify-content: space-between;
 
   @media ${MEDIA_QUERY.TABLET_AND_DOWN} {

@@ -1,13 +1,12 @@
 import styled from "styled-components"
 
-import { COLOR, MEDIA_QUERY,SHADOW } from "../../../utils/constants"
+import { COLOR, MEDIA_QUERY, SHADOW } from "../../../utils/constants"
 
 export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  flex-wrap:wrap;
-  
+  flex-wrap: wrap;
 `
 
 export const Content = styled.div`
@@ -18,15 +17,13 @@ export const Content = styled.div`
   }
 `
 
-
-
 export const Card = styled.div`
   width: 80%;
   display: flex;
   flex-direction: column;
   box-shadow: ${SHADOW.BOX};
   padding: 40px 50px;
-  margin:10px;
+  margin: 10px;
 
   @media ${MEDIA_QUERY.SMALL_DESKTOP} {
     width: 80%;

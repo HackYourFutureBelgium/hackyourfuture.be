@@ -12,7 +12,6 @@ import ContactUs from "../components/page-sections/contact-us"
 
 import OurProgramImageUrl from "../assets/images/our-program.jpg"
 
-
 const ourProgramData = {
   title: "Our program",
   description:
@@ -27,7 +26,6 @@ const donateData = {
   description:
     "Help refugees build digital & soft skills for a career in web development. We are a non-profit organization. Thanks to your support we can improve and keep our program free of charge for students.",
 }
-
 
 const IndexPage = () => (
   <LandingLayout page="index">

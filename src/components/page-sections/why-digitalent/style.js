@@ -2,7 +2,6 @@ import styled from "styled-components"
 
 import { COLOR, MEDIA_QUERY } from "../../../utils/constants"
 
-
 export const TextContainer = styled.div`
   width: 100%;
   display: flex;
@@ -11,7 +10,6 @@ export const TextContainer = styled.div`
   @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
     flex-direction: column;
   }
-
 `
 export const Card = styled.div`
   display: flex;

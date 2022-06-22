@@ -18,10 +18,12 @@ const data = {
     {
       link: "https://www.linkedin.com/company/hackyourfuture-belgium/",
       image: linkedinUrl,
-    },{
-      link:"https://www.livechat.com/",
-      image:"https://cdn.livechatinc.com/website/media/img/resources/logos/livechat-black.svg"
-    }
+    },
+    {
+      link: "https://www.livechat.com/",
+      image:
+        "https://cdn.livechatinc.com/website/media/img/resources/logos/livechat-black.svg",
+    },
   ],
 }
 

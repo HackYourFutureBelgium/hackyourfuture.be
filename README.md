@@ -10,19 +10,19 @@ npm start
 
 ## Update
 
-*Application form link ("Apply now" button)*
+_Application form link ("Apply now" button)_
 
 - Update website header: [`src/components/navigation/top-nav/TopNav.jsx` (line 29)](src/components/navigation/top-nav/TopNav.jsx#L29)
 - Update program page: [`src/components/page-sections/program-header/ProgramHeader.jsx` (line 17)](src/components/page-sections/program-header/ProgramHeader.jsx#L17)
 
-*Partners logo*
+_Partners logo_
 
 - Upload partner logo: [`src/assets/partners/`](src/assets/partners/)
 - Update homepage: [`src/components/page-sections/our-partners/OurPartners.jsx`](src/components/page-sections/our-partners/OurPartners.jsx)
   - Copy [line 11](src/components/page-sections/our-partners/OurPartners.jsx#L11) and fix file path + variable name
   - Copy [line 24](src/components/page-sections/our-partners/OurPartners.jsx#L24) and fix variable name
-  
-*Success stories*
+
+_Success stories_
 
 - Upload picture: [`src/assets/alumni/`](src/assets/alumni/)
 - Update homepage: [`src/components/page-sections/success-stories/SuccessStories.jsx`](src/components/page-sections/success-stories/SuccessStories.jsx)
@@ -44,4 +44,3 @@ You might want to do this, for example, if there are some accessibility tests th
 ```
 npm run test:e2e
 ```
-

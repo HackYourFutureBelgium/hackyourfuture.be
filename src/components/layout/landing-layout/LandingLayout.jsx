@@ -17,7 +17,6 @@ import Footer from "../../footer/Footer"
 const LandingLayout = ({ children, page }) => (
   <>
     <Helmet htmlAttributes={{ lang: "en" }}>
-
       <meta charSet="utf-8" />
       <meta
         name="description"

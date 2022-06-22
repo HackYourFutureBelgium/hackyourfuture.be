@@ -9,7 +9,6 @@ import OurTeam from "../components/page-sections/our-team"
 import JoinUs from "../components/page-sections/join-us/Join-us"
 import graduationUrl from "../assets/images/graduation.jpg"
 
-
 const DescriptionHistoryData = {
   title: "History",
   description:

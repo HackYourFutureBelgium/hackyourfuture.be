@@ -40,8 +40,7 @@ const data = {
     Antwerp,
     Epitech,
     Vbo,
-    Agoria
-
+    Agoria,
   ],
 }
 

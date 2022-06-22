@@ -7,8 +7,7 @@ const data = {
   description:
     "HackYourFuture is possible only thanks to our many volunteer coaches and mentors. Do you also want to help to make the tech industry more inclusive and become part of our community?",
   cta1: "join as a coach",
-  cta1Link:
-    "https://form.typeform.com/to/yfzzQxtI",
+  cta1Link: "https://form.typeform.com/to/yfzzQxtI",
   cta2: "Join as a mentor",
   cta2Link:
     "https://docs.google.com/forms/d/e/1FAIpQLSdsTmIgbCA2X02NUFsVSE-BQJIx6_KWpABujlZYA9PP8JgHJg/viewform",
