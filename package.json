@@ -12,7 +12,6 @@
     "@testing-library/cypress": "^8.0.3",
     "cypress": "^10.2.0",
     "eslint": "^7.32.0",
-    "fortawesome": "^0.0.1-security",
     "gatsby": "^4.17.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-fontawesome-css": "^1.2.0",
@@ -30,10 +29,9 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-fontawesome": "^1.7.1",
     "react-helmet": "^6.1.0",
+    "sharp": "^0.30.6",
     "start-server-and-test": "^1.14.0",
-    "stripe": "^9.9.0",
     "styled-components": "^5.3.5"
   },
   "keywords": [
