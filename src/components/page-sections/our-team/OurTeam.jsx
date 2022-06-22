@@ -67,19 +67,19 @@ const data = {
       ],
     },
 
-    {
-      picture: yoshiUrl,
-      fullName: "Yoshi Malaise",
-      role: "Educational Coordinator & Researcher",
-      links: [
-        { icon: "mail", link: "mailto:yoshi@hackyourfuture.be" },
+    // {
+    //   picture: yoshiUrl,
+    //   fullName: "Yoshi Malaise",
+    //   role: "Educational Coordinator & Researcher",
+    //   links: [
+    //     { icon: "mail", link: "mailto:yoshi@hackyourfuture.be" },
 
-        {
-          icon: "linkedin",
-          link: "https://www.linkedin.com/in/yoshi-malaise/",
-        },
-      ],
-    },
+    //     {
+    //       icon: "linkedin",
+    //       link: "https://www.linkedin.com/in/yoshi-malaise/",
+    //     },
+    //   ],
+    // },
   ],
 }
 
