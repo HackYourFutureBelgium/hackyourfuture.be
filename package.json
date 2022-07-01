@@ -10,7 +10,7 @@
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@stripe/stripe-js": "^1.32.0",
     "@testing-library/cypress": "^8.0.3",
-    "cypress": "^10.2.0",
+    "cypress": "^10.3.0",
     "eslint": "^7.32.0",
     "gatsby": "^4.17.0",
     "gatsby-image": "^3.11.0",
