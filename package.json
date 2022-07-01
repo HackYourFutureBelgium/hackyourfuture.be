@@ -11,7 +11,7 @@
     "@stripe/stripe-js": "^1.32.0",
     "@testing-library/cypress": "^8.0.3",
     "cypress": "^10.2.0",
-    "eslint": "^7.32.0",
+    "eslint": "^8.18.0",
     "gatsby": "^4.17.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-fontawesome-css": "^1.2.0",
