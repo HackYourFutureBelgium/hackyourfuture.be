@@ -37,8 +37,8 @@ const data = {
       fullName: "Tugba Yildiz",
       role: "Educational Officer",
       links: [
-        { icon: "mail", link: "mailto:gelila@hackyourfuture.be" },
-        { icon: "linkedin", link: "https://www.linkedin.com/in/gelilaali/" },
+        { icon: "mail", link: "mailto:tugba@hackyourfuture.be" },
+        { icon: "linkedin", link: "https://www.linkedin.com/in/yildiztugba/" },
       ],
     },
     {
