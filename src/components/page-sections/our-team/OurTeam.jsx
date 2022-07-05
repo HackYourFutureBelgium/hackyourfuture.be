@@ -6,16 +6,15 @@ import { Title, Text, Section, Wrapper, Image, Icon, Pane } from "../../ui"
 import hindUrl from "../../../assets/team/Hind.jpg"
 import evanUrl from "../../../assets/team/Evan.jpg"
 import lizhenUrl from "../../../assets/team/Lizhen.jpg"
-import gelilaUrl from "../../../assets/team/Gelila.jpg"
-import yoshiUrl from "../../../assets/team/Yoshi.jpg"
 import danielUrl from "../../../assets/team/Daniel.jpg"
+import tugbaUrl from "../../../assets/team/Tugba.jpg"
 
 const data = {
   teams: [
     {
       picture: danielUrl,
       fullName: "Daniel Halasz",
-      role: "Educational Officer @ HYF Lab Brussels",
+      role: "Educational Officer",
       links: [
         { icon: "mail", link: "mailto:daniel@hackyourfuture.be" },
         {
@@ -34,9 +33,9 @@ const data = {
       ],
     },
     {
-      picture: gelilaUrl,
-      fullName: "Gelila Ali",
-      role: "Educational Officer @ HYF Lab Antwerp",
+      picture: tugbaUrl,
+      fullName: "Tugba Yildiz",
+      role: "Educational Officer",
       links: [
         { icon: "mail", link: "mailto:gelila@hackyourfuture.be" },
         { icon: "linkedin", link: "https://www.linkedin.com/in/gelilaali/" },
@@ -66,20 +65,6 @@ const data = {
         },
       ],
     },
-
-    // {
-    //   picture: yoshiUrl,
-    //   fullName: "Yoshi Malaise",
-    //   role: "Educational Coordinator & Researcher",
-    //   links: [
-    //     { icon: "mail", link: "mailto:yoshi@hackyourfuture.be" },
-
-    //     {
-    //       icon: "linkedin",
-    //       link: "https://www.linkedin.com/in/yoshi-malaise/",
-    //     },
-    //   ],
-    // },
   ],
 }
 
