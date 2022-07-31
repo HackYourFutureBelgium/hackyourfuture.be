@@ -1,14 +1,15 @@
 import React from "react"
 
 import LandingLayout from "../components/layout/landing-layout"
-import Whydigitalent from "../components/page-sections/why-digitalent/WhyDigitalent"
-import Objective from "../components/page-sections/objective-digitalent/Objective"
+import WhatIsDigitalents from "../components/page-sections/what-is-digitalents/WhatIsDigitalents"
+import TwoTracksDigitalents from "../components/page-sections/two-tracks-digitalents/TwoTracksDigitalents"
+import WhoAreWeLookingForDigitalents from "../components/page-sections/who-are-we-looking-for-digitalents/WhoAreWeLookingForDigitalents"
 
 const DigiTalents = () => (
   <LandingLayout page="digitalents">
-    <Whydigitalent />
-    <Objective />
+    <WhatIsDigitalents/>
+    <TwoTracksDigitalents/>
+    <WhoAreWeLookingForDigitalents />
   </LandingLayout>
 )
-
 export default DigiTalents
