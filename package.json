@@ -6,7 +6,7 @@
   "author": "HYF <contact@hackyourfuture.be>",
   "dependencies": {
     "@elgorditosalsero/react-gtm-hook": "^2.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@stripe/stripe-js": "^1.32.0",
     "@testing-library/cypress": "^8.0.3",
