@@ -21,7 +21,7 @@
     "gatsby-plugin-react-helmet": "^5.18.0",
     "gatsby-plugin-sharp": "^4.18.0",
     "gatsby-plugin-styled-components": "^5.18.0",
-    "gatsby-source-filesystem": "^4.18.0",
+    "gatsby-source-filesystem": "^4.24.0",
     "gatsby-source-stripe": "^4.0.0",
     "gatsby-transformer-sharp": "^4.18.0",
     "lodash.debounce": "^4.0.8",
