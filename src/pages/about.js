@@ -6,7 +6,6 @@ import AboutValues from "../components/page-sections/about-values"
 import MissionVision from "../components/page-sections/mission-vision"
 import ImageDescription from "../components/page-sections/image-description"
 import OurTeam from "../components/page-sections/our-team"
-import JoinUs from "../components/page-sections/join-us/Join-us"
 import graduationUrl from "../assets/images/graduation.jpg"
 
 

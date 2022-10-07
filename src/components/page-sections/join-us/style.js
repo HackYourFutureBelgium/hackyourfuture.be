@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { COLOR, MEDIA_QUERY,SHADOW } from "../../../utils/constants"
+import { MEDIA_QUERY, SHADOW } from "../../../utils/constants"
 
 export const Container = styled.div`
   width: 100%;

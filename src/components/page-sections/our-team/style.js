@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import { MEDIA_QUERY, SHADOW } from "../../../utils/constants"
+import { MEDIA_QUERY } from "../../../utils/constants"
 
 export const CardsContainer = styled.div`
   display: flex;
