@@ -4,10 +4,10 @@ import { Card, Container, CardsContainer } from "./style.js"
 import { Title, Text, Section, Wrapper, Image, Icon, Pane } from "../../ui"
 
 import hindUrl from "../../../assets/team/Hind.jpg"
-import evanUrl from "../../../assets/team/Evan.jpg"
+// import evanUrl from "../../../assets/team/Evan.jpg"
 import lizhenUrl from "../../../assets/team/Lizhen.jpg"
 import danielUrl from "../../../assets/team/Daniel.jpg"
-import tugbaUrl from "../../../assets/team/Tugba.jpg"
+// import tugbaUrl from "../../../assets/team/Tugba.jpg"
 
 const data = {
   teams: [
@@ -23,24 +23,24 @@ const data = {
         },
       ],
     },
-    {
-      picture: evanUrl,
-      fullName: "Evan Cole",
-      role: "Instructional Designer",
-      links: [
-        { icon: "mail", link: "mailto:evan@hackyourfuture.be" },
-        { icon: "linkedin", link: "https://www.linkedin.com/in/evan-cole/" },
-      ],
-    },
-    {
-      picture: tugbaUrl,
-      fullName: "Tugba Yildiz",
-      role: "Educational Officer",
-      links: [
-        { icon: "mail", link: "mailto:tugba@hackyourfuture.be" },
-        { icon: "linkedin", link: "https://www.linkedin.com/in/yildiztugba/" },
-      ],
-    },
+    // {
+    //   picture: evanUrl,
+    //   fullName: "Evan Cole",
+    //   role: "Instructional Designer",
+    //   links: [
+    //     { icon: "mail", link: "mailto:evan@hackyourfuture.be" },
+    //     { icon: "linkedin", link: "https://www.linkedin.com/in/evan-cole/" },
+    //   ],
+    // },
+    // {
+    //   picture: tugbaUrl,
+    //   fullName: "Tugba Yildiz",
+    //   role: "Educational Officer",
+    //   links: [
+    //     { icon: "mail", link: "mailto:tugba@hackyourfuture.be" },
+    //     { icon: "linkedin", link: "https://www.linkedin.com/in/yildiztugba/" },
+    //   ],
+    // },
     {
       picture: hindUrl,
       fullName: "Hind Channa",
