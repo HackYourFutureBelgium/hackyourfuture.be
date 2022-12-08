@@ -3,7 +3,7 @@ import React from "react"
 import { TopContainer, BottomContainer } from "./style.js"
 import { Title, Pane, Image, Button, Section, Wrapper } from "../../ui"
 import printSimpleUrl from "../../../assets/partners/print-simple.svg"
-import openKnowledgeUrl from "../../../assets/partners/open-knowledge.svg"
+// import openKnowledgeUrl from "../../../assets/partners/open-knowledge.svg"
 import digitalBelgiumUrl from "../../../assets/partners/digital-belgium.svg"
 import arteveldeUrl from "../../../assets/partners/artevelde-hogeschool.svg"
 import bruxellesEmploiUrl from "../../../assets/partners/bruxelles-emploi.svg"
@@ -25,7 +25,7 @@ const data = {
   ctaLink: "mailto:contact@hackyourfuture.be",
   partnerImages: [
     printSimpleUrl,
-    openKnowledgeUrl,
+    // openKnowledgeUrl,
     digitalBelgiumUrl,
     arteveldeUrl,
     bruxellesEmploiUrl,
@@ -40,8 +40,7 @@ const data = {
     Antwerp,
     Epitech,
     Vbo,
-    Agoria
-
+    Agoria,
   ],
 }
 
