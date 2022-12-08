@@ -8,8 +8,8 @@ import githubUrl from "../../assets/social/github.svg"
 import linkedinUrl from "../../assets/social/linkedin.svg"
 
 const data = {
-  title: "Hack Your Future (part of Open Knowledge Belgium)",
-  address: "Open Knowledge Belgium vzw\nCantersteen 12\n1000 Bruxelles",
+  title: "Hack Your Future",
+  address: "Avenue de Tervueren 142\n1150 Bruxelles",
   email: "contact@hackyourfuture.be",
   socials: [
     { link: "https://www.facebook.com/HackYFutureBE/", image: facebookUrl },
@@ -18,10 +18,12 @@ const data = {
     {
       link: "https://www.linkedin.com/company/hackyourfuture-belgium/",
       image: linkedinUrl,
-    },{
-      link:"https://www.livechat.com/",
-      image:"https://cdn.livechatinc.com/website/media/img/resources/logos/livechat-black.svg"
-    }
+    },
+    {
+      link: "https://www.livechat.com/",
+      image:
+        "https://cdn.livechatinc.com/website/media/img/resources/logos/livechat-black.svg",
+    },
   ],
 }
 
