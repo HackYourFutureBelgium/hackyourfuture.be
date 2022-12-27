@@ -49,7 +49,6 @@ module.exports = {
         displayName: !isProd,
       },
     },
-    `gatsby-plugin-fontawesome-css`,
     // {
     //   resolve: `gatsby-source-stripe`,
     //   options: {
