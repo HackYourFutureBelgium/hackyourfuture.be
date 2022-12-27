@@ -49,6 +49,7 @@ module.exports = {
         displayName: !isProd,
       },
     },
+    `gatsby-plugin-netlify-cms`,
     // {
     //   resolve: `gatsby-source-stripe`,
     //   options: {
