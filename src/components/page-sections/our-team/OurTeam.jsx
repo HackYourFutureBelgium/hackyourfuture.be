@@ -3,7 +3,7 @@ import React from "react"
 import { Card, Container, CardsContainer } from "./style.js"
 import { Title, Text, Section, Wrapper, Image, Icon, Pane } from "../../ui"
 
-import hindUrl from "../../../assets/team/Hind.jpg"
+import hindUrl from "../../../assets/team/Hind2.jpg"
 // import evanUrl from "../../../assets/team/Evan.jpg"
 import lizhenUrl from "../../../assets/team/Lizhen.jpg"
 import danielUrl from "../../../assets/team/Daniel.jpg"
