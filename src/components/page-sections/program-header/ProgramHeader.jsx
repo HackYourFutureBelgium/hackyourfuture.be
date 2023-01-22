@@ -10,9 +10,9 @@ const data = {
   title: "Your new career starts here",
   description:
     "HackYourFuture is a <b>free 9-month front end web development program</b> for newcomers passionate about code and web development. You don’t need any technical background to start, only loads of motivation.<br/><br/>If you want to kickstart your career in the IT sector, take your chance!<br/><b>Women are strongly encouraged to apply!</b><br><br>",
-  cta1: "Applications for new classes are constantly ongoing",
+  cta1: "Applications for new classes starting in March are open now",
   cta: "Apply Now",
-  ctaLink: "https://form.typeform.com/to/SQbn9nP1",
+  ctaLink: "https://forms.gle/jevj2Ti6brB9pAdw8",
   image: imageUrl,
 }
 
