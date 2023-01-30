@@ -75,8 +75,14 @@ const ContactUs = () => {
           </Form>
         </LeftContainer>
         <RightContainer>
-          <Iframe
+          {/*<Iframe
             src="https://www.openstreetmap.org/export/embed.html?bbox=4.356269538402558%2C50.84478366215189%2C4.358683526515962%2C50.84615377213845&amp;layer=mapnik&amp;marker=50.8454687221748%2C4.357476532459259"
+            width="600"
+            height="450"
+            title="map"
+          />*/}
+          <Iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=4.404986500740052%2C50.83687552915718%2C4.411938786506654%2C50.83906399222352&amp;layer=mapnik&amp;marker=50.83796977351917%2C4.408462643623352" 
             width="600"
             height="450"
             title="map"

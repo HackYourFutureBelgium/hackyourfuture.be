@@ -7,10 +7,10 @@ import { SHADOW } from "../../../utils/constants"
 const data = {
   title: "Our impact",
   description:
-    "We graduated over 100 people in Belgium and more than 300 globally. In Belgium, over 70% found and retained a high-quality job as a developer.",
+    "We graduated over 300 people in Belgium and more than 650 globally. In Belgium, over 70% found and retained a high-quality job as a developer.",
   results: [
     {
-      title: "100",
+      title: "300+",
       description:
         "Students graduated since HackYourFuture Belgium was founded in 2018",
     },
@@ -20,7 +20,7 @@ const data = {
         "Of our graduates find an internship, a job or start advanced studies.",
     },
     {
-      title: "300+",
+      title: "650+",
       description: "Alumni in the Netherlands, Denmark, Belgium and Canada.",
     },
   ],
@@ -48,5 +48,7 @@ const OurImpact = () => (
     </Wrapper>
   </Section>
 )
+
+
 
 export default OurImpact
