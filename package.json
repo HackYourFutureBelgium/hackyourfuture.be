@@ -60,7 +60,7 @@
   "devDependencies": {
     "eslint": "^8.30.0",
     "eslint-config-react-app": "^7.0.1",
-    "prettier": "^2.8.1"
+    "prettier": "^2.8.3"
   },
   "overrides": {
     "react": "^18.2.0",
