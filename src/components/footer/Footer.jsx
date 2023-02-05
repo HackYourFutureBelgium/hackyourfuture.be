@@ -10,7 +10,7 @@ import linkedinUrl from "../../assets/social/linkedin.svg"
 const data = {
   title: "Hack Your Future",
   address: "Avenue de Tervueren 142\n1150 Bruxelles",
-  email: "contact@hackyourfuture.be",
+  email: "info@hyfbe.be",
   socials: [
     { link: "https://www.facebook.com/HackYFutureBE/", image: facebookUrl },
     { link: "https://twitter.com/HackYFutureBE", image: twitterUrl },
@@ -18,11 +18,6 @@ const data = {
     {
       link: "https://www.linkedin.com/company/hackyourfuture-belgium/",
       image: linkedinUrl,
-    },
-    {
-      link: "https://www.livechat.com/",
-      image:
-        "https://cdn.livechatinc.com/website/media/img/resources/logos/livechat-black.svg",
     },
   ],
 }
