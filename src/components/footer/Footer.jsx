@@ -30,7 +30,7 @@ const Footer = () => (
           {data.title}
         </Title>
         <Text isCenter>{data.address}</Text>
-        <Text as="a" href="mailto:contact@hackyourfuture.be">
+        <Text as="a" href="mailto:info@hyfbe.be">
           {data.email}
         </Text>
         <Pane justifyContent="center" margin="20px 0">

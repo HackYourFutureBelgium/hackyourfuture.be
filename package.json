@@ -3,7 +3,7 @@
   "private": true,
   "description": "The Hack Your Future Belgium website.",
   "version": "0.1.0",
-  "author": "HYF <contact@hackyourfuture.be>",
+  "author": "HYF <info@hyfbe.be>",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",

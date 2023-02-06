@@ -22,7 +22,7 @@ import Agoria from "../../../assets/partners/agoria.png"
 const data = {
   title: "Our partners",
   cta: "Become a partner",
-  ctaLink: "mailto:contact@hackyourfuture.be",
+  ctaLink: "mailto:info@hyfbe.be",
   partnerImages: [
     printSimpleUrl,
     // openKnowledgeUrl,

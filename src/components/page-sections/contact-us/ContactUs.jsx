@@ -23,7 +23,7 @@ const ContactUs = () => {
   const [body, setBody] = useState("")
 
   const sendEmail = () => {
-    const mailTo = "mailto:contact@hackyourfuture.be"
+    const mailTo = "mailto:info@hyfbe.be"
     const subject = `Message from website by <${email}>`
     window.open(
       `${mailTo}?cc=${email}&subject=${subject}&body=${body}`,

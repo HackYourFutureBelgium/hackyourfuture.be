@@ -106,25 +106,25 @@ const data = {
     {
       question: "Where can I see your graduates’ profiles?",
       answer:
-        "We are most happy to share our graduates’ profiles with you. Please contact us on <a href='mailto:contact@hackyourfuture.be'>contact@hackyourfuture.be</a>!<br/><br/>Currently, our alumni are working on an alumni platform, where you will be able to consult the freshly graduated students who are currently looking for an internship or job. It will be online soon. In the meantime, don’t hesitate to reach out to us.",
+        "We are most happy to share our graduates’ profiles with you. Please contact us on <a href='mailto:info@hyfbe.be'>info@hyfbe.be</a>!<br/><br/>Currently, our alumni are working on an alumni platform, where you will be able to consult the freshly graduated students who are currently looking for an internship or job. It will be online soon. In the meantime, don’t hesitate to reach out to us.",
       category: CATEGORY.PARTNERS,
     },
     {
       question: "How can I support HackYourFuture?",
       answer:
-        "HackYourFuture Belgium can only improve thanks to the help of our donors and sponsors. By supporting our organisation, you have an impact on the lives of newcomers in Belgium, who want to work hard to take their future into their own hands.<br/><br/>If you want to donate, please visit our <a href='/support-us' target='_blank' rel='noopener noreferrer nofollow'>Support us</a> page.<br/><br/>If you’d like to support us on a more structural basis, please contact us via <a href='mailto:contact@hackyourfuture.be'>contact@hackyourfuture.be</a>.<br/><br/>We’d love to hear from you and explore the most appropriate way of collaborating!",
+        "HackYourFuture Belgium can only improve thanks to the help of our donors and sponsors. By supporting our organisation, you have an impact on the lives of newcomers in Belgium, who want to work hard to take their future into their own hands.<br/><br/>If you want to donate, please visit our <a href='/support-us' target='_blank' rel='noopener noreferrer nofollow'>Support us</a> page.<br/><br/>If you’d like to support us on a more structural basis, please contact us via <a href='mailto:info@hyfbe.be'>info@hyfbe.be</a>.<br/><br/>We’d love to hear from you and explore the most appropriate way of collaborating!",
       category: CATEGORY.PARTNERS,
     },
     {
       question: "How do I become a partner for the bootcamp?",
       answer:
-        "The bootcamp takes place once every 4 months. During 4 intensive weeks, our newly grads are challenged to work on a real project, with a real partner. Each team of 4 graduates is guided by a freelance coach.<br/><br/>Do you have a project you’d like to explore? Would you like to give an opportunity to incredibly motivated graduates? Get in touch via <a href='mailto:contact@hackyourfuture.be'>contact@hackyourfuture.be</a>!",
+        "The bootcamp takes place once every 4 months. During 4 intensive weeks, our newly grads are challenged to work on a real project, with a real partner. Each team of 4 graduates is guided by a freelance coach.<br/><br/>Do you have a project you’d like to explore? Would you like to give an opportunity to incredibly motivated graduates? Get in touch via <a href='mailto:info@hyfbe.be'>info@hyfbe.be</a>!",
       category: CATEGORY.PARTNERS,
     },
     {
       question: "How can I donate computers?",
       answer:
-        "Students can only develop their full potential if they have access to qualitative material to learn. Because not every student has the resources to buy a computer, we collect used computers from companies to borrow them for the duration of our program.<br/><br/>If your company has unused computers in stock, we would be incredibly grateful to make them useful again! Contact us via <a href='mailto:contact@hackyourfuture.be'>contact@hackyourfuture.be</a>",
+        "Students can only develop their full potential if they have access to qualitative material to learn. Because not every student has the resources to buy a computer, we collect used computers from companies to borrow them for the duration of our program.<br/><br/>If your company has unused computers in stock, we would be incredibly grateful to make them useful again! Contact us via <a href='mailto:info@hyfbe.be'>info@hyfbe.be</a>",
       category: CATEGORY.PARTNERS,
     },
   ],
