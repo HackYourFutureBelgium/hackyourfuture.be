@@ -9,7 +9,7 @@ import { COLOR } from "../../../utils/constants"
 const data = {
   title: "Your new career starts here",
   description:
-    "HackYourFuture is a <b>free 9-month front end web development program</b> for newcomers passionate about code and web development. You don’t need any technical background to start, only loads of motivation.<br/><br/>If you want to kickstart your career in the IT sector, take your chance!<br/><b>Women are strongly encouraged to apply!</b><br><br>",
+    "HackYourFuture is a <b>free 9-month front end web development program</b> for refugees, newcomers and ‘anderstalige’ jobseekers passionate about code and web development. You don’t need any technical background to start, only loads of motivation.<br/><br/>If you want to kickstart your career in the IT sector, take your chance!<br/><b>Women are strongly encouraged to apply!</b><br><br>",
   cta1: "We are launching two new web-dev classes, one in ANTWERPEN and one in BRUSSELS",
   cta2 : 'Applications for these new classes starting in March are open now', 
   cta: "Apply Now",
