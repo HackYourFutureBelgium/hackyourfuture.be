@@ -24,7 +24,6 @@
     "gatsby-transformer-sharp": "^5.3.1",
     "lodash.debounce": "^4.0.8",
     "netlify-cms-app": "^2.15.72",
-    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
@@ -58,16 +57,21 @@
     "url": "https://github.com/HackYourFutureBelgium/website/issues"
   },
   "devDependencies": {
+    "@types/lodash.debounce": "^4.0.7",
+    "@types/node": "^18.14.1",
+    "@types/react": "^17.0.53",
+    "@types/react-dom": "^18.0.11",
     "eslint": "^8.30.0",
     "eslint-config-react-app": "^7.0.1",
-    "prettier": "^2.8.1"
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.5"
   },
   "overrides": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "engines" : { 
-    "npm" : ">=8.0.0 <9.0.0",
-    "node" : ">=18.0.0 <19.0.0"
+  "engines": {
+    "npm": ">=8.0.0 <9.0.0",
+    "node": ">=18.0.0 <19.0.0"
   }
 }
