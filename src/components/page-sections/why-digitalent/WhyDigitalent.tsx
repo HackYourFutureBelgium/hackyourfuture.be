@@ -1,8 +1,7 @@
 import React from "react"
 
 import SingleTestimonial from "../single-testimonial/SingleTestimonial"
-import { Title, Section, Wrapper, Text, Icon, Image } from "../../ui"
-import { COLOR } from "../../../utils/constants"
+import { Section } from "../../ui"
 import imageUrl from "../../../assets/images/new-career.jpg"
 
 const data = {

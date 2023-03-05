@@ -20,6 +20,7 @@ const Collapse = ({ content, main }) => {
 
     return () => {
       window.removeEventListener("resize", setContentSize)
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       setContentSize.cancel()
     }

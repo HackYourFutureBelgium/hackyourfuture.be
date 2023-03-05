@@ -3,7 +3,7 @@ import Icon from "../icon"
 const Button = ({ children, is, iconLeft, iconRight, isLoading, ...props }) => {
   const El = is || "button"
 
-  let iconLeftContent = isLoading ? "spinner" : iconLeft
+  const iconLeftContent = isLoading ? "spinner" : iconLeft
 
   return (
     <El {...props}>

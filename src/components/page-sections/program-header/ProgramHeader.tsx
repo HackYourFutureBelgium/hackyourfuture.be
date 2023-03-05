@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import { Container, AbsoluteContainer } from "./style"
 import { Title, Text, Section, Wrapper, Image, Button } from "../../ui"

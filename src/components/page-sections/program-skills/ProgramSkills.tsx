@@ -2,7 +2,6 @@ import React from "react"
 
 import { Container, LeftContainer, RightContainer } from "./style"
 import { Title, Pane, Text, Section, Wrapper, Image, Button } from "../../ui"
-import { COLOR } from "../../../utils/constants"
 import htmlUrl from "../../../assets/images/html.svg"
 import cssUrl from "../../../assets/images/css.svg"
 import javascriptUrl from "../../../assets/images/javascript.svg"

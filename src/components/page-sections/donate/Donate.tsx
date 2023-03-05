@@ -41,6 +41,7 @@ const Donate = ({ data }) => {
 
     let session
     if (isMonthly) {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       session = await getSessionPlan(`monthly-${parseInt(amount)}`)
     } else {
@@ -49,8 +50,10 @@ const Donate = ({ data }) => {
 
     redirectToCheckout(session.id)
       .then(result => {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
         if (result.error) {
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
           console.log("ERROR STRIPE RESULT: ", result.error)
           setIsLoading(false)

@@ -2,6 +2,7 @@ import PropTypes from "prop-types"
 
 const Title = ({ level, children, ...props }) => {
   const H = `h${level}`
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   return <H {...props}>{children}</H>
 }

@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import { COLOR, FONT_SIZE_TEXT, FONT_FAMILY } from "../../../utils/constants"
 
 export const StyledNavLink = styled(({ isActive, ...props }) => (
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   <Link {...props} />
 ))`

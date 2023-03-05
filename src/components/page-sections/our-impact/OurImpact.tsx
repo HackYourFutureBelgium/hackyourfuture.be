@@ -1,8 +1,7 @@
 import React from "react"
 
 import { TopContainer, BottomContainer, Card, Container } from "./style"
-import { Title, Pane, Text, Section, Wrapper } from "../../ui"
-import { SHADOW } from "../../../utils/constants"
+import { Title, Text, Section, Wrapper } from "../../ui"
 
 const data = {
   title: "Our impact",

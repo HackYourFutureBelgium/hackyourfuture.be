@@ -1,5 +1,5 @@
 const fetchStripeAPI = async (path, data) => {
-  let options: RequestInit = {
+  const options: RequestInit = {
     method: "POST",
     mode: "cors",
     cache: "no-cache",

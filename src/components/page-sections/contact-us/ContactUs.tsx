@@ -9,7 +9,7 @@ import {
   RightContainer,
   Container,
 } from "./style"
-import { Title, Text, Button, Section, Wrapper } from "../../ui"
+import { Title, Text, Button, Section } from "../../ui"
 
 const data = {
   title: "Contact us",
