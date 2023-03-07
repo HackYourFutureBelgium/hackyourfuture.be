@@ -4,10 +4,39 @@ backend:
 
 media_folder: static/img
 public_folder: /img
+search: false
 
 collections:
   - name: 'pages'
     label: 'Pages'
+    create: true
     folder: 'content/pages'
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
+      - name: 'page-title'
+        label: 'Page title'
+        widget: 'string'
+  - name: 'block'
+    label: 'Block'
+    create: true
+    folder: 'content/blocks'
+    fields:
+      - name: 'block-title'
+        label: 'Title'
+        widget: 'string'
+      - name: 'block-description'
+        label: 'Description'
+        widget: 'markdown'
+        buttons: ['bold', 'bulleted-list', 'numbered-list']
+        editor_components: []
+        modes: ['rich_text']
+      - name: "cta"
+        label: "Call to action"
+        widget: "object"
+        collapsed: false
+        fields: 
+          - name: 'cta-label'
+            label: "Label"
+            widget: "string"
+          - name: 'cta-url'
+            label: "Url (https://...)"
+            widget: "string"
