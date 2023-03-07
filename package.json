@@ -8,7 +8,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@stripe/stripe-js": "^1.38.1",
-    "@testing-library/cypress": "^8.0.3",
+    "@testing-library/cypress": "^9.0.0",
     "cypress": "^12.7.0",
     "gatsby": "^5.3.3",
     "gatsby-image": "^3.11.0",
