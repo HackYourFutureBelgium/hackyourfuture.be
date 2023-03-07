@@ -1,1 +1,1 @@
-export { default } from "./OurValues.jsx"
+export { default } from "./OurValues"

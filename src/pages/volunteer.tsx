@@ -4,6 +4,7 @@ import WhyVolunteer from "../components/page-sections/why-volunteer"
 import SingleTestimonial from "../components/page-sections/single-testimonial"
 import anthonyPictureUrl from "../assets/testimonials/anthony.png"
 import eleniPictureUrl from "../assets/testimonials/eleni.jpg"
+import React from "react"
 
 const testimonialAnthonyData = {
   name: "Anthony",

@@ -1,3 +1,4 @@
+import React from "react"
 import { StyledFaqCard, StyledContent, StyledMain } from "./style"
 import { Collapse, Text, Icon } from "../ui"
 import { COLOR } from "../../utils/constants"

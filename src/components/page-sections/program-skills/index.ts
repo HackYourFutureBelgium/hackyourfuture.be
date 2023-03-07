@@ -1,1 +1,1 @@
-export { default } from "./ProgramSkills.jsx"
+export { default } from "./ProgramSkills"

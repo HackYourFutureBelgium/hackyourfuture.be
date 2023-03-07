@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Card, Container } from "./style.js"
+import { Card, Container } from "./style"
 import { Title, Text, Section, Wrapper, Image } from "../../ui"
 
 import zoomUrl from "../../../assets/illustrations/zoom.svg"

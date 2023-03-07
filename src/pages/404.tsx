@@ -1,4 +1,4 @@
-import { FC } from "react"
+import React, { FC } from "react"
 
 import LandingLayout from "../components/layout/landing-layout"
 import NotFound from "../components/page-sections/not-found"

@@ -1,4 +1,5 @@
 import Icon from "../icon"
+import React from "react"
 
 const Button = ({ children, is, iconLeft, iconRight, isLoading, ...props }) => {
   const El = is || "button"

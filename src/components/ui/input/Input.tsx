@@ -1,4 +1,4 @@
-import { useState } from "react"
+import React, { useState } from "react"
 
 import { InputContainer, StyledInput } from "./style"
 import Icon from "../icon"

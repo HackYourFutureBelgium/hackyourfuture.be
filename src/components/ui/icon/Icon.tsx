@@ -11,6 +11,7 @@ import {
   faEnvelope,
   faSpinner,
 } from "@fortawesome/free-solid-svg-icons"
+import React from "react"
 
 import linkedin from "../../../assets/illustrations/linkedin.svg"
 import twitter from "../../../assets/illustrations/twitter.svg"

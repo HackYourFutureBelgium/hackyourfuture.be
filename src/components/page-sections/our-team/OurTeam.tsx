@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Card, Container, CardsContainer } from "./style.js"
+import { Card, Container, CardsContainer } from "./style"
 import { Title, Text, Section, Wrapper, Image, Icon, Pane } from "../../ui"
 
 import hindUrl from "../../../assets/team/Hind2.jpg"

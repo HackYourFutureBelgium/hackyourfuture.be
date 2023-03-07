@@ -1,1 +1,1 @@
-export { default } from "./LandingLayout.jsx"
+export { default } from "./LandingLayout"

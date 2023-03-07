@@ -1,1 +1,1 @@
-export { default } from "./ProgramHeader.jsx"
+export { default } from "./ProgramHeader"

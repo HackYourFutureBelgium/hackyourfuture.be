@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
+import React from "react"
 
 import { COLOR, FONT_SIZE_TEXT, FONT_FAMILY } from "../../../utils/constants"
 

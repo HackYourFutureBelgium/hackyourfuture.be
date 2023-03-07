@@ -1,1 +1,1 @@
-export { default } from "./VolunteerHeader.jsx"
+export { default } from "./VolunteerHeader"

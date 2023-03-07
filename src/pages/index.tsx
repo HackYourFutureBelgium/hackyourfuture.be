@@ -8,6 +8,7 @@ import SuccessStories from "../components/page-sections/success-stories"
 import Donate from "../components/page-sections/donate"
 import ContactUs from "../components/page-sections/contact-us"
 import OurProgramImageUrl from "../assets/images/our-program.jpg"
+import React from "react"
 
 
 const ourProgramData = {

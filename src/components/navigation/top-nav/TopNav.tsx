@@ -1,6 +1,7 @@
 import { StyledTopNav, StyledTopNavMobile } from "./style"
 import NavLink from "../nav-link/NavLink"
 import { Button } from "../../ui"
+import React from "react"
 
 const TopNav = ({ onBurgerNavClicked, isMobile, currentPage }) => {
   return (

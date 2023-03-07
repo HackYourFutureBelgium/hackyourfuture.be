@@ -2,7 +2,7 @@ import React from "react"
 
 import { COLOR } from "../../../utils/constants"
 import { Section, Wrapper, Title, Text} from "../../ui"
-import { Card, Container } from "./style.js"
+import { Card, Container } from "./style"
 
 
 const data = {

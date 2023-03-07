@@ -1,4 +1,5 @@
 import { Title, Pane, Text, Image, Section, Wrapper } from "../ui"
+import React from "react"
 
 import facebookUrl from "../../assets/social/facebook.svg"
 import twitterUrl from "../../assets/social/twitter.svg"

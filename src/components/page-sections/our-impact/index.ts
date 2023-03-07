@@ -1,1 +1,1 @@
-export { default } from "./OurImpact.jsx"
+export { default } from "./OurImpact"

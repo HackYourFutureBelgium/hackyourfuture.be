@@ -3,6 +3,7 @@ import ImageDescription from "../components/page-sections/image-description"
 import SupportUsDetails from "../components/page-sections/support-us-details"
 import Donate from "../components/page-sections/donate"
 import teamWorkUrl from "../assets/images/teamwork.jpg"
+import React from "react"
 
 const WhyBecomePartnerData = {
   title: "Why become a partner?",

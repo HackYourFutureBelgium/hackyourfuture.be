@@ -3,6 +3,7 @@ import ProgramHeader from "../components/page-sections/program-header"
 import ProgramSkills from "../components/page-sections/program-skills"
 import WhoCanApply from "../components/page-sections/who-can-apply"
 import ImageDescription from "../components/page-sections/image-description"
+import React from "react"
 
 import bootcampUrl from "../assets/images/bootcamp.jpg"
 import mentorshipUrl from "../assets/images/mentorship.jpg"

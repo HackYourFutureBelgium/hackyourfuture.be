@@ -1,6 +1,5 @@
 import React from "react"
 
-
 import { Container, Card } from "./style"
 import { Title, Text, Section, Wrapper} from "../../ui"
 import { COLOR } from "../../../utils/constants"

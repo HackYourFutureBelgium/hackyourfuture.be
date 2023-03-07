@@ -5,6 +5,7 @@ import MissionVision from "../components/page-sections/mission-vision"
 import ImageDescription from "../components/page-sections/image-description"
 import OurTeam from "../components/page-sections/our-team"
 import graduationUrl from "../assets/images/graduation.jpg"
+import React from "react"
 
 
 const DescriptionHistoryData = {

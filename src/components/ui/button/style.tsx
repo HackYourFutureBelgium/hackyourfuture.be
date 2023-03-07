@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import React from "react"
 
 import Button from "./Button"
 import { COLOR, FONT_SIZE_TEXT, FONT_FAMILY } from "../../../utils/constants"
