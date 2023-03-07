@@ -8,26 +8,19 @@ npm install
 npm start
 ```
 
-## Update
+## Developing on the project
 
-*Application form link ("Apply now" button)*
+### Launch the website in watch mode
 
-- Update website header: [`src/components/navigation/top-nav/TopNav.jsx` (line 29)](src/components/navigation/top-nav/TopNav.jsx#L29)
-- Update program page: [`src/components/page-sections/program-header/ProgramHeader.jsx` (line 17)](src/components/page-sections/program-header/ProgramHeader.jsx#L17)
+```
+npm dev
+```
 
-*Partners logo*
+### Launch the UI kit in watch more (Storybook)
 
-- Upload partner logo: [`src/assets/partners/`](src/assets/partners/)
-- Update homepage: [`src/components/page-sections/our-partners/OurPartners.jsx`](src/components/page-sections/our-partners/OurPartners.jsx)
-  - Copy [line 11](src/components/page-sections/our-partners/OurPartners.jsx#L11) and fix file path + variable name
-  - Copy [line 24](src/components/page-sections/our-partners/OurPartners.jsx#L24) and fix variable name
-  
-*Success stories*
-
-- Upload picture: [`src/assets/alumni/`](src/assets/alumni/)
-- Update homepage: [`src/components/page-sections/success-stories/SuccessStories.jsx`](src/components/page-sections/success-stories/SuccessStories.jsx)
-  - Copy [line 14](src/components/page-sections/success-stories/SuccessStories.jsx#L14) and fix file path + variable name
-  - Copy [lines 55 to 62](src/components/page-sections/success-stories/SuccessStories.jsx#L55-L62) and fix variable name + content
+```
+npm dev:sb
+```
 
 ## End-to-end tests
 
