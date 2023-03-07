@@ -24,7 +24,6 @@
     "gatsby-transformer-sharp": "^5.3.1",
     "lodash.debounce": "^4.0.8",
     "netlify-cms-app": "^2.15.72",
-    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
@@ -69,14 +68,26 @@
     "@storybook/manager-webpack5": "^6.5.16",
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
+    "@types/lodash.debounce": "^4.0.7",
+    "@types/node": "^18.14.1",
+    "@types/react-dom": "^18.0.11",
+    "@types/react": "^17.0.53",
+    "@types/styled-components": "^5.1.26",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
     "babel-loader": "^8.3.0",
-    "eslint": "^8.30.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-storybook": "^0.6.11",
-    "prettier": "^2.8.1"
+    "eslint": "^8.30.0",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.5"
   },
   "overrides": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "engines": {
+    "npm": ">=8.0.0 <9.0.0",
+    "node": ">=18.0.0 <19.0.0"
   }
 }

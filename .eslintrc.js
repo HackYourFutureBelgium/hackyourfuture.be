@@ -2,7 +2,17 @@ module.exports = {
   globals: {
     __PATH_PREFIX__: true
   },
-  extends: ["react-app", "plugin:storybook/recommended"],
+  parser: "@typescript-eslint/parser",
+  plugins: [
+    "@typescript-eslint"
+  ],
+  extends: [
+    "react-app",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:storybook/recommended"
+  ],
   rules: {
     "no-inner-declarations": 1
   }
