@@ -9,34 +9,31 @@ search: false
 collections:
   - name: 'pages'
     label: 'Pages'
-    create: true
-    folder: 'content/pages'
-    fields:
-      - name: 'page-title'
-        label: 'Page title'
-        widget: 'string'
-  - name: 'block'
-    label: 'Block'
-    create: true
-    folder: 'content/blocks'
-    fields:
-      - name: 'block-title'
-        label: 'Title'
-        widget: 'string'
-      - name: 'block-description'
-        label: 'Description'
-        widget: 'markdown'
-        buttons: ['bold', 'bulleted-list', 'numbered-list']
-        editor_components: []
-        modes: ['rich_text']
-      - name: "cta"
-        label: "Call to action"
-        widget: "object"
-        collapsed: false
-        fields: 
-          - name: 'cta-label'
-            label: "Label"
-            widget: "string"
-          - name: 'cta-url'
-            label: "Url (https://...)"
-            widget: "string"
+    files: 
+      - name: 'block'
+        label: 'Block'
+        file: 'content/blocks.json'
+        fields:
+          - name: 'title'
+            label: 'Title'
+            widget: 'string'
+          - name: 'description'
+            label: 'Description'
+            required: false
+            widget: 'markdown'
+            buttons: ['bold', 'bulleted-list', 'numbered-list']
+            editor_components: []
+            modes: ['rich_text']
+          - name: "cta"
+            label: "Call to action"
+            widget: "object"
+            collapsed: false
+            fields: 
+              - name: 'cta-label'
+                label: "Label"
+                required: false
+                widget: "string"
+              - name: 'cta-url'
+                label: "Url (https://...)"
+                required: false
+                widget: "string"
