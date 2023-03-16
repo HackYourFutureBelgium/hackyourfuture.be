@@ -7,40 +7,45 @@ public_folder: /img
 search: false
 
 collections:
-  - name: 'website'
-    label: 'Website'
+  - name: 'pages'
+    label: 'Pages'
     files:
-      - label: "Pages"
-        name: "pages"
+      - label: "Page content"
+        name: "content"
         file: "content/pages.json"
         fields:
-          - label: Title
-            name: title
-            widget: string
-          - label: Blocks
-            name: blocks
+          - labal: Page
+            name: page
             widget: list
             fields:
-              - label: Title
-                name: title
-                widget: string
-              - label: Description
-                name: description
-                widget: markdown
-                required: false
-                buttons: ['bold', 'bulleted-list', 'numbered-list']
-                editor_components: []
-                modes: ['rich_text']
-              - name: "cta"
-                label: "Call to action"
-                widget: "object"
-                collapsed: false
-                fields: 
-                  - name: 'cta-label'
-                    label: "Label"
-                    required: false
-                    widget: "string"
-                  - name: 'cta-url'
-                    label: "Url (https://...)"
-                    required: false
-                    widget: "string"
+            - label: Title
+              name: title
+              widget: string
+            - label: Blocks
+              name: blocks
+              widget: list
+              fields:
+                - label: Title
+                  name: title
+                  widget: string
+                - label: Description
+                  name: description
+                  widget: markdown
+                  required: false
+                  buttons: ['bold', 'bulleted-list', 'numbered-list']
+                  editor_components: []
+                  modes: ['rich_text']
+                - name: "cta"
+                  label: "Call to action"
+                  widget: "object"
+                  required: false
+                  collapsed: true
+                  fields: 
+                    - name: 'cta-label'
+                      label: "Label"
+                      required: false
+                      widget: "string"
+                    - name: 'cta-url'
+                      label: "Url (https://...)"
+                      required: false
+                      widget: "string"
