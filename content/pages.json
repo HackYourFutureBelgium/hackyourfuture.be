@@ -8,10 +8,12 @@
         },
         {
           "title": "Our program",
-          "description": "Our **9-month** program is divided into **12 modules**. The last module is a **6-weeks intensive Final Project** where students work on a real project with a real partner. Our training takes place at **Epitech** (Brussels) every **Sunday**. During the week, students are supported online in their **self-study**, homework and peer learning.",
-          "cta": {
-            "cta-url": "https://hackyourfuturebelgium.be/program/",
-            "cta-label": "Discover more"
+          "options": {
+            "description": "Our **9-month** program is divided into **12 modules**. The last module is a **6-weeks intensive Final Project** where students work on a real project with a real partner. Our training takes place at **Epitech** (Brussels) every **Sunday**. During the week, students are supported online in their **self-study**, homework and peer learning.",
+            "cta": {
+              "cta-url": "https://hackyourfuturebelgium.be/program/",
+              "cta-label": "Discover more"
+            }
           }
         }
       ]
