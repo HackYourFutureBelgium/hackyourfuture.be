@@ -4,7 +4,7 @@ import styled, { css } from "styled-components";
 interface Props extends HTMLAttributes<HTMLButtonElement> {
     children?: ReactNode;
     size?: "small" | "medium";
-    variant?: "default" | "secondary";
+    variant?: "default" | "primary" | "secondary";
 }
 
 const Button: FC<Props> = ({ children, size = "medium", variant = "default", ...props }) => (
@@ -19,24 +19,39 @@ interface StyledButtonProps {
 }
 
 const StyledButton = styled.button<StyledButtonProps>`
-  padding: ${(props) => (props.size === "small" ? "10px 24px" : "10px 32px")};
-  gap: ${(props) => (props.size === "small" ? "10px" : "16px")};
+  border-style: none;
+  padding: ${({ size }) => (size === "small" ? "10px 24px" : "10px 32px")};
+  gap: ${({ size }) => (size === "small" ? "10px" : "16px")};
   border-radius: 8px;
-  color: #ffffff;
-  
-  ${(props) =>
-        props.variant === "default" &&
+//   TODO: Colors should be replaced with theme colors in the design system
+  color: #ffffff; 
+  transition: background-color 0.2s ease-in-out;
+
+  ${({ variant }) =>
+        variant === "default" &&
         css`
-      background: #295bf6;
+        background-color: transparent;
+        &:hover {
+            background-color: #295bf6;
+        }
+    `}
+  
+  ${({ variant }) =>
+        variant === "primary" &&
+        css`
+      background-color: #295bf6;
       &:hover {
-        background: rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.1);
       }
     `}
 
-  ${(props) =>
-        props.variant === "secondary" &&
+  ${({ variant }) =>
+        variant === "secondary" &&
         css`
-      background: rgba(255, 255, 255, 0.1);
+      background-color: rgba(255, 255, 255, 0.1);
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
     `}
 `;
 

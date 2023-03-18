@@ -12,7 +12,7 @@ export default {
       control: { type: "radio" },
     },
     variant: {
-      options: ["default", "secondary"],
+      options: ["default", "primary", "secondary"],
       control: { type: "radio" },
     },
   },
@@ -25,6 +25,13 @@ Default.args = {
   children: "Default Button",
 };
 
+export const Primary = Template.bind({});
+Primary.args = {
+  children: "Primary Button",
+  variant: "primary",
+};
+
+
 export const Secondary = Template.bind({});
 Secondary.args = {
   children: "Secondary Button",
@@ -35,6 +42,13 @@ export const Small = Template.bind({});
 Small.args = {
   children: "Small Button",
   size: "small",
+};
+
+export const SmallPrimary = Template.bind({});
+SmallPrimary.args = {
+  children: "Small Primary Button",
+  size: "small",
+  variant: "primary",
 };
 
 export const SmallSecondary = Template.bind({});
