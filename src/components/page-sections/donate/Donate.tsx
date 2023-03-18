@@ -17,7 +17,7 @@ import {
   Li,
   Input,
 } from "./style"
-import { Title, Button, Text, Section, Wrapper, Pane } from "../../ui"
+import { Title, LegacyButton, Text, Section, Wrapper, Pane } from "../../ui"
 import { COLOR } from "../../../utils/constants"
 
 const Donate = ({ data }) => {

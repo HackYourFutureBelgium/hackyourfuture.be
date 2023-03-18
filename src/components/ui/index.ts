@@ -18,7 +18,7 @@ import IconUI from "./icon"
 import { StyledSection, StyledWrapper } from "./section"
 import DialogUI from "./dialog"
 
-export const Button = ButtonUI
+export const LegacyButton = ButtonUI
 export const Image = StyledImage
 export const Pane = StyledPane
 export const Text = StyledText

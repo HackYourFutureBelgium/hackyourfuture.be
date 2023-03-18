@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { Title, Text, Section, Wrapper, Button, Pane } from "../../ui"
+import { Title, Text, Section, Wrapper, LegacyButton, Pane } from "../../ui"
 
 const data = {
   title: "Oops",

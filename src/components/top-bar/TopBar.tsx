@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 import { StyledHeader, MobileNavHeader } from "./style"
-import { Pane, Dialog, Button } from "../ui"
+import { Pane, Dialog, LegacyButton } from "../ui"
 import Logo from "../logo/Logo"
 import TopNav from "../navigation/top-nav/TopNav"
 import { BREAKPOINT } from "../../utils/constants"

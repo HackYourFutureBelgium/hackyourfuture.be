@@ -6,7 +6,7 @@ import {
   ContentContainer,
   Container,
 } from "./style"
-import { Title, Text, Image, Button, Section, Wrapper } from "../../ui"
+import { Title, Text, Image, LegacyButton, Section, Wrapper } from "../../ui"
 import { COLOR } from "../../../utils/constants"
 
 const SingleTestimonial = ({ data, isReverse }) => (

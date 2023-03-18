@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Title, Pane, Text, Button, Section, Wrapper } from "../../ui"
+import { Title, Pane, Text, LegacyButton, Section, Wrapper } from "../../ui"
 
 const data = {
   title: "Volunteer",

@@ -1,7 +1,7 @@
 import React from "react"
 
 import { Container, AbsoluteContainer } from "./style"
-import { Title, Text, Section, Wrapper, Image, Button } from "../../ui"
+import { Title, Text, Section, Wrapper, Image, LegacyButton } from "../../ui"
 import imageUrl from "../../../assets/images/new-career.jpg"
 import { COLOR } from "../../../utils/constants"
 

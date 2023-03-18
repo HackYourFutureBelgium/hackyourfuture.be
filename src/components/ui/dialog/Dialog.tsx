@@ -1,7 +1,7 @@
 import React from "react"
 
 import { Container, Layer, Modal, CloseContainer } from "./style"
-import Button from "../button"
+import LegacyButton from "../button"
 
 const Dialog = ({ children, isVisible, onClose, isFullScreen }) => {
   return (

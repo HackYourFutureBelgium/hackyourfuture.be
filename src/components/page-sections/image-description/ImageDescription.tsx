@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { LeftContainer, RightContainer, Container } from "./style"
-import { Title, Pane, Text, Button, Section, Wrapper } from "../../ui"
+import { Title, Pane, Text, LegacyButton, Section, Wrapper } from "../../ui"
 import { COLOR } from "../../../utils/constants"
 
 const ImageDescription = ({
