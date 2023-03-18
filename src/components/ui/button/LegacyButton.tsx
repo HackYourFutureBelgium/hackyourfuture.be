@@ -1,7 +1,7 @@
 import Icon from "../icon"
 import React from "react"
 
-const Button = ({ children, is, iconLeft, iconRight, isLoading, ...props }) => {
+const LegacyButton = ({ children, is, iconLeft, iconRight, isLoading, ...props }) => {
   const El = is || "button"
 
   const iconLeftContent = isLoading ? "spinner" : iconLeft
@@ -15,11 +15,11 @@ const Button = ({ children, is, iconLeft, iconRight, isLoading, ...props }) => {
   )
 }
 
-Button.defaultProps = {
+LegacyButton.defaultProps = {
   children: undefined,
   iconLeft: null,
   iconRight: null,
   isLoading: false,
 }
 
-export default Button
+export default LegacyButton;

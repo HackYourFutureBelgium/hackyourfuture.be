@@ -50,13 +50,13 @@ const ImageDescription = ({
           )}
           {data.cta && !data.isCtaExternal && (
             <Link to={data.ctaLink} data-target="link">
-              <Button variant="minimal" iconRight="arrow-right">
+              <LegacyButton variant="minimal" iconRight="arrow-right">
                 {data.cta}
-              </Button>
+              </LegacyButton>
             </Link>
           )}
           {data.cta && data.isCtaExternal && (
-            <Button
+            <LegacyButton
               is="a"
               href={data.ctaLink}
               target="_blank"
@@ -65,7 +65,7 @@ const ImageDescription = ({
               iconRight="arrow-right"
             >
               {data.cta}
-            </Button>
+            </LegacyButton>
           )}
         </LeftContainer>
         <RightContainer

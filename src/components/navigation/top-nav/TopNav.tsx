@@ -25,18 +25,18 @@ const TopNav = ({ onBurgerNavClicked, isMobile, currentPage }) => {
         <NavLink to="/support-us" isActive={currentPage === "support-us"}>
           <span>Support us</span>
         </NavLink>
-        <Button
+        <LegacyButton
           is="a"
           href="https://forms.gle/jevj2Ti6brB9pAdw8"
           target="_blank"
           rel="noopener noreferrer nofollow"
         >
           Apply now
-        </Button>
+        </LegacyButton>
       </StyledTopNav>
       {!isMobile && (
         <StyledTopNavMobile>
-          <Button
+          <LegacyButton
             iconLeft="bars"
             onClick={onBurgerNavClicked}
             variant="minimal"

@@ -30,24 +30,24 @@ const ProgramSkills = () => (
         <LeftContainer>
           <Title level={2}>{data.title}</Title>
           <Pane margin="10px 0">
-            <Button
+            <LegacyButton
               as="a"
               href="https://home.hackyourfuture.be/curriculum#the-modules"
               target="_blank"
               rel="noopener noreferrer nofollow"
             >
               {data.cta1}
-            </Button>
+            </LegacyButton>
           </Pane>
           <Pane margin="10px 0">
-            <Button
+            <LegacyButton
               as="a"
               href="https://form.typeform.com/to/yfzzQxtI"
               target="_blank"
               rel="noopener noreferrer nofollow"
             >
               {data.cta2}
-            </Button>
+            </LegacyButton>
           </Pane>
         </LeftContainer>
         <RightContainer>

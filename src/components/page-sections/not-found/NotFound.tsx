@@ -23,9 +23,9 @@ const NotFound = () => (
       <Pane maxWidth="400px" margin="20px 0 40px 0">
         <Text isCenter>{data.intro}</Text>
       </Pane>
-      <Button as={Link} to="/">
+      <LegacyButton as={Link} to="/">
         {data.cta}
-      </Button>
+      </LegacyButton>
     </Wrapper>
   </Section>
 )

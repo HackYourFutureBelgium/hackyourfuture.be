@@ -49,14 +49,14 @@ const OurPartners = () => (
     <Wrapper>
       <TopContainer>
         <Title level={2}>{data.title}</Title>
-        <Button
+        <LegacyButton
           is="a"
           variant="minimal"
           iconRight="arrow-right"
           href={data.ctaLink}
         >
           {data.cta}
-        </Button>
+        </LegacyButton>
       </TopContainer>
       <BottomContainer>
         {data.partnerImages.map((value, index) => (

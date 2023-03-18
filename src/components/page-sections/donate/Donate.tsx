@@ -144,9 +144,9 @@ const Donate = ({ data }) => {
                   onChange={({ target: { value } }) => setMessage(value)}
                 />
               </FormSection>
-              <Button onClick={onSubmit} isLoading={isLoading}>
+              <LegacyButton onClick={onSubmit} isLoading={isLoading}>
                 Donate
-              </Button>
+              </LegacyButton>
             </Form>
           </RightContainer>
         </Container>

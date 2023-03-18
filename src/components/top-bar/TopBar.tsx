@@ -27,13 +27,13 @@ const TopBar = ({ page }) => {
       </Pane>
       <Dialog isVisible={isMobileNavOpen} isFullScreen>
         <MobileNavHeader>
-          <Button
+          <LegacyButton
             iconLeft="arrow-left"
             onClick={() => setIsMobileNavOpen(false)}
             variant="minimal"
           >
             Back
-          </Button>
+          </LegacyButton>
         </MobileNavHeader>
         {/* <MobileNav> */}
         <TopNav isMobile onBurgerNavClicked={undefined} currentPage={undefined} />

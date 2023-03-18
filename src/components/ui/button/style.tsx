@@ -1,13 +1,13 @@
 import styled from "styled-components"
 import React from "react"
 
-import Button from "./Button"
+import LegacyButton from "./LegacyButton"
 import { COLOR, FONT_SIZE_TEXT, FONT_FAMILY } from "../../../utils/constants"
 
 const StyledButton = styled(
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
-  ({ variant, size, isWhite, hasRadius, ...rest }) => <Button {...rest} />
+  ({ variant, size, isWhite, hasRadius, ...rest }) => <LegacyButton {...rest} />
 )`
   display: inline-flex;
   font-size: ${({ size }) => size || FONT_SIZE_TEXT.S};

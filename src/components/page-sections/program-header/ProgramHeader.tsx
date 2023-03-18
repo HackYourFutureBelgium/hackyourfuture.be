@@ -40,14 +40,14 @@ const ProgramHeader = () => (
         >
           {data.cta2}
         </Text>
-        <Button
+        <LegacyButton
           is="a"
           href={data.ctaLink}
           target="_blank"
           rel="noopener noreferrer nofollow"
         >
           {data.cta}
-        </Button>
+        </LegacyButton>
       </Container>
       <AbsoluteContainer>
         <Image src={data.image} width="100%" height="100%" objectFit="cover" />

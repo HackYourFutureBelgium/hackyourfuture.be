@@ -69,9 +69,9 @@ const ContactUs = () => {
               value={body}
               onChange={({ target: { value } }) => setBody(value)}
             />
-            <Button isWhite onClick={sendEmail}>
+            <LegacyButton isWhite onClick={sendEmail}>
               Send
-            </Button>
+            </LegacyButton>
           </Form>
         </LeftContainer>
         <RightContainer>

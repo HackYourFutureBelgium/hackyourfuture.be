@@ -11,7 +11,7 @@ const Dialog = ({ children, isVisible, onClose, isFullScreen }) => {
           {children}
           {onClose && (
             <CloseContainer>
-              <Button iconLeft="times" onClick={onClose} />
+              <LegacyButton iconLeft="times" onClick={onClose} />
             </CloseContainer>
           )}
         </Modal>

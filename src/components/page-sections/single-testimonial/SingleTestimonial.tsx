@@ -37,7 +37,7 @@ const SingleTestimonial = ({ data, isReverse }) => (
             </Text>
             <Text>{data.quote}</Text>
           </ContentContainer>
-          <Button
+          <LegacyButton
             as="a"
             href={data.ctaLink}
             target="_blank"
@@ -45,7 +45,7 @@ const SingleTestimonial = ({ data, isReverse }) => (
             hasRadius={false}
           >
             {data.cta}
-          </Button>
+          </LegacyButton>
         </QuoteContainer>
       </Container>
     </Wrapper>

@@ -25,23 +25,23 @@ const VolunteerHeader = () => (
           {data.description}
         </Text>
         <Pane justifyContent="center" margin="20px 0 0 0">
-          <Button
+          <LegacyButton
             as="a"
             href={data.cta1Link}
             target="_blank"
             rel="noopener noreferrer nofollow"
           >
             {data.cta1}
-          </Button>
+          </LegacyButton>
           &nbsp; &nbsp;
-          <Button
+          <LegacyButton
             as="a"
             href={data.cta2Link}
             target="_blank"
             rel="noopener noreferrer nofollow"
           >
             {data.cta2}
-          </Button>
+          </LegacyButton>
         </Pane>
       </Pane>
     </Wrapper>
