@@ -1,7 +1,7 @@
-import React from "react";
-import { Story, Meta } from "@storybook/react";
-import Button, { ButtonProps } from "../components/ui/button/ButtonV2";
-import styled from "styled-components";
+import React from "react"
+import { Story, Meta } from "@storybook/react"
+import Button, { ButtonProps } from "../components/ui/button/ButtonV2"
+import styled from "styled-components"
 
 const meta: Meta<ButtonProps> = {
   title: "Button",
@@ -32,7 +32,7 @@ const meta: Meta<ButtonProps> = {
     },
   },
   decorators: [
-    (Story) => (
+    Story => (
       <StyledDiv>
         <Story />
       </StyledDiv>
@@ -40,50 +40,49 @@ const meta: Meta<ButtonProps> = {
   ],
 }
 
-export default meta;
+export default meta
 
 const StyledDiv = styled.div`
-// TODO: Replace color with theme color variable
-background-color: #040419;
-padding: 20px;
-`;
+  // TODO: Replace color with theme color variable
+  background-color: #040419;
+  padding: 20px;
+`
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+const Template: Story<ButtonProps> = args => <Button {...args} />
 
-export const Default = Template.bind({});
+export const Default = Template.bind({})
 Default.args = {
   children: "Default Button",
-};
+}
 
-export const Primary = Template.bind({});
+export const Primary = Template.bind({})
 Primary.args = {
   children: "Primary Button",
   variant: "primary",
-};
+}
 
-
-export const Secondary = Template.bind({});
+export const Secondary = Template.bind({})
 Secondary.args = {
   children: "Secondary Button",
   variant: "secondary",
-};
+}
 
-export const SmallDefault = Template.bind({});
+export const SmallDefault = Template.bind({})
 SmallDefault.args = {
   children: "Small Default Button",
   size: "small",
-};
+}
 
-export const SmallPrimary = Template.bind({});
+export const SmallPrimary = Template.bind({})
 SmallPrimary.args = {
   children: "Small Primary Button",
   size: "small",
   variant: "primary",
-};
+}
 
-export const SmallSecondary = Template.bind({});
+export const SmallSecondary = Template.bind({})
 SmallSecondary.args = {
   children: "Small Secondary Button",
   size: "small",
   variant: "secondary",
-};
+}
