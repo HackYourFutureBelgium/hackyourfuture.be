@@ -7,7 +7,11 @@ const meta: Meta<ButtonProps> = {
   title: "Button",
   component: Button,
   argTypes: {
-    onClick: { action: "clicked" },
+    children: {
+      control: { type: "text" },
+      description: "Text or other elements to be rendered inside the button",
+    },
+    onClick: { action: "clicked", description: "Click event" },
     size: {
       options: ["small", "medium"],
       control: { type: "radio" },
@@ -21,7 +25,7 @@ const meta: Meta<ButtonProps> = {
     HTMLElement: {
       options: ["button", "a"],
       control: { type: "radio" },
-      description: "Element of the button",
+      description: "HTMLElement of the button",
       defaultValue: "button",
     },
   },
@@ -62,9 +66,9 @@ Secondary.args = {
   variant: "secondary",
 };
 
-export const Small = Template.bind({});
-Small.args = {
-  children: "Small Button",
+export const SmallDefault = Template.bind({});
+SmallDefault.args = {
+  children: "Small Default Button",
   size: "small",
 };
 
