@@ -1,24 +1,48 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react";
-import Button from "../components/ui/button/ButtonV2";
+import Button, { ButtonProps } from "../components/ui/button/ButtonV2";
+import styled from "styled-components";
 
-export default {
-  title: "ButtonV2",
+const meta: Meta<ButtonProps> = {
+  title: "Button",
   component: Button,
   argTypes: {
     onClick: { action: "clicked" },
     size: {
       options: ["small", "medium"],
       control: { type: "radio" },
+      description: "Size of the button",
     },
     variant: {
       options: ["default", "primary", "secondary"],
       control: { type: "radio" },
+      description: "Variant of the button",
+    },
+    HTMLElement: {
+      options: ["button", "a"],
+      control: { type: "radio" },
+      description: "Element of the button",
+      defaultValue: "button",
     },
   },
-} as Meta;
+  decorators: [
+    (Story) => (
+      <StyledDiv>
+        <Story />
+      </StyledDiv>
+    ),
+  ],
+}
 
-const Template: Story = (args) => <Button {...args} />;
+export default meta;
+
+const StyledDiv = styled.div`
+// TODO: Replace color with theme color variable
+background-color: #040419;
+padding: 20px;
+`;
+
+const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

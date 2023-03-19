@@ -1,16 +1,16 @@
 import React, { FC, HTMLAttributes, ReactNode } from "react";
 import styled, { css } from "styled-components";
 
-interface Props extends HTMLAttributes<HTMLButtonElement | HTMLAnchorElement> {
+export interface ButtonProps extends HTMLAttributes<HTMLButtonElement | HTMLAnchorElement> {
     children?: ReactNode;
     size?: "small" | "medium";
     variant?: "default" | "primary" | "secondary";
-    element?: "button" | "a";
+    HTMLElement?: "button" | "a";
 }
 
-const Button: FC<Props> = ({ children, size = "medium", variant = "default", element = "button", ...props }) => {
+const Button: FC<ButtonProps> = ({ children, size = "medium", variant = "default", HTMLElement = "button", ...props }) => {
 
-    const StyledElement = element === "button" ? StyledButton : StyledAnchor as FC<StyledButtonProps>;
+    const StyledElement = HTMLElement === "button" ? StyledButton : StyledAnchor as FC<StyledButtonProps>;
 
     return (
         <StyledElement size={size} variant={variant} {...props} >
@@ -19,8 +19,8 @@ const Button: FC<Props> = ({ children, size = "medium", variant = "default", ele
     )
 }
 interface StyledButtonProps {
-    size: Props["size"];
-    variant: Props["variant"];
+    size: ButtonProps["size"];
+    variant: ButtonProps["variant"];
 }
 
 
