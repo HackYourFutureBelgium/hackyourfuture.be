@@ -24,7 +24,7 @@ const meta: Meta<ButtonProps> = {
       description: "Variant of the button",
       defaultValue: "default",
     },
-    HTMLElement: {
+    as: {
       options: ["button", "a"],
       control: { type: "radio" },
       description: "HTMLElement of the button",
