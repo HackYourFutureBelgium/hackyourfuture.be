@@ -16,19 +16,16 @@ const meta: Meta<ButtonProps> = {
       options: ["small", "medium"],
       control: { type: "radio" },
       description: "Size of the button",
-      defaultValue: "medium",
     },
     variant: {
       options: ["default", "primary", "secondary"],
       control: { type: "radio" },
       description: "Variant of the button",
-      defaultValue: "default",
     },
     as: {
       options: ["button", "a"],
       control: { type: "radio" },
       description: "HTMLElement of the button",
-      defaultValue: "button",
     },
   },
   decorators: [

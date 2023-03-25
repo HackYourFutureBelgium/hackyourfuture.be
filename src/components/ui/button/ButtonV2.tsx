@@ -1,5 +1,6 @@
 import React, { FC, HTMLAttributes, ReactNode } from "react"
 import styled, { css } from "styled-components"
+import { darken, rgba } from "polished"
 
 export interface ButtonProps
   extends HTMLAttributes<HTMLButtonElement | HTMLAnchorElement> {
@@ -47,6 +48,12 @@ const StyledButton = styled.button<StyledButtonProps>`
       &:hover {
         background-color: #295bf6;
       }
+      &:active {
+        background-color: ${darken(0.2, "#295bf6")};
+      }
+      &:focus {
+        outline: 2px solid #295bf6;
+      }
     `}
 
   ${({ variant }) =>
@@ -56,6 +63,12 @@ const StyledButton = styled.button<StyledButtonProps>`
       &:hover {
         background-color: rgba(255, 255, 255, 0.1);
       }
+      &:active {
+        background-color: ${darken(0.2, rgba(255, 255, 255, 0.1))};
+      }
+      &:focus {
+        outline: 2px solid #ffffff;
+      }
     `}
 
   ${({ variant }) =>
@@ -64,6 +77,12 @@ const StyledButton = styled.button<StyledButtonProps>`
       background-color: rgba(255, 255, 255, 0.1);
       &:hover {
         background-color: rgba(255, 255, 255, 0.2);
+      }
+      &:active {
+        background-color: ${darken(0.2, rgba(255, 255, 255, 0.2))};
+      }
+      &:focus {
+        outline: 2px solid #295bf6;
       }
     `}
 `
