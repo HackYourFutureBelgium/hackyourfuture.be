@@ -50,7 +50,8 @@
     "serve": "gatsby serve",
     "start": "npm run develop",
     "test:e2e:headless": "start-server-and-test develop http://localhost:8000 cy:run",
-    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open"
+    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
+    "test:sb": "test-storybook"
   },
   "repository": {
     "type": "git",
@@ -68,6 +69,7 @@
     "@storybook/builder-webpack5": "^6.5.16",
     "@storybook/manager-webpack5": "^6.5.16",
     "@storybook/react": "^6.5.16",
+    "@storybook/test-runner": "^0.9.4",
     "@storybook/testing-library": "^0.0.13",
     "@types/lodash.debounce": "^4.0.7",
     "@types/node": "^18.14.1",
