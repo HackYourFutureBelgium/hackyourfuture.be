@@ -1,6 +1,7 @@
 import React from "react"
 import { Story, Meta } from "@storybook/react"
 import { within, userEvent } from "@storybook/testing-library"
+import { expect } from "@storybook/jest"
 import Button, { ButtonProps } from "../components/ui/button/ButtonV2"
 import styled from "styled-components"
 
@@ -48,20 +49,45 @@ const StyledDiv = styled.div`
 
 const Template: Story<ButtonProps> = args => <Button {...args} />
 
-// The following code is used to test the button click event
+// The following code is used to test the button component
+
+interface TestExpectedStyles {
+  "background-color": string
+  color: string
+  padding: string
+  gap: string
+}
+
 interface TestArgs {
   canvasElement: HTMLElement
   story: Story<ButtonProps>
+  expectedStyles: TestExpectedStyles
 }
 
-const testButtonClick = ({ canvasElement, story }: TestArgs) => {
+const testButton = async ({
+  canvasElement,
+  story,
+  expectedStyles,
+}: TestArgs) => {
+  // Get canvas element
   const canvas = within(canvasElement)
 
-  const button = canvas.getByText(story.args?.children as string, {
+  // Get button element
+  const button = await canvas.getByText(story.args?.children as string, {
     selector: "button",
   })
 
-  userEvent.click(button)
+  // Test button text
+  expect(button.innerText).toBe(story.args?.children as string)
+
+  // Test button ExpectedStyles
+  Object.entries(expectedStyles).forEach(([key, value]) => {
+    expect(button).toHaveStyle(`${key}: ${value}`)
+  })
+
+  // Test button click event
+  await userEvent.click(button)
+  expect(button).toHaveFocus()
 }
 
 // Stories for the button component
@@ -72,17 +98,35 @@ Default.args = {
   children: "Default Button",
 }
 
-Default.play = ({ canvasElement }) =>
-  testButtonClick({ canvasElement, story: Default })
+Default.play = async ({ canvasElement }) =>
+  testButton({
+    canvasElement,
+    story: Default,
+    expectedStyles: {
+      "background-color": "rgba(0, 0, 0, 0)",
+      color: "#ffffff",
+      padding: "10px 32px",
+      gap: "16px",
+    },
+  })
 
 export const Primary = Template.bind({})
 Primary.args = {
   children: "Primary Button",
-  variant: "primary",
+  variant: "primary", 
 }
 
-Primary.play = ({ canvasElement }) =>
-  testButtonClick({ canvasElement, story: Primary })
+Primary.play = async ({ canvasElement }) =>
+  testButton({
+    canvasElement,
+    story: Primary,
+    expectedStyles: {
+      "background-color": "#295bf6",
+      color: "#ffffff",
+      padding: "10px 32px",
+      gap: "16px",
+    },
+  })
 
 export const Secondary = Template.bind({})
 Secondary.args = {
@@ -90,8 +134,17 @@ Secondary.args = {
   variant: "secondary",
 }
 
-Secondary.play = ({ canvasElement }) =>
-  testButtonClick({ canvasElement, story: Secondary })
+Secondary.play = async ({ canvasElement }) =>
+  testButton({
+    canvasElement,
+    story: Secondary,
+    expectedStyles: {
+      "background-color": "rgba(255, 255, 255, 0.1);",
+      color: "#ffffff",
+      padding: "10px 32px",
+      gap: "16px",
+    },
+  })
 
 export const SmallDefault = Template.bind({})
 SmallDefault.args = {
@@ -99,8 +152,17 @@ SmallDefault.args = {
   size: "small",
 }
 
-SmallDefault.play = ({ canvasElement }) =>
-  testButtonClick({ canvasElement, story: SmallDefault })
+SmallDefault.play = async ({ canvasElement }) =>
+  testButton({
+    canvasElement,
+    story: SmallDefault,
+    expectedStyles: {
+      "background-color": "rgba(0, 0, 0, 0)",
+      color: "#ffffff",
+      padding: "10px 24px",
+      gap: "10px",
+    },
+  })
 
 export const SmallPrimary = Template.bind({})
 SmallPrimary.args = {
@@ -109,8 +171,17 @@ SmallPrimary.args = {
   variant: "primary",
 }
 
-SmallPrimary.play = ({ canvasElement }) =>
-  testButtonClick({ canvasElement, story: SmallPrimary })
+SmallPrimary.play = async ({ canvasElement }) =>
+  testButton({
+    canvasElement,
+    story: SmallPrimary,
+    expectedStyles: {
+      "background-color": "#295bf6",
+      color: "#ffffff",
+      padding: "10px 24px",
+      gap: "10px",
+    },
+  })
 
 export const SmallSecondary = Template.bind({})
 SmallSecondary.args = {
@@ -119,5 +190,14 @@ SmallSecondary.args = {
   variant: "secondary",
 }
 
-SmallSecondary.play = ({ canvasElement }) =>
-  testButtonClick({ canvasElement, story: SmallSecondary })
+SmallSecondary.play = async ({ canvasElement }) =>
+  testButton({
+    canvasElement,
+    story: SmallSecondary,
+    expectedStyles: {
+      "background-color": "rgba(255, 255, 255, 0.1);",
+      color: "#ffffff",
+      padding: "10px 24px",
+      gap: "10px",
+    },
+  })
