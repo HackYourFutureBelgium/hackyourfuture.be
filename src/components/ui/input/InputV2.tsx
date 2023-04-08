@@ -4,13 +4,20 @@ import styled from "styled-components"
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string
   label?: string
+  error?: string
+  isRequired?: boolean
 }
 
-const Input = ({ name, label, ...props }: InputProps) => {
+const Input = ({ name, label, error, isRequired, ...props }: InputProps) => {
   return (
     <StyledInputDiv>
-      {label && <label htmlFor={name}>{label}</label>}
+      {label && (
+        <label htmlFor={name}>
+          {label}{isRequired && "*"}
+        </label>
+      )}
       <StyledInput name={name} {...props} />
+      {error && <StyledInputErrorDiv>{error}</StyledInputErrorDiv>}
     </StyledInputDiv>
   )
 }
@@ -37,4 +44,9 @@ const StyledInput = styled.input`
     outline: 2px solid #184ff4;
     box-shadow: 0px 0px 0px 4px rgba(24, 79, 244, 0.2);
   }
+`
+const StyledInputErrorDiv = styled.div`
+  color: #ff0000;
+  font-size: 12px;
+  font-weight: 400;
 `
