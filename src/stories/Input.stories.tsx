@@ -31,11 +31,6 @@ const meta: Meta<InputProps> = {
         type: "text",
       },
     },
-    name: {
-      control: {
-        type: "text",
-      },
-    },
     id: {
       control: {
         type: "text",
@@ -68,7 +63,6 @@ export const Default = Template.bind({})
 Default.args = {
   placeholder: "Enter your name...",
   type: "text",
-  name: "name",
   id: "name",
 }
 
@@ -77,7 +71,6 @@ export const WithLabel = Template.bind({})
 WithLabel.args = {
   placeholder: "Enter your name...",
   type: "text",
-  name: "name",
   id: "name",
   label: "Name",
 }
@@ -86,7 +79,6 @@ export const WithError = Template.bind({})
 WithError.args = {
   placeholder: "Enter your name...",
   type: "text",
-  name: "name",
   id: "name",
   label: "Name",
   error: "This field is required",
