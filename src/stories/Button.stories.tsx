@@ -88,6 +88,8 @@ const testButton = async ({
   // Test button click event
   await userEvent.click(button)
   expect(button).toHaveFocus()
+
+  button.blur()
 }
 
 // Stories for the button component
