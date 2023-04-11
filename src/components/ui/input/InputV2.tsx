@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes, TextareaHTMLAttributes } from "react"
+import React, { FC, InputHTMLAttributes, TextareaHTMLAttributes } from "react"
 import styled from "styled-components"
 
 type HTMLProps = InputHTMLAttributes<HTMLInputElement> &
@@ -14,7 +14,7 @@ export interface InputProps extends HTMLProps {
   resize?: "none" | "both" | "horizontal" | "vertical"
 }
 
-const Input = ({
+const Input: FC<InputProps> = ({
   id,
   name,
   label,
@@ -23,7 +23,7 @@ const Input = ({
   as,
   resize = "none",
   ...props
-}: InputProps) => {
+}) => {
   const isError = Boolean(error)
   return (
     <StyledInputDiv isError={isError}>
