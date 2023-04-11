@@ -25,31 +25,61 @@ const meta: Meta<InputProps> = {
           "color",
         ],
       },
+      description: "The type of input to render. Only used for input.",
     },
     placeholder: {
       control: {
         type: "text",
       },
+      description: "The placeholder text for the input.",
     },
     id: {
       control: {
         type: "text",
       },
+      description: "The id of the input. This is required for accessibility.",
     },
     label: {
       control: {
         type: "text",
       },
+      description: "The label for the input.",
     },
     error: {
       control: {
         type: "text",
       },
+      description:
+        "The error message for the input. If this is passed, the input will be in an error state.",
     },
     isRequired: {
       control: {
         type: "boolean",
       },
+      description: "Whether or not the input is required.",
+    },
+    as: {
+      control: {
+        type: "select",
+        options: ["input", "textarea"],
+      },
+      description:
+        "The type of input to render. If not passed, defaults to input.",
+    },
+    rows: {
+      control: {
+        type: "number",
+      },
+      description:
+        "The number of rows for the textarea. Only used for textarea.",
+    },
+    resize: {
+      control: {
+        type: "select",
+        options: ["none", "both", "horizontal", "vertical"],
+      },
+      description:
+        "The resize property for the textarea. Only used for textarea.",
     },
   },
 }
@@ -83,4 +113,15 @@ WithError.args = {
   label: "Name",
   error: "This field is required",
   isRequired: true,
+}
+
+export const AsTextArea = Template.bind({})
+
+AsTextArea.args = {
+  placeholder: "Enter your name...",
+  id: "description",
+  label: "Description",
+  as: "textarea",
+  rows: 6,
+  resize: "none",
 }
