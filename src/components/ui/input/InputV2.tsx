@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 type HTMLProps = InputHTMLAttributes<HTMLInputElement> &
   TextareaHTMLAttributes<HTMLTextAreaElement>
+
 export interface InputProps extends HTMLProps {
   id: string
   name?: string
@@ -25,7 +26,7 @@ const Input = ({
 }: InputProps) => {
   const isError = Boolean(error)
   return (
-    <StyledInputDiv>
+    <StyledInputDiv isError={isError}>
       {label && (
         <label htmlFor={id}>
           {label}
@@ -49,7 +50,12 @@ const Input = ({
 }
 
 export default Input
-const StyledInputDiv = styled.div`
+
+interface StyledInputDivProps {
+  isError: boolean
+}
+
+const StyledInputDiv = styled.div<StyledInputDivProps>`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -57,12 +63,11 @@ const StyledInputDiv = styled.div`
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   margin-bottom: 1.5rem;
-  position: relative;
+  ${({ isError }) => isError && "position: relative;"}
 `
 
-interface StyledInputProps {
+interface StyledInputProps extends Pick<InputProps, "resize"> {
   isError: boolean
-  resize?: InputProps["resize"]
 }
 
 const StyledInput = styled.input<StyledInputProps>`
