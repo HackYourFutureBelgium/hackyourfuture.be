@@ -22,21 +22,19 @@ const Button: FC<ButtonProps> = ({
   </StyledButton>
 )
 
-interface StyledButtonProps {
-  size: ButtonProps["size"]
-  variant: ButtonProps["variant"]
-}
+type StyledButtonProps = Pick<ButtonProps, "size" | "variant">
 
 const StyledButton = styled.button<StyledButtonProps>`
   display: flex;
   width: fit-content;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   border-style: none;
   cursor: pointer;
-  padding: ${({ size }) => (size === "small" ? "10px 24px" : "10px 32px")};
-  gap: ${({ size }) => (size === "small" ? "10px" : "16px")};
-  border-radius: 8px;
+  padding: ${({ size }) =>
+    size === "small" ? "0.625rem 1.5rem" : "0.625rem 2rem"};
+  gap: ${({ size }) => (size === "small" ? "0.625rem" : "1rem")};
+  border-radius: 0.5rem;
   //   TODO: Colors should be replaced with theme colors in the design system
   color: #ffffff;
   transition: background-color 0.2s ease-in-out;
