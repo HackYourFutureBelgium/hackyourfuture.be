@@ -10,7 +10,7 @@
     "@stripe/stripe-js": "^1.38.1",
     "@testing-library/cypress": "^9.0.0",
     "cypress": "^12.7.0",
-    "gatsby": "^5.3.3",
+    "gatsby": "^5.10.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-google-tagmanager": "^5.3.1",
     "gatsby-plugin-manifest": "^5.3.1",
