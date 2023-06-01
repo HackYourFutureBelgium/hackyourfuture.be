@@ -13,7 +13,7 @@
     "gatsby": "^5.3.3",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-google-tagmanager": "^5.3.1",
-    "gatsby-plugin-manifest": "^5.3.1",
+    "gatsby-plugin-manifest": "^5.10.0",
     "gatsby-plugin-netlify-cms": "^7.3.0",
     "gatsby-plugin-offline": "^6.3.1",
     "gatsby-plugin-react-helmet": "^6.7.0",
