@@ -11,8 +11,8 @@ const data ={
     ctaLink: "https://docs.google.com/forms/d/1P8JxEyHHRNJs06e6_NpxrkuzQba1CGRacRtYbIV9N9k/edit#responses",
     quote:[
       "Do you already have some knowledge in programming?",
-      "                             Are you highly motivated to enrich your digital skills?",
-      "                             Do you have the time to commit to your track of choice for 10 weeks?"],
+      "Are you highly motivated to enrich your digital skills?",
+      "Do you have the time to commit to your track of choice for 10 weeks?"],
 
     image: imageUrl,
 }

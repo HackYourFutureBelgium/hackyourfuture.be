@@ -8,7 +8,7 @@ const data = {
   name: "Why Digitalents?",
   quote: [
     "✅Companies have more hiring needs for specific profiles",
-    "                 ✅Increasing number of graduates who after a year are still unemployed                ",
+    "✅Increasing number of graduates who after a year are still unemployed                ",
     "✅Digitalents aims at bridging the gap",
   ],
   cta: "Apply now for our Digitalents training",
