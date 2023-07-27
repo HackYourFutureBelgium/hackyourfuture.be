@@ -76,7 +76,7 @@ const data = {
     //  { icon: "mail", link: "mailto:lizhen@hackyourfuture.be" },
       {
         icon: "linkedin",
-        link: "https://www.linkedin.com/in/lizhenxu/",
+        link: "https://www.linkedin.com/in/anthony-meirlaen-aaa73884/",
       },
     ],
   },
@@ -88,7 +88,7 @@ const data = {
       //{ icon: "mail", link: "mailto:lizhen@hackyourfuture.be" },
       {
         icon: "linkedin",
-        link: "https://www.linkedin.com/in/lizhenxu/",
+        link: "https://www.linkedin.com/in/donatello-cartella-0492a02/",
       },
     ],
   },
@@ -97,7 +97,7 @@ const data = {
       fullName: "Lizhen Xu",
       role: "Board Member and General Manager",
       links: [
-        { icon: "mail", link: "mailto:lizhen@hackyourfuture.be" },
+        { icon: "mail", link: "mailto:lizhen@hyfbe.be" },
         {
           icon: "linkedin",
           link: "https://www.linkedin.com/in/lizhenxu/",
