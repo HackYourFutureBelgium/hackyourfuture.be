@@ -15,7 +15,7 @@ const DescriptionOneData = {
   description:
     "We challenge our graduates to a 6-weeks final project sprint, where they build open source projects with a social impact. During the final project spring, the students get acquainted with new skills, discover new ways to collaborate, processes and learn about the industry best practices that are expected in the local labor market.",
   cta: "Discover more",
-  ctaLink: "https://home.hackyourfuture.be/curriculum/final-project",
+  ctaLink: "https://github.com/HackYourFutureBelgium/final-projects",
   isCtaExternal: true,
   image: bootcampUrl,
 }

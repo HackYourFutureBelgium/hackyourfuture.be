@@ -64,7 +64,7 @@ const data = {
      // { icon: "mail", link: "mailto:lizhen@hackyourfuture.be" },
       {
         icon: "linkedin",
-        link: "https://www.linkedin.com/in/lizhenxu/",
+        link: "https://www.linkedin.com/in/luciekroemer/",
       },
     ],
   },

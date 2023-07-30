@@ -10,7 +10,7 @@ import mysqlUrl from "../../../assets/images/sql-lite.svg"
 import reactjsUrl from "../../../assets/images/react-js.svg"
 
 const data = {
-  title: "9-month program",
+  title: "8-month program",
   cta1: "Discover the full curriculum here",
   cta2: "Become a coach",
   images: [
@@ -32,7 +32,7 @@ const ProgramSkills = () => (
           <Pane margin="10px 0">
             <Button
               as="a"
-              href="https://home.hackyourfuture.be/curriculum#the-modules"
+              href="https://hyfbe-1.gitbook.io/hack-your-future-belgium/curriculum"
               target="_blank"
               rel="noopener noreferrer nofollow"
             >
