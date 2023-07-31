@@ -5,7 +5,10 @@
       "blocks": [
         {
           "title": "Helping new talent into the tech world",
-          "type": "general_header"
+          "type": "general_header",
+          "options": {
+            "image": "/img/home-header.jpg"
+          }
         },
         {
           "title": "Our program",
