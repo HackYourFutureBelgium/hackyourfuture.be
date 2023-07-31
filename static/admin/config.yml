@@ -33,8 +33,10 @@ collections:
                     "general_header",
                     "main_header",
                     "presentation",
+                    "blocks",
                     "three_blocks",
                     "logos",
+                    "testimonials",
                   ]
                 - name: title
                   label: Title
@@ -52,6 +54,10 @@ collections:
                       buttons: ['bold', 'bulleted-list', 'numbered-list']
                       editor_components: []
                       modes: ['rich_text']
+                    - name: image
+                      label: Image
+                      widget: image
+                      required: false
                     - name: cta
                       label: "Primary call to action"
                       widget: "object"
@@ -61,11 +67,35 @@ collections:
                         - name: 'cta-label'
                           label: "Label"
                           widget: "string"
+                          required: false
                         - name: 'cta-url'
                           label: "Url (https://...)"
                           widget: "string"
+                          required: false
                     - name: isRevert
                       label: Is Reverted?
                       default: false
                       widget: boolean
-                        
+                      required: false
+                    - name: isDark
+                      label: Is Dark theme?
+                      default: false
+                      widget: boolean
+                      required: false
+                    - name: Blocks
+                      label: Blocks
+                      widget: list
+                      fields:
+                        - name: title
+                          label: Title
+                          widget: string
+                          required: false
+                        - name: description
+                          label: Description
+                          widget: string
+                          required: false
+                        - name: image
+                          label: Image
+                          widget: image
+                          required: false
+                      required: false
