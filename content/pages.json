@@ -4,7 +4,8 @@
       "title": "Home",
       "blocks": [
         {
-          "title": "Helping new talent into the tech world"
+          "title": "Helping new talent into the tech world",
+          "type": "general_header"
         },
         {
           "title": "Our program",
@@ -14,7 +15,8 @@
               "cta-url": "https://hackyourfuturebelgium.be/program/",
               "cta-label": "Discover more"
             }
-          }
+          },
+          "type": "presentation"
         }
       ]
     }
