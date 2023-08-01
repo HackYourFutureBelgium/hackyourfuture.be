@@ -1,8 +1,12 @@
 import styled from "styled-components"
 
-import { MEDIA_QUERY } from "../../../utils/constants"
+import { MEDIA_QUERY } from "@utils"
 
-export const StyledTopNav = styled.nav`
+type TopNavProps = {
+  isMobile: boolean
+}
+
+export const StyledTopNav = styled.nav<TopNavProps>`
   display: flex;
   justify-content: flex-end;
   align-items: ${({ isMobile }) => (isMobile ? "flex-start" : "center")};

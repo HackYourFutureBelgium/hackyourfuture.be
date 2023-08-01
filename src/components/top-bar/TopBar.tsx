@@ -1,30 +1,29 @@
 import React, { useState } from "react"
 
-import { StyledHeader, MobileNavHeader } from "./style"
+import { Container, Wrapper, MobileNavHeader } from "./TopBar.styles"
 import { Pane, Dialog, Button } from "../ui"
 import Logo from "../logo/Logo"
-import TopNav from "../navigation/top-nav/TopNav"
-import { BREAKPOINT } from "../../utils/constants"
+import { TopNav } from "@components"
+import { BREAKPOINT } from "@utils"
+import { Page } from "@types"
 
-const TopBar = ({ page }) => {
+type TopBarProps = {
+  page?: Page
+}
+
+export const TopBar = ({ page }: TopBarProps) => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
 
   return (
-    <StyledHeader>
-      <Pane
-        width="100%"
-        maxWidth={BREAKPOINT.XL}
-        margin="auto"
-        height="100%"
-        alignItems="center"
-      >
+    <Container>
+      <Wrapper>
         <Logo />
         <TopNav
           onBurgerNavClicked={() => setIsMobileNavOpen(true)}
           currentPage={page}
           isMobile={false}
         />
-      </Pane>
+      </Wrapper>
       <Dialog isVisible={isMobileNavOpen} isFullScreen>
         <MobileNavHeader>
           <Button
@@ -36,11 +35,9 @@ const TopBar = ({ page }) => {
           </Button>
         </MobileNavHeader>
         {/* <MobileNav> */}
-        <TopNav isMobile onBurgerNavClicked={undefined} currentPage={undefined} />
+        <TopNav isMobile />
         {/* </MobileNav> */}
       </Dialog>
-    </StyledHeader>
+    </Container>
   )
 }
-
-export default TopBar

@@ -1,23 +1,35 @@
-import React from "react"
 import styled from "styled-components"
-import { darken, rgba } from "polished"
+import { darken } from "polished"
 import { Link } from "gatsby"
 
-import { MEDIA_QUERY, FONT_FAMILY } from "../../../utils/constants"
+import { MEDIA_QUERY, FONT_FAMILY } from "@utils"
+import { sectionCss, WrapperCss } from "@styles"
 
-export const Section = styled.section`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 16px;
+type SectionProps = {
+  $isDark: boolean
+}
+
+export const Section = styled.section<SectionProps>`
+  ${sectionCss}
+  padding-top: 100px;
+  padding-bottom: 100px;
   position: relative;
-  background: none;
+  background: ${p => (p.$isDark ? "#060620" : "#f6f8ff")};
   z-index: 1;
-  flex: 0 0 auto;
+  overflow: hidden;
+  color: ${p => (p.$isDark ? "white" : "black")};
+
+  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+    padding: 50px 16px;
+  }
 
   @media ${MEDIA_QUERY.MOBILE} {
     padding: 20px;
   }
+`
+
+export const Wrapper = styled.div`
+  ${WrapperCss}
 `
 
 export const Title = styled.h2`
@@ -25,7 +37,7 @@ export const Title = styled.h2`
   line-height: 150%;
   font-family: ${FONT_FAMILY.WORK};
   font-weight: 500;
-  color: inherit;
+  color: currentColor;
 `
 
 export const Text = styled.div`
@@ -33,11 +45,12 @@ export const Text = styled.div`
   line-height: 150%;
   font-family: ${FONT_FAMILY.WORK};
   font-weight: 400;
-  color: inherit;
+  color: currentColor;
 `
 
 type LeftProps = {
   $isReverse: boolean
+  $isDark: boolean
 }
 
 export const Left = styled.div<LeftProps>`
@@ -46,26 +59,27 @@ export const Left = styled.div<LeftProps>`
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0 50px 0 0;
-  padding: ${p => (p.$isReverse ? "0 0 0 50px" : "0 50px 0 0")};
+  padding-right: 50px;
   width: 50%;
   order: ${p => (p.$isReverse ? 2 : 1)};
+  gap: 24px;
 
   @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
     width: 100%;
     order: 1;
-    padding: 0 0 20px 0;
+    padding-right: 0;
   }
 `
 type RightProps = LeftProps
 
 export const Right = styled.div<RightProps>`
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width: 50%;
   height: 100%;
-  min-height: 400px;
+  min-height: 300px;
   order: ${p => (p.$isReverse ? 1 : 2)};
-  padding: ${p => (p.$isReverse ? "0 50px 0 0" : "0 0 0 50px")};
   align-items: stretch;
 
   @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
@@ -73,17 +87,14 @@ export const Right = styled.div<RightProps>`
     order: 2;
     padding: 0;
   }
-`
 
-export const Container = styled.div`
-  width: 100%;
-  display: flex;
-
-  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
-    flex-direction: column;
-  }
-  @media ${MEDIA_QUERY.MOBILE} {
-    margin: 0;
+  > svg {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    fill: ${p => (p.$isDark ? "#2559E7" : "white")};
+    z-index: -1;
+    transform: rotate(90deg);
   }
 `
 
@@ -109,5 +120,17 @@ export const Button = styled(Link)`
   }
   &:focus {
     outline: 2px solid #ffffff;
+  }
+`
+
+export const Image = styled.img`
+  width: 550px;
+  max-width: 100%;
+  height: 380px;
+  object-fit: cover;
+  z-index: 2;
+
+  @media ${MEDIA_QUERY.TABLET_AND_DOWN} {
+    width: 100%;
   }
 `

@@ -1,1 +1,1 @@
-export { default } from "./SectionsFactory"
+export * from "./SectionsFactory"

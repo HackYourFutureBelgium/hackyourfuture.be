@@ -3,9 +3,18 @@ export type Data = {
 }
 
 export type DataPage = {
-  title: "Home"
+  title: Page
   blocks: DataBlock[]
 }
+
+export type Page =
+  | "Home"
+  | "program"
+  | "volunteer"
+  | "digitalents"
+  | "about"
+  | "faq"
+  | "support-us"
 
 export type DataBlock = {
   type: DataBlockType

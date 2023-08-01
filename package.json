@@ -19,8 +19,6 @@
     "build:sb": "build-storybook",
     "build": "gatsby build",
     "clean": "gatsby clean",
-    "cy:open": "cypress open",
-    "cy:run": "cypress run",
     "deploy": "gatsby build && gh-pages -d public",
     "dev:sb": "start-storybook -p 6006",
     "dev": "gatsby develop",
@@ -37,10 +35,9 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@stripe/stripe-js": "^1.38.1",
-    "@testing-library/cypress": "^9.0.0",
-    "cypress": "^12.7.0",
     "gatsby": "^5.3.3",
     "gatsby-image": "^3.11.0",
+    "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-google-tagmanager": "^5.3.1",
     "gatsby-plugin-manifest": "^5.3.1",
     "gatsby-plugin-netlify-cms": "^7.3.0",
@@ -80,6 +77,7 @@
     "@types/node": "^18.14.1",
     "@types/react": "^17.0.53",
     "@types/react-dom": "^18.0.11",
+    "@types/react-helmet": "^6.1.6",
     "@types/showdown": "^2.0.1",
     "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
@@ -90,6 +88,10 @@
     "eslint-plugin-storybook": "^0.6.11",
     "prettier": "^2.8.4",
     "typescript": "^4.9.5"
+  },
+  "overrides": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "engines": {
     "npm": ">=8.0.0 <9.0.0",

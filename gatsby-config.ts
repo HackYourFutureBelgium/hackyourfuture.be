@@ -1,3 +1,5 @@
+import path from "path"
+
 const isProd = process.env.NODE_ENV === "production"
 
 module.exports = {
@@ -37,6 +39,19 @@ module.exports = {
         enableWebVitalsTracking: true,
         // Defaults to https://www.googletagmanager.com
         // selfHostedOrigin: "YOUR_SELF_HOSTED_ORIGIN",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@components": path.resolve(__dirname, "src/components"),
+          "@pages": path.resolve(__dirname, "src/pages"),
+          "@styles": path.resolve(__dirname, "src/styles"),
+          "@types": path.resolve(__dirname, "src/@types"),
+          "@utils": path.resolve(__dirname, "src/utils"),
+        },
+        extensions: [],
       },
     },
     `gatsby-plugin-react-helmet`,

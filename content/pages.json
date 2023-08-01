@@ -17,7 +17,9 @@
             "cta": {
               "cta-url": "https://hackyourfuturebelgium.be/program/",
               "cta-label": "Discover more"
-            }
+            },
+            "image": "/img/our-program.jpg",
+            "isDark": true
           },
           "type": "presentation"
         }
