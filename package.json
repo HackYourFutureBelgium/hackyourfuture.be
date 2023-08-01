@@ -4,6 +4,35 @@
   "description": "The Hack Your Future Belgium website.",
   "version": "0.1.0",
   "author": "HYF <info@hyfbe.be>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HackYourFutureBelgium/website"
+  },
+  "bugs": {
+    "url": "https://github.com/HackYourFutureBelgium/website/issues"
+  },
+  "keywords": [
+    "hackyourfuture",
+    "code"
+  ],
+  "scripts": {
+    "build:sb": "build-storybook",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "deploy": "gatsby build && gh-pages -d public",
+    "dev:sb": "start-storybook -p 6006",
+    "dev": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint": "eslint src/",
+    "serve": "gatsby serve",
+    "start": "npm run develop",
+    "test:e2e:headless": "start-server-and-test develop http://localhost:8000 cy:run",
+    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
+    "test:sb": "test-storybook",
+    "develop": "gatsby develop"
+  },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
@@ -29,37 +58,9 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "sharp": "^0.31.3",
+    "showdown": "^2.1.0",
     "start-server-and-test": "^2.0.0",
     "styled-components": "^5.3.6"
-  },
-  "keywords": [
-    "hackyourfuture",
-    "code"
-  ],
-  "scripts": {
-    "build:sb": "build-storybook",
-    "build": "gatsby build",
-    "clean": "gatsby clean",
-    "cy:open": "cypress open",
-    "cy:run": "cypress run",
-    "deploy": "gatsby build && gh-pages -d public",
-    "dev:sb": "start-storybook -p 6006",
-    "dev": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "lint": "eslint src/",
-    "serve": "gatsby serve",
-    "start": "npm run develop",
-    "test:e2e:headless": "start-server-and-test develop http://localhost:8000 cy:run",
-    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open",
-    "test:sb": "test-storybook", 
-    "develop": "gatsby develop"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/HackYourFutureBelgium/website"
-  },
-  "bugs": {
-    "url": "https://github.com/HackYourFutureBelgium/website/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
@@ -79,6 +80,7 @@
     "@types/node": "^18.14.1",
     "@types/react": "^17.0.53",
     "@types/react-dom": "^18.0.11",
+    "@types/showdown": "^2.0.1",
     "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
@@ -88,10 +90,6 @@
     "eslint-plugin-storybook": "^0.6.11",
     "prettier": "^2.8.4",
     "typescript": "^4.9.5"
-  },
-  "overrides": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
   },
   "engines": {
     "npm": ">=8.0.0 <9.0.0",

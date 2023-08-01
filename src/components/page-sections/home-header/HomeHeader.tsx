@@ -8,7 +8,11 @@ const data = {
   title: "Helping new talent into the tech world",
 }
 
-const HomeHeader = () => (
+type HomeHeaderProps = {
+  title: string
+}
+
+const HomeHeader = ({ title }: HomeHeaderProps) => (
   <Section
     background={`transparent url(${homeHeaderImageUrl}) no-repeat center center`}
     style={{ backgroundSize: "cover" }}
@@ -17,7 +21,7 @@ const HomeHeader = () => (
     <Wrapper>
       <Container>
         <Title level={1} size="XL" isUpperCase isCenter isWhite>
-          {data.title}
+          {title}
         </Title>
       </Container>
     </Wrapper>
