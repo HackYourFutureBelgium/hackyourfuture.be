@@ -5,12 +5,15 @@ import { Pane, Dialog, Button } from "../ui"
 import Logo from "../logo/Logo"
 import TopNav from "../navigation/top-nav/TopNav"
 import { BREAKPOINT } from "../../utils/constants"
+import Note from "../ui/note/Note";
 
 const TopBar = ({ page }) => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false)
 
   return (
     <StyledHeader>
+      {/* Sticky Note */}
+      <Note text="Website Under Construction" />
       <Pane
         width="100%"
         maxWidth={BREAKPOINT.XL}
@@ -36,7 +39,11 @@ const TopBar = ({ page }) => {
           </Button>
         </MobileNavHeader>
         {/* <MobileNav> */}
-        <TopNav isMobile onBurgerNavClicked={undefined} currentPage={undefined} />
+        <TopNav
+          isMobile
+          onBurgerNavClicked={undefined}
+          currentPage={undefined}
+        />
         {/* </MobileNav> */}
       </Dialog>
     </StyledHeader>
