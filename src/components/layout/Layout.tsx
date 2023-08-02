@@ -29,7 +29,7 @@ export const Layout = ({ children, page }: LayoutProps) => (
       <title>Hack Your Future Belgium</title>
       <link rel="canonical" href="https://hackyourfuture.be/" />
       <link
-        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;600;900&family=Work+Sans:wght@400;500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&family=Work+Sans:wght@400;500;700&display=swap"
         rel="stylesheet"
       />
     </Helmet>

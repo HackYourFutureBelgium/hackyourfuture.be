@@ -1,30 +1,12 @@
-import React, { FC, HTMLAttributes, ReactNode } from "react"
 import styled, { css } from "styled-components"
 import { darken, rgba } from "polished"
 
-export interface ButtonProps
-  extends HTMLAttributes<HTMLButtonElement | HTMLAnchorElement> {
-  children?: ReactNode
+export type StyledButtonProps = {
   size?: "small" | "medium"
   variant?: "default" | "primary" | "secondary"
-  as?: "button" | "a"
 }
 
-const Button: FC<ButtonProps> = ({
-  children,
-  size = "medium",
-  variant = "default",
-  as = "button",
-  ...props
-}) => (
-  <StyledButton size={size} variant={variant} as={as} {...props}>
-    {children}
-  </StyledButton>
-)
-
-type StyledButtonProps = Pick<ButtonProps, "size" | "variant">
-
-const StyledButton = styled.button<StyledButtonProps>`
+export const StyledButton = styled.button<StyledButtonProps>`
   display: flex;
   width: fit-content;
   font-family: "Poppins", sans-serif;
@@ -84,5 +66,3 @@ const StyledButton = styled.button<StyledButtonProps>`
       }
     `}
 `
-
-export default Button

@@ -5,7 +5,7 @@ import { COLOR, FONT_FAMILY } from "../../utils/constants"
 export const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${COLOR.WHITE};
-    font-family: ${FONT_FAMILY.SPACE};
+    font-family: ${FONT_FAMILY.POPPINS};
     max-width: 100vw;
   }
 `

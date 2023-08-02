@@ -25,7 +25,7 @@ const StyledButton = styled(
   cursor: pointer;
   text-transform: uppercase;
   align-items: center;
-  font-family: ${FONT_FAMILY.WORK};
+  font-family: ${FONT_FAMILY.POPPINS};
 
   ${({ variant }) => {
     if (variant === "minimal") {

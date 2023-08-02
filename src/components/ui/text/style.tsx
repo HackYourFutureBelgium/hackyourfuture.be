@@ -28,7 +28,7 @@ export const StyledText = styled(
   line-height: 160%;
   font-size: ${({ size }) => FONT_SIZE_TEXT[size.toUpperCase()]};
   font-family: ${({ isWorkFont }) =>
-    isWorkFont ? FONT_FAMILY.WORK : FONT_FAMILY.SPACE};
+    isWorkFont ? FONT_FAMILY.POPPINS : FONT_FAMILY.POPPINS};
   margin: ${({ margin }) => margin};
   white-space: pre-wrap;
   word-break: break-word;
@@ -40,7 +40,7 @@ export const StyledText = styled(
     font-weight: inherit;
     font-weight: bold;
     font-family: ${({ isWorkFont }) =>
-      isWorkFont ? FONT_FAMILY.WORK : FONT_FAMILY.SPACE};
+    isWorkFont ? FONT_FAMILY.POPPINS : FONT_FAMILY.POPPINS};
   }
 `
 

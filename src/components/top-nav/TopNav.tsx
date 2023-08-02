@@ -1,6 +1,5 @@
 import { StyledTopNav, StyledTopNavMobile } from "./TopNav.styles"
-import NavLink from "../navigation/nav-link/NavLink"
-import { Button } from "../ui"
+import { Button, NavLink } from "@components"
 import React from "react"
 import { Page } from "@types"
 
@@ -17,6 +16,13 @@ export const TopNav = ({
 }: TopNavProps) => (
   <>
     <StyledTopNav isMobile={isMobile}>
+      <Button
+        as="a"
+        href="/program"
+        variant="secondary"
+      >
+        The program
+      </Button>
       <NavLink to="/program" isActive={currentPage === "program"}>
         <span>The program</span>
       </NavLink>
@@ -36,10 +42,11 @@ export const TopNav = ({
         <span>Support us</span>
       </NavLink>
       <Button
-        is="a"
+        as="a"
         href="https://forms.gle/jevj2Ti6brB9pAdw8"
         target="_blank"
         rel="noopener noreferrer nofollow"
+        variant="primary"
       >
         Apply now
       </Button>
@@ -47,10 +54,9 @@ export const TopNav = ({
     {!isMobile && (
       <StyledTopNavMobile>
         <Button
-          iconLeft="bars"
           onClick={onBurgerNavClicked}
-          variant="minimal"
-          size="28px"
+          variant="primary"
+          size="medium"
         />
       </StyledTopNavMobile>
     )}

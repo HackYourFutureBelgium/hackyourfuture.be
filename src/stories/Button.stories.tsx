@@ -2,7 +2,7 @@ import React from "react"
 import { Story, Meta } from "@storybook/react"
 import { within, userEvent } from "@storybook/testing-library"
 import { expect } from "@storybook/jest"
-import Button, { ButtonProps } from "../components/ui/button/ButtonV2"
+import { Button, ButtonProps } from "@components"
 import styled from "styled-components"
 
 const meta: Meta<ButtonProps> = {

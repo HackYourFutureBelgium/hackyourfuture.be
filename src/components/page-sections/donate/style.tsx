@@ -38,7 +38,7 @@ export const Li = styled(({ isActive, ...props }) => (
   justify-content: center;
   background-color: ${({ isActive }) =>
     isActive ? COLOR.JACKSON_PURPLE : "white"};
-  font-family: ${FONT_FAMILY.WORK};
+  font-family: ${FONT_FAMILY.POPPINS};
 
   &:not(:last-child) {
     border-right: none;

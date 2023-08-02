@@ -11,7 +11,7 @@ export const sectionCss = css`
   flex: 0 0 auto;
 `
 
-export const WrapperCss = css`
+export const wrapperCss = css`
   display: flex;
   flex-direction: row;
   justify-content: center;

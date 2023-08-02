@@ -3,7 +3,7 @@ import { darken } from "polished"
 import { Link } from "gatsby"
 
 import { MEDIA_QUERY, FONT_FAMILY } from "@utils"
-import { sectionCss, WrapperCss } from "@styles"
+import { sectionCss, wrapperCss } from "@styles"
 
 type SectionProps = {
   $isDark: boolean
@@ -29,13 +29,13 @@ export const Section = styled.section<SectionProps>`
 `
 
 export const Wrapper = styled.div`
-  ${WrapperCss}
+  ${wrapperCss}
 `
 
 export const Title = styled.h2`
   font-size: 32px;
   line-height: 150%;
-  font-family: ${FONT_FAMILY.WORK};
+  font-family: ${FONT_FAMILY.POPPINS};
   font-weight: 500;
   color: currentColor;
 `
@@ -43,7 +43,7 @@ export const Title = styled.h2`
 export const Text = styled.div`
   font-size: 18px;
   line-height: 150%;
-  font-family: ${FONT_FAMILY.WORK};
+  font-family: ${FONT_FAMILY.POPPINS};
   font-weight: 400;
   color: currentColor;
 `

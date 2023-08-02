@@ -1,14 +1,13 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
-import React from "react"
+import { Link, GatsbyLinkProps } from "gatsby"
 
-import { COLOR, FONT_SIZE_TEXT, FONT_FAMILY } from "../../../utils/constants"
+import { COLOR, FONT_SIZE_TEXT, FONT_FAMILY } from "@utils"
 
-export const StyledNavLink = styled(({ isActive, ...props }) => (
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
-  <Link {...props} />
-))`
+export type StyledNavLinkProps = {
+  isActive: boolean
+} & GatsbyLinkProps<any>
+
+export const StyledNavLink = styled(Link) <StyledNavLinkProps>`
   display: inline-flex;
   align-items: center;
   height: 100%;
@@ -17,7 +16,7 @@ export const StyledNavLink = styled(({ isActive, ...props }) => (
   line-height: 160%;
   text-transform: uppercase;
   padding: 10px 20px;
-  font-family: ${FONT_FAMILY.WORK};
+  font-family: ${FONT_FAMILY.POPPINS};
 
   &:hover,
   &:focus,
@@ -27,7 +26,7 @@ export const StyledNavLink = styled(({ isActive, ...props }) => (
 
   span {
     position: relative;
-    font-family: ${FONT_FAMILY.WORK};
+    font-family: ${FONT_FAMILY.POPPINS};
 
     &:after {
       content: "";

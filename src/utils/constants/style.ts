@@ -55,6 +55,5 @@ export const SHADOW = {
 }
 
 export const FONT_FAMILY = {
-  SPACE: "'Space Mono', monospace",
-  WORK: "'Work Sans', sans-serif",
+  POPPINS: "'Poppins', sans-serif",
 }

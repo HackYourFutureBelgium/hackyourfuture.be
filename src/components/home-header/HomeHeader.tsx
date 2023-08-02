@@ -1,8 +1,6 @@
 import React from "react"
 
-import { Container } from "./HomeHeader.styles"
-import { Title, Section, Wrapper } from "../ui"
-// import homeHeaderImageUrl from "../../../assets/images/home-header.jpg"
+import { Container, Wrapper, Title } from "./HomeHeader.styles"
 
 type HomeHeaderProps = {
   title: string,
@@ -10,17 +8,9 @@ type HomeHeaderProps = {
 }
 
 export const HomeHeader = ({ title, image }: HomeHeaderProps) => (
-  <Section
-    background={`transparent url(${image}) no-repeat center center`}
-    style={{ backgroundSize: "cover" }}
-    hasOverlay
-  >
+  <Container style={{ background: `transparent url(${image}) no-repeat center center` }}>
     <Wrapper>
-      <Container>
-        <Title level={1} size="XL" isUpperCase isCenter isWhite>
-          {title}
-        </Title>
-      </Container>
+      <Title>{title}</Title>
     </Wrapper>
-  </Section>
+  </Container>
 )

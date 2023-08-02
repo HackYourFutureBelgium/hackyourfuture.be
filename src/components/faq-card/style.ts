@@ -23,7 +23,7 @@ export const StyledContent = styled.div`
 
   a {
     color: ${COLOR.BLUE_VIOLET};
-    font-family: ${FONT_FAMILY.SPACE};
+    font-family: ${FONT_FAMILY.POPPINS};
 
     &:hover {
       text-decoration: underline;
@@ -36,7 +36,7 @@ export const StyledContent = styled.div`
     li {
       list-style-type: disc;
       margin-left: 20px;
-      font-family: ${FONT_FAMILY.SPACE};
+      font-family: ${FONT_FAMILY.POPPINS};
     }
   }
 `
