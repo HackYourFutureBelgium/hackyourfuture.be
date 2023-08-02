@@ -1,0 +1,71 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: static/img
+public_folder: /img
+search: false
+
+collections:
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - label: "Page content"
+        name: "content"
+        file: "content/pages.json"
+        fields:
+          - label: Page
+            name: page
+            widget: list
+            fields:
+            - label: Page title
+              name: title
+              widget: string
+            - label: Blocks
+              name: blocks
+              widget: list
+              fields:
+                - label: Block type
+                  name: type
+                  widget: select
+                  default: general_header
+                  options: [
+                    "general_header",
+                    "main_header",
+                    "presentation",
+                    "three_blocks",
+                    "logos",
+                  ]
+                - name: title
+                  label: Title
+                  widget: string
+                - name: options
+                  label: Options
+                  collapsed: true
+                  required: false
+                  widget: object
+                  fields:
+                    - name: description
+                      label: Description
+                      widget: markdown
+                      required: false
+                      buttons: ['bold', 'bulleted-list', 'numbered-list']
+                      editor_components: []
+                      modes: ['rich_text']
+                    - name: cta
+                      label: "Primary call to action"
+                      widget: "object"
+                      required: false
+                      collapsed: true
+                      fields: 
+                        - name: 'cta-label'
+                          label: "Label"
+                          widget: "string"
+                        - name: 'cta-url'
+                          label: "Url (https://...)"
+                          widget: "string"
+                    - name: isRevert
+                      label: Is Reverted?
+                      default: false
+                      widget: boolean
+                        
